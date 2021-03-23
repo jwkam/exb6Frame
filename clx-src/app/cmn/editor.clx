@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cd381e60" version="1.0.0.0">
+  <head std:sid="head-02392974">
+    <title>04_1_Edit&amp;MaskEdit</title>
+    <screen std:sid="screen-1b98de13" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-fb33a53d" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-4ca24071" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-8877acb5"/>
+    <cl:appspec title="에디터"/>
+  </head>
+  <body std:sid="body-ef2c84d3" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-443a885d" style="font-size:10px;" class="cl-form-group">
+      <cl:formdata std:sid="f-data-d7eae2e6" row="0" col="0"/>
+      <cl:output std:sid="output-60b5fc49" class="cl-form-label" value="웹 에디터">
+        <cl:formdata std:sid="f-data-2fb367d9" row="0" col="0" rowspan="1" colspan="6"/>
+      </cl:output>
+      <cl:output std:sid="output-b5abd6e3" class="cl-form-label" value="기능(API)">
+        <cl:formdata std:sid="f-data-ff3ac3e8" row="4" col="0" rowspan="1" colspan="4"/>
+      </cl:output>
+      <cl:output std:sid="output-c8e3d825" class="cl-form-label" value="설명">
+        <cl:formdata std:sid="f-data-c793f2be" row="4" col="4" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-588cb047" class="cl-form-label" value="콘솔">
+        <cl:formdata std:sid="f-data-9498175b" row="2" col="0" rowspan="1" colspan="6"/>
+      </cl:output>
+      <cl:textarea std:sid="t-area-f4786679" id="txaConsole">
+        <cl:formdata std:sid="f-data-30c1767f" row="3" col="0" rowspan="1" colspan="6"/>
+      </cl:textarea>
+      <cl:output std:sid="output-1aab36b9" value="에디터에 쓰여진 값을 가져올 수 있습니다.">
+        <cl:formdata std:sid="f-data-f286e13d" row="5" col="4" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-09e0e17f" value="에디터에 값을 입력할 수 있습니다.">
+        <cl:formdata std:sid="f-data-2b2d4a1b" row="6" col="4" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-31d634a5" value="에디터에 쓰여진 값의 길이를 가져올 수 있습니다.">
+        <cl:formdata std:sid="f-data-7b00218b" row="7" col="4" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-5e519ace" value="getVaule">
+        <cl:formdata std:sid="f-data-7421c359" row="5" col="0" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-d782fe40" value="SetValue">
+        <cl:formdata std:sid="f-data-f97d8b28" row="6" col="0" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:embeddedpage std:sid="e-page-ab61d421" id="editor" src="../../lib/smarteditor/SmartEditor2.html" notsupportmessage="안된">
+        <cl:formdata std:sid="f-data-d0d73e89" row="1" col="0" rowspan="1" colspan="6"/>
+      </cl:embeddedpage>
+      <cl:button std:sid="button-08373851" value="getVaule">
+        <cl:listener std:sid="listener-59a1f47e" name="click" handler="onButtonClick"/>
+        <cl:formdata std:sid="f-data-212201ad" row="5" col="2" rowspan="1" colspan="2"/>
+      </cl:button>
+      <cl:output std:sid="output-fbe6489e" value="Reset">
+        <cl:formdata std:sid="f-data-67566988" row="8" col="0" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:button std:sid="button-1e63345a" value="Reset">
+        <cl:listener std:sid="listener-359969fe" name="click" handler="onButtonClick4"/>
+        <cl:formdata std:sid="f-data-08899b85" row="8" col="2" rowspan="1" colspan="2"/>
+      </cl:button>
+      <cl:output std:sid="output-5975abf7" value="GetLength">
+        <cl:formdata std:sid="f-data-ac975fda" row="7" col="0" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:button std:sid="button-a551875d" value="GetLength">
+        <cl:listener std:sid="listener-47d9204e" name="click" handler="onButtonClick2"/>
+        <cl:formdata std:sid="f-data-6d4e9044" row="7" col="2" rowspan="1" colspan="2"/>
+      </cl:button>
+      <cl:output std:sid="output-25a072e0" value="에디터에 쓰여진 값을 초기화 시킬수 있습니다.">
+        <cl:formdata std:sid="f-data-e3470241" row="8" col="4" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-ad1610a7" id="ipb1">
+        <cl:formdata std:sid="f-data-e4fd2616" row="6" col="2"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-9204dee5" value="setValue">
+        <cl:listener std:sid="listener-7e473391" name="click" handler="onButtonClick3"/>
+        <cl:formdata std:sid="f-data-12e6a97f" row="6" col="3"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-84befd1b" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="28" unit="PIXEL"/>
+        <cl:rows length="28" unit="PIXEL"/>
+        <cl:rows length="28" unit="PIXEL"/>
+        <cl:rows length="28" unit="PIXEL"/>
+        <cl:columns length="130" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-cc43197a" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

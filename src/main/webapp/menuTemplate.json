@@ -1,0 +1,91 @@
+{
+	"dmGlobalConfig": {
+		"mdiWindowMaxCount": "10",
+		"defaultLocale": null,
+		"deputyLoginYn": "",
+		"useSearchBoxClear": "N",
+		"divideMdiUseYn": "N",
+		"webSocketUrl": "",
+		"userViewPartPopOut": "Y",
+		"webSocketYn": "N"
+	},
+	"dmUserInfo": {
+		"L_LOGIN_DT": "20200915150937889946",
+		"USER_NM": "Admin",
+		"LOGIN_ID": "temp",
+		"LAYOUT": "default",
+		"USER_ID": "TST014",
+		"L_LOGIN_IP": "211.109.22.200",
+		"USER_DIV_CD": "GUEST",
+		"LANG": "ko",
+		"PARTY_ID": "000000000000017",
+		"SYS_MGR_YN": null,
+		"DUP_PERMIT_YN": null
+	},
+	"dsAllMenu": [
+		{
+			"MENU_KEY": "MDAwMzAmTUVOVUhFQURFUg==",
+			"MENU_ID": "00030",
+			"MENU_NM": "메뉴",
+			"CALL_PAGE": null,
+			"UP_MENU_ID": null,
+			"PGM_ID": "MENUHEADER",
+			"PGM_NM": "MENUHEADER",
+			"ICON": "theme/common/images/menu/icon/lnb_ico_01_w.png",
+			"MENU_LVL": 0,
+			"UP_PGM_ID": null
+		},
+			{
+			"MENU_KEY": "Y21uQ0dyaWQmY21uQ0dyaWQ=",
+			"MENU_ID": "cmnCGrid",
+			"MENU_NM": "그리드",
+			"CALL_PAGE": "app/cmn/cmnCGrid.clx",
+			"UP_MENU_ID": "00030",
+			"PGM_ID": "cmnCGrid",
+			"PGM_NM": "그리드",
+			"ICON": "theme/common/images/menu/icon/lnb_ico_03_w.png",
+			"MENU_LVL": 3,
+			"UP_PGM_ID": "MENUHEADER",
+			"PRT_ORD": 1
+		},
+		{
+			"MENU_KEY": "Y21uQ0dyaWQmY21uQ0dyaWQ=",
+			"MENU_ID": "chart",
+			"MENU_NM": "차트",
+			"CALL_PAGE": "app/cmn/chart.clx",
+			"UP_MENU_ID": "00030",
+			"PGM_ID": "chart",
+			"PGM_NM": "차트",
+			"ICON": "theme/common/images/menu/icon/lnb_ico_04_w.png",
+			"MENU_LVL": 3,
+			"UP_PGM_ID": "MENUHEADER",
+			"PRT_ORD": 1
+		},
+		{
+			"MENU_KEY": "Y21uQ0dyaWQmY21uQ0dyaWQ=",
+			"MENU_ID": "editor",
+			"MENU_NM": "HTML에디터",
+			"CALL_PAGE": "app/cmn/editor.clx",
+			"UP_MENU_ID": "00030",
+			"PGM_ID": "editor",
+			"PGM_NM": "HTML에디터",
+			"ICON": "theme/common/images/menu/icon/lnb_ico_07_w.png",
+			"MENU_LVL": 3,
+			"UP_PGM_ID": "MENUHEADER",
+			"PRT_ORD": 1
+		},
+		{
+			"MENU_KEY": "Y21uQ0dyaWQmY21uQ0dyaWQ=",
+			"MENU_ID": "etc",
+			"MENU_NM": "기타",
+			"CALL_PAGE": "app/cmn/etc.clx",
+			"UP_MENU_ID": "00030",
+			"PGM_ID": "etc",
+			"PGM_NM": "기타",
+			"ICON": "theme/common/images/menu/icon/lnb_ico_08_w.png",
+			"MENU_LVL": 3,
+			"UP_PGM_ID": "MENUHEADER",
+			"PRT_ORD": 1
+		}
+	]
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ccf50f87" version="1.0.0.0">
+  <head std:sid="head-36af639d">
+    <title>InputBox</title>
+    <screen std:sid="screen-86f08349" id="default" name="default" minwidth="1235px" width="1235px" height="675px"/>
+    <screen std:sid="screen-baae5930" id="notebook" name="notebook" minwidth="1020px" maxwidth="1234px" width="1020px" height="540px"/>
+    <screen std:sid="screen-be0f89c0" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-2cb04679" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-8a447e37">
+      <cl:dataset std:sid="d-set-fc003b0e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-770501cb" name="CD"/>
+          <cl:datacolumn std:sid="d-column-7a3d0ae3" name="CD_NM"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[서울]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[수원]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[울산광역시]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[부산광역시]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[50]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[광주광역시]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-656f5d75" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-030de306" top="44px" left="44px" width="900px" height="71px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-37f32a80" id="opt1" value="값 설정">
+        <cl:formdata std:sid="f-data-bcbc6d7d" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-a665ba05" id="opt2" value="아이콘 위치변경">
+        <cl:formdata std:sid="f-data-7248e5c9" row="1" col="0"/>
+      </cl:output>
+      <cl:checkbox std:sid="c-box-3cfa4a9b" id="ckb1" truevalue="Y" text="Check">
+        <cl:formdata std:sid="f-data-1f58f91e" row="0" col="1"/>
+      </cl:checkbox>
+      <cl:checkbox std:sid="c-box-1e6f026c" id="ckb2" truevalue="Y" text="Check" iconalign="right">
+        <cl:formdata std:sid="f-data-588c397e" row="1" col="1"/>
+      </cl:checkbox>
+      <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-c75b85d4" id="opt7" value="자주 사용되는 체크박스 속성 지정 방법입니다.">
+      <cl:xylayoutdata std:sid="xyl-data-ebde5e4a" top="9px" left="44px" width="900px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:group std:sid="group-f39d7c2c" id="grp2" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-6396022f" top="192px" left="44px" width="900px" height="214px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-20cd6ed1" id="opt4" value="아이템 넓이에 맞게 사이즈 조정">
+        <cl:formdata std:sid="f-data-12da1757" row="1" col="0"/>
+      </cl:output>
+      <cl:checkboxgroup std:sid="cb-group-59131b66" id="ckg2" colcount="3">
+        <cl:formdata std:sid="f-data-ffe92dc1" row="2" col="1"/>
+        <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+      </cl:checkboxgroup>
+      <cl:output std:sid="output-452d2687" id="opt3" value="아이템 넓이 고정">
+        <cl:formdata std:sid="f-data-dab2fe77" row="0" col="0"/>
+      </cl:output>
+      <cl:checkboxgroup std:sid="cb-group-a782442e" id="ckg3">
+        <cl:formdata std:sid="f-data-a3197da5" row="0" col="1"/>
+        <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+      </cl:checkboxgroup>
+      <cl:output std:sid="output-be27935c" id="opt5" value="한줄에 보여지는 아이템 갯수 조정(1줄에 3개씩)">
+        <cl:formdata std:sid="f-data-069cd3e1" row="2" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-b5e3a643" id="opt6" value="아이템 활성/비활성 표현식 지정">
+        <cl:formdata std:sid="f-data-09c3595d" row="3" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-314946c9" id="grp3" class="cl-form-group">
+        <cl:formdata std:sid="f-data-096b2e17" row="1" col="1"/>
+        <cl:checkboxgroup std:sid="cb-group-9d5c2223" id="ckg1" fixedwidth="false">
+          <cl:formdata std:sid="f-data-96b94628" row="0" col="0"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:checkboxgroup>
+        <cl:output std:sid="output-8fd097e7" id="opt9" style="color:#757272;" value="fixedWidth 속성을 false로 지정하면, 각 아이템 넓이에 맞게 아이템간의 간격이 조정된다.">
+          <cl:formdata std:sid="f-data-19627694" row="1" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-120ab9ba" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-6016f3b4" id="grp4" class="cl-form-group">
+        <cl:formdata std:sid="f-data-22df2c5d" row="3" col="1"/>
+        <cl:checkboxgroup std:sid="cb-group-0711f9bf" id="ckg4" enableditemexp="(value == '20' || value == '30') ? false : true">
+          <cl:formdata std:sid="f-data-4b74f8ab" row="0" col="0"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:checkboxgroup>
+        <cl:output std:sid="output-b52560ee" id="opt10" style="color:#757272;" value="enabledItemExp 속성을 사용하여, 특정 아이템들의 활성/비활성 상태를 지정할 수 있다.">
+          <cl:formdata std:sid="f-data-3a9ae4e9" row="1" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-dfcdc7b6" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-8cf910ce" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+        <cl:rows length="55" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="45" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="55" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-8710d70e" id="opt8" value="자주 사용되는 체크박스그룹 속성 지정 방법입니다.">
+      <cl:xylayoutdata std:sid="xyl-data-419893ee" top="157px" left="44px" width="900px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-3225b378"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

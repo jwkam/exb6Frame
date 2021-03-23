@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-af6e5bf6" version="1.0.0.0">
+  <head std:sid="head-2d2e97ba">
+    <title>GridPersonnel</title>
+    <screen std:sid="screen-c24b797a" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-8738933c" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-2dd1f5e2" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-639b36c7">
+      <cl:dataset std:sid="d-set-246fb5d2" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ccbc2505" name="column1"/>
+          <cl:datacolumn std:sid="d-column-f7b368e8" name="column2"/>
+          <cl:datacolumn std:sid="d-column-2baddbe7" name="column3"/>
+          <cl:datacolumn std:sid="d-column-8589f24c" name="column4"/>
+          <cl:datacolumn std:sid="d-column-72088641" name="column5"/>
+          <cl:datacolumn std:sid="d-column-d5a240c5" name="column6"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+            <cl:datavalue columnname="column3">column31</cl:datavalue>
+            <cl:datavalue columnname="column4">column41</cl:datavalue>
+            <cl:datavalue columnname="column5">column51</cl:datavalue>
+            <cl:datavalue columnname="column6">column61</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+            <cl:datavalue columnname="column3">column32</cl:datavalue>
+            <cl:datavalue columnname="column4">column42</cl:datavalue>
+            <cl:datavalue columnname="column5">column52</cl:datavalue>
+            <cl:datavalue columnname="column6">column62</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+            <cl:datavalue columnname="column3">column33</cl:datavalue>
+            <cl:datavalue columnname="column4">column43</cl:datavalue>
+            <cl:datavalue columnname="column5">column53</cl:datavalue>
+            <cl:datavalue columnname="column6">column63</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2">column24</cl:datavalue>
+            <cl:datavalue columnname="column3">column34</cl:datavalue>
+            <cl:datavalue columnname="column4">column44</cl:datavalue>
+            <cl:datavalue columnname="column5">column54</cl:datavalue>
+            <cl:datavalue columnname="column6">column64</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2">column25</cl:datavalue>
+            <cl:datavalue columnname="column3">column35</cl:datavalue>
+            <cl:datavalue columnname="column4">column45</cl:datavalue>
+            <cl:datavalue columnname="column5">column55</cl:datavalue>
+            <cl:datavalue columnname="column6">column65</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column16</cl:datavalue>
+            <cl:datavalue columnname="column2">column26</cl:datavalue>
+            <cl:datavalue columnname="column3">column36</cl:datavalue>
+            <cl:datavalue columnname="column4">column46</cl:datavalue>
+            <cl:datavalue columnname="column5">column56</cl:datavalue>
+            <cl:datavalue columnname="column6">column66</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column17</cl:datavalue>
+            <cl:datavalue columnname="column2">column27</cl:datavalue>
+            <cl:datavalue columnname="column3">column37</cl:datavalue>
+            <cl:datavalue columnname="column4">column47</cl:datavalue>
+            <cl:datavalue columnname="column5">column57</cl:datavalue>
+            <cl:datavalue columnname="column6">column67</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column18</cl:datavalue>
+            <cl:datavalue columnname="column2">column28</cl:datavalue>
+            <cl:datavalue columnname="column3">column38</cl:datavalue>
+            <cl:datavalue columnname="column4">column48</cl:datavalue>
+            <cl:datavalue columnname="column5">column58</cl:datavalue>
+            <cl:datavalue columnname="column6">column68</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="그리드 개인화"/>
+  </head>
+  <body std:sid="body-49649abb" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-77ace462" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-74df5382" class="card-title">
+      <cl:xylayoutdata std:sid="xyl-data-3c7e83a7" top="10px" right="10px" left="10px" height="30px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-7befeb54" class="h3" value="그리드 개인화">
+        <cl:formdata std:sid="f-data-ca42ca06" row="0" col="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-341c33fc" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-be3400dc" row="0" col="1"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-990be31b" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-a83f2465">
+      <cl:xylayoutdata std:sid="xyl-data-70ae3fc7" top="50px" right="10px" bottom="11px" left="10px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:grid std:sid="grid-841cc46d" id="grd1" datasetid="ds1" resizablecolumns="all" columnMovable="true">
+        <cl:formdata std:sid="f-data-0e3075a9" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-dd7faf21"/>
+        <cl:gridcolumn std:sid="g-column-99a99684"/>
+        <cl:gridcolumn std:sid="g-column-2d1a9204"/>
+        <cl:gridcolumn std:sid="g-column-f094eaa0"/>
+        <cl:gridcolumn std:sid="g-column-425fae5c"/>
+        <cl:gridcolumn std:sid="g-column-5e44ed19"/>
+        <cl:gridheader std:sid="gh-band-28037203">
+          <cl:gridrow std:sid="g-row-6b0fbbc3"/>
+          <cl:gridcell std:sid="gh-cell-17208cdb" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="컬럼1"/>
+          <cl:gridcell std:sid="gh-cell-44c940be" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="컬럼2"/>
+          <cl:gridcell std:sid="gh-cell-fb62bd39" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="컬럼3"/>
+          <cl:gridcell std:sid="gh-cell-79bec771" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="컬럼4"/>
+          <cl:gridcell std:sid="gh-cell-ac3c83c7" rowindex="0" colindex="4" targetcolumnname="column5" sortable="false" filterable="false" text="컬럼5"/>
+          <cl:gridcell std:sid="gh-cell-59f4a31a" rowindex="0" colindex="5" targetcolumnname="column6" sortable="false" filterable="false" text="컬럼6"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-2a80fefb">
+          <cl:gridrow std:sid="g-row-ee8d5a6f"/>
+          <cl:gridcell std:sid="gd-cell-8d7d8162" rowindex="0" colindex="0" columnname="column1"/>
+          <cl:gridcell std:sid="gd-cell-5ecabdef" rowindex="0" colindex="1" columnname="column2"/>
+          <cl:gridcell std:sid="gd-cell-bca31b48" rowindex="0" colindex="2" columnname="column3"/>
+          <cl:gridcell std:sid="gd-cell-c2bb2ac6" rowindex="0" colindex="3" columnname="column4"/>
+          <cl:gridcell std:sid="gd-cell-569c9782" rowindex="0" colindex="4" columnname="column5"/>
+          <cl:gridcell std:sid="gd-cell-f8a3127d" rowindex="0" colindex="5" columnname="column6"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:group std:sid="group-bc9ac54c">
+        <cl:formdata std:sid="f-data-f759bf23" halign="FILL" valign="FILL" row="0" col="0"/>
+        <cl:button std:sid="button-344b6021" value="그리드 개인화 저장하기">
+          <cl:listener std:sid="listener-34a74783" name="click" handler="onButtonClick"/>
+          <cl:flowlayoutdata std:sid="f-data-e390ca6f" width="35px" height="23px" autosize="width"/>
+        </cl:button>
+        <cl:button std:sid="button-cdbf2685" value="개인화 리셋">
+          <cl:listener std:sid="listener-5f04270d" name="click" handler="onButtonClick2"/>
+          <cl:flowlayoutdata std:sid="f-data-d777ff30" width="45px" height="23px" autosize="width"/>
+        </cl:button>
+        <cl:udc std:sid="ud-control-168a267f" type="udc.scr.gridFilterBtn">
+          <cl:flowlayoutdata std:sid="f-data-c5c0b0a1" width="35px" height="23px" autosize="height"/>
+          <cl:property name="grid" value="grd1" type="control"/>
+        </cl:udc>
+        <cl:flowlayout std:sid="f-layout-4bc43127" scrollable="false" halign="right" valign="middle"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-8cd14b28" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-1f46b4d5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

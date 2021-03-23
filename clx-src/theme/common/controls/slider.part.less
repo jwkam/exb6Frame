@@ -1,0 +1,107 @@
+@import "../custom-settings.part.less";
+
+ /* 슬라이더 */
+.cl-slider {
+
+	&.cl-horizontal{
+		// min-width: 40px;
+		// min-height: 20px;
+	}
+	&.cl-vertical{
+		// min-width: 20px;
+		// min-height: 40px;
+	}
+
+	/* 슬라이더 바 */
+	.cl-slider-bar {
+		background-color: @lighter;
+		border: @component-border-base;
+
+		/* 슬라이더 가로 바 */
+		&.cl-horizontal{
+			 background-image: @component-background-image;
+		}
+
+		/* 슬라이더 세로 바*/
+		&.cl-vertical {
+			 background-image: @component-background-image;
+		}
+
+
+		/* 슬라이더 핸들 */
+		.cl-slider-handle {
+
+			/* 슬라이더 가로바 핸들 */
+			&.cl-horizontal {
+				background-image: url(images/controls/slider/icon-slider-handle.png);
+				background-size: 8px 19px;
+				width: 8px;
+				height: 19px;
+				top: -7px;
+				transform: translateX(-7px);
+			}
+
+			/* 슬라이더 세로바 핸들 */
+			&.cl-vertical {
+				background-image: url(images/controls/slider/icon-slider-handle-vertical.png);
+				background-size: 19px 8px;
+				width: 19px;
+				height: 8px;
+				left: -7px;
+				transform: translateY(-7px);
+			}
+		}
+
+		/* 슬라이더 선택 영역 표시 바 */
+		.cl-slider-range {
+			background-color: @primary;
+		}
+	}
+
+	&.cl-focus{
+		/* 슬라이더 바 - focus */
+		.cl-slider-bar {
+			border-color: @component-focus-border-color;
+		}
+	}
+
+	&.cl-disabled {
+		
+		.cl-slider-bar {
+			background-color: @component-disabled-background-color;
+		}
+		
+		/* 슬라이더 바 핸들 - disabled */
+		.cl-slider-handle {
+			&.cl-horizontal {
+				 background-image: url(images/controls/slider/icon-slider-handle-disabled.png);
+			}
+			
+			&.cl-vertical {
+				 background-image: url(images/controls/slider/icon-slider-handle-vertical-disabled.png);
+			}
+		}
+
+		/* 슬라이더 바 선택 영역 - disabled */
+		.cl-slider-range {
+			background-color: @component-disabled-selected-background-color;
+		}
+	}
+}
+
+.cl-slider:not(.cl-disabled){
+	.cl-slider-bar {
+		.cl-slider-handle{
+			/* 슬라이더 바 핸들 - hover */
+			&:hover, &.cl-hover {
+				&.cl-horizontal {
+					 background-image: url(images/controls/slider/icon-slider-handle-hover.png);
+				}
+				
+				&.cl-vertical {
+					 background-image: url(images/controls/slider/icon-slider-handle-vertical-hover.png);
+				}
+			}
+		}
+	}
+}

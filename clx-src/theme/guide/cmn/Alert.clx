@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-03a3a0c7" version="1.0.0.0">
+  <head std:sid="head-8d61889b">
+    <title>Alert</title>
+    <screen std:sid="screen-7bfaaf48" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-826c57ae" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-43251d52" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-adcf8568"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-723b3fa2" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-c82ca3db" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-9042ae3d" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Alerts">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,ALERTS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-974e2737" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-2a991c14" autosize="height" height="563px" width="400px"/>
+      <cl:output std:sid="output-314e555e" class="card-title" value="Examples - Default Style">
+        <cl:verticaldata std:sid="v-data-286273d3" height="25px" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-a911d33f" class="card-subtitle" value="notifier.part.less">
+        <cl:verticaldata std:sid="v-data-3425c0ce" height="25px" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-c458675f" class="text-gray" value="Default">
+        <cl:verticaldata std:sid="v-data-99c9522a" height="25px" width="100px"/>
+      </cl:output>
+      <cl:notifier std:sid="notifier-9d1a2016" id="notiDf" close="true" delay="1000000">
+        <cl:verticaldata std:sid="v-data-f061b2e2" height="50px" width="100px"/>
+      </cl:notifier>
+      <cl:output std:sid="output-ebbdddbc" class="text-gray" value="Info">
+        <cl:verticaldata std:sid="v-data-90e86bc9" height="25px" width="100px"/>
+      </cl:output>
+      <cl:notifier std:sid="notifier-79d6d7ac" id="notiIn" infoclose="true" infodelay="1000000">
+        <cl:verticaldata std:sid="v-data-9c5ef36d" height="50px" width="100px"/>
+      </cl:notifier>
+      <cl:output std:sid="output-2f5e3a1b" class="text-gray" value="Success">
+        <cl:verticaldata std:sid="v-data-69ff1fd1" height="25px" width="100px"/>
+      </cl:output>
+      <cl:notifier std:sid="notifier-257aa1d8" id="notiSc" successclose="true" successdelay="1000000">
+        <cl:verticaldata std:sid="v-data-81f80da3" height="50px" width="100px"/>
+      </cl:notifier>
+      <cl:output std:sid="output-2437179b" class="text-gray" value="Warning">
+        <cl:verticaldata std:sid="v-data-89fd9cb2" height="25px" width="100px"/>
+      </cl:output>
+      <cl:notifier std:sid="notifier-01c6ec52" id="notiWr" warningclose="true" warningdelay="1000000">
+        <cl:verticaldata std:sid="v-data-766cb186" height="50px" width="100px"/>
+      </cl:notifier>
+      <cl:output std:sid="output-5f6138cb" class="text-gray" value="Danger">
+        <cl:verticaldata std:sid="v-data-27f188cb" height="25px" width="100px"/>
+      </cl:output>
+      <cl:notifier std:sid="notifier-8fa67906" id="notiDn" dangerclose="true" dangerdelay="1000000">
+        <cl:verticaldata std:sid="v-data-53e7e89d" height="50px" width="100px"/>
+      </cl:notifier>
+      <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="10" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

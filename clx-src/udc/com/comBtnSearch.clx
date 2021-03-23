@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-aa26cc8e" version="1.0.0.0">
+  <head std:sid="head-1445ca71">
+    <title>comBtnSearch</title>
+    <screen std:sid="screen-366a1a25" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-a87118e7" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-b5cda767" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-10a70d79"/>
+    <cl:appspec dev-description="조회 UDC">
+      <cl:property bindable="true" default="true" std:desc="조회버튼 보이기 여부(true/false)" name="visibleSearchButton" type="boolean"/>
+      <cl:event std:desc="조회버튼 클릭시 이벤트" name="search" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-fa61ed8e" style="top:0px; left:0px; width:60px; height:25px;">
+    <cl:listener std:sid="listener-756c5adf" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:button std:sid="button-05998a89" id="btnSearch" class="btn-search" value="조회">
+      <cl:listener std:sid="listener-2dd7a988" handler="onBtnSearchClick" name="click"/>
+      <cl:apppropbind category="PROPERTY" property="visible" app-property="visibleSearchButton"/>
+      <cl:formdata std:sid="f-data-4c5b1a1d" col="0" row="0"/>
+    </cl:button>
+    <cl:formlayout std:sid="f-layout-6c984992" scrollable="false">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="147"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

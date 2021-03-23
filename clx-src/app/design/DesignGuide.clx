@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-da0e247f" version="1.0.0.0">
+  <head std:sid="head-fd85439c">
+    <title>DesignGuidd</title>
+    <screen std:sid="screen-cff9f2c5" id="default" customHeight="5000" customWidth="800" height="768px" minwidth="1024px" name="default" useCustomHeight="true" width="1024px"/>
+    <screen std:sid="screen-d006cee0" id="tablet" height="768px" maxwidth="1023px" minwidth="800px" name="tablet" width="800px"/>
+    <screen std:sid="screen-66562827" id="mobile" height="768px" maxwidth="799px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-436e7ce4">
+      <cl:dataset std:sid="d-set-d2f83d56" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label1</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label4</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label5</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="디자인 가이드"/>
+  </head>
+  <body std:sid="body-6c80d7a0" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:output std:sid="output-02607e49" id="opt1" class="h5" value="Input Group">
+      <cl:verticaldata std:sid="v-data-2f466774" height="30px" width="100%"/>
+    </cl:output>
+    <cl:group std:sid="group-a29f8b65" id="grp1">
+      <cl:verticaldata std:sid="v-data-d95168a6" autosize="height" height="504px" width="100%"/>
+      <cl:output std:sid="output-2116d68a" id="opt2" class="text-xs" value="인풋박스">
+        <cl:formdata std:sid="f-data-5eb9e745" col="0" colspan="2" row="0" rowspan="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-1c392a13" id="ipb1" placeholder="인풋 박스">
+        <cl:formdata std:sid="f-data-14bc77fb" col="0" row="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-745da3c9" id="ipb2" enabled="false" placeholder="인풋 박스">
+        <cl:formdata std:sid="f-data-03977007" col="1" row="1"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-eb534595" id="opt3" class="text-xs" value="파일 인풋">
+        <cl:formdata std:sid="f-data-649608ed" col="0" colspan="2" row="2" rowspan="1"/>
+      </cl:output>
+      <cl:fileinput std:sid="f-input-6b98d160" id="fi1" placeholder="파일 인풋">
+        <cl:formdata std:sid="f-data-b061f828" col="0" row="3"/>
+      </cl:fileinput>
+      <cl:fileinput std:sid="f-input-c57d0b27" id="fi2" enabled="false" placeholder="파일 인풋">
+        <cl:formdata std:sid="f-data-b27f0302" col="1" row="3"/>
+      </cl:fileinput>
+      <cl:output std:sid="output-65dab2c9" id="opt4" class="text-xs" value="넘버에디터">
+        <cl:formdata std:sid="f-data-c92941b8" col="0" colspan="2" row="4" rowspan="1"/>
+      </cl:output>
+      <cl:numbereditor std:sid="n-editor-3dc8431d" id="nbe1" placeholder="넘버 에디터">
+        <cl:formdata std:sid="f-data-66ac5486" col="0" row="5"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-616fb504" id="nbe2" enabled="false" placeholder="넘버 에디터">
+        <cl:formdata std:sid="f-data-b9a66e27" col="1" row="5"/>
+      </cl:numbereditor>
+      <cl:output std:sid="output-51bdbdb1" id="opt5" class="text-xs" value="데이트 인풋">
+        <cl:formdata std:sid="f-data-dd357cfa" col="0" colspan="2" row="6" rowspan="1"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-e4da2ff6" id="dti1" placeholder="데이트 인풋" spinbutton="true">
+        <cl:formdata std:sid="f-data-726844af" col="0" row="7"/>
+      </cl:dateinput>
+      <cl:dateinput std:sid="d-input-7cdd263f" id="dti2" enabled="false" placeholder="데이트 인풋" spinbutton="true">
+        <cl:formdata std:sid="f-data-6be69a90" col="1" row="7"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-e03a68f2" id="opt6" class="text-xs" value="마스크에디터">
+        <cl:formdata std:sid="f-data-950263dd" col="0" colspan="2" row="8" rowspan="1"/>
+      </cl:output>
+      <cl:maskeditor std:sid="m-editor-96e5b0af" id="mse1">
+        <cl:formdata std:sid="f-data-e7741bf8" col="0" row="9"/>
+      </cl:maskeditor>
+      <cl:maskeditor std:sid="m-editor-0c18bf1b" id="mse2" enabled="false">
+        <cl:formdata std:sid="f-data-8987223e" col="1" row="9"/>
+      </cl:maskeditor>
+      <cl:output std:sid="output-02e6effc" id="opt7" class="text-xs" value="텍스트 에리어">
+        <cl:formdata std:sid="f-data-f0a90099" col="0" colspan="2" row="10" rowspan="1"/>
+      </cl:output>
+      <cl:textarea std:sid="t-area-a7d83238" id="txa1" placeholder="텍스트 에리어">
+        <cl:formdata std:sid="f-data-d2752e83" col="0" row="11"/>
+      </cl:textarea>
+      <cl:textarea std:sid="t-area-97a8fb53" id="txa2" enabled="false" placeholder="텍스트 에리어">
+        <cl:formdata std:sid="f-data-2e7e716c" col="1" row="11"/>
+      </cl:textarea>
+      <cl:formlayout std:sid="f-layout-d60c3c22" hmargin="24px" hspace="10px" vmargin="24px" vspace="5px">
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="40" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="40" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="40" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="40" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="40" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-f4ff45ad" id="opt8" class="h5" value="Selection Group (List Group)">
+      <cl:verticaldata std:sid="v-data-b391ac15" autosize="none" height="30px" width="100%"/>
+    </cl:output>
+    <cl:group std:sid="group-8ca50684" id="grp2">
+      <cl:verticaldata std:sid="v-data-17576c10" autosize="height" height="769px" width="100%"/>
+      <cl:output std:sid="output-96f113b1" id="opt9" class="text-sm" value="콤보박스">
+        <cl:formdata std:sid="f-data-ff641126" col="0" colspan="2" row="1" rowspan="1"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-ad066e66" id="cmb1" multiple="true" placeholder="콤보박스">
+        <cl:formdata std:sid="f-data-f1de683a" col="0" row="2"/>
+        <cl:itemset datasetid="ds1" label="label" value="value"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-e559235e" id="cmb2" enabled="false" placeholder="콤보박스">
+        <cl:formdata std:sid="f-data-6f9981d3" col="1" row="2"/>
+        <cl:itemset datasetid="ds1" label="label" value="value"/>
+      </cl:combobox>
+      <cl:output std:sid="output-68de397f" id="opt10" class="text-sm" value="링크드 콤보박스">
+        <cl:formdata std:sid="f-data-efc8b891" col="0" colspan="2" row="3" rowspan="1"/>
+      </cl:output>
+      <cl:linkedcombobox std:sid="lc-box-dd2f0c85" id="lcb1">
+        <cl:formdata std:sid="f-data-fbf324c0" col="0" row="4"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+        <cl:placeholder>콤보박스1</cl:placeholder>
+        <cl:placeholder>콤보박스2</cl:placeholder>
+        <cl:placeholder>콤보박스3</cl:placeholder>
+      </cl:linkedcombobox>
+      <cl:linkedcombobox std:sid="lc-box-41cd7e4c" id="lcb2" enabled="false">
+        <cl:formdata std:sid="f-data-9f5318ff" col="1" row="4"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+        <cl:placeholder>콤보박스1</cl:placeholder>
+        <cl:placeholder>콤보박스2</cl:placeholder>
+        <cl:placeholder>콤보박스3</cl:placeholder>
+      </cl:linkedcombobox>
+      <cl:output std:sid="output-7c5dbd82" id="opt11" class="text-sm" value="리스트 박스">
+        <cl:formdata std:sid="f-data-68619154" col="0" colspan="2" row="5" rowspan="1"/>
+      </cl:output>
+      <cl:listbox std:sid="l-box-031b1130" id="lbx1">
+        <cl:formdata std:sid="f-data-fdd954eb" col="0" row="6"/>
+        <cl:itemset datasetid="ds1" label="label" value="value"/>
+      </cl:listbox>
+      <cl:listbox std:sid="l-box-b16057a5" id="lbx2" enabled="false">
+        <cl:formdata std:sid="f-data-6d0ade5a" col="1" row="6"/>
+        <cl:itemset datasetid="ds1" label="label" value="value"/>
+        <cl:value>value2</cl:value>
+      </cl:listbox>
+      <cl:output std:sid="output-7452d034" id="opt12" class="text-sm" value="링크드 리스트 박스">
+        <cl:formdata std:sid="f-data-6a806826" col="0" colspan="2" row="7" rowspan="1"/>
+      </cl:output>
+      <cl:linkedlistbox std:sid="ll-box-3fc519a4" id="llb1">
+        <cl:formdata std:sid="f-data-4bb4e7f6" col="0" row="8"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:linkedlistbox>
+      <cl:linkedlistbox std:sid="ll-box-f480c435" id="llb2" enabled="false">
+        <cl:formdata std:sid="f-data-e4c4ce3a" col="1" row="8"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:linkedlistbox>
+      <cl:output std:sid="output-da5a9efd" id="opt13" class="text-sm" value="체크박스">
+        <cl:formdata std:sid="f-data-33fb1c34" col="0" colspan="2" row="9" rowspan="1"/>
+      </cl:output>
+      <cl:checkbox std:sid="c-box-77bf98c1" id="cbx1" text="Check">
+        <cl:formdata std:sid="f-data-68fcb94f" col="0" row="10"/>
+      </cl:checkbox>
+      <cl:checkbox std:sid="c-box-f808362f" id="cbx2" enabled="false" text="Check">
+        <cl:formdata std:sid="f-data-eff8a932" col="1" row="10"/>
+      </cl:checkbox>
+      <cl:output std:sid="output-c9015836" id="opt14" class="text-sm" value="체크박스 그룹">
+        <cl:formdata std:sid="f-data-c3da3b3e" col="0" colspan="2" row="11" rowspan="1"/>
+      </cl:output>
+      <cl:checkboxgroup std:sid="cb-group-f4a7f915" id="cbg1">
+        <cl:formdata std:sid="f-data-ccb5f3cc" col="0" row="12"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:checkboxgroup>
+      <cl:checkboxgroup std:sid="cb-group-d1346587" id="cbg2" enabled="false">
+        <cl:formdata std:sid="f-data-696ee8e6" col="1" row="12"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:checkboxgroup>
+      <cl:output std:sid="output-cd51f65d" id="opt15" class="text-sm" value="라디오 버튼">
+        <cl:formdata std:sid="f-data-9fc33960" col="0" colspan="2" row="13" rowspan="1"/>
+      </cl:output>
+      <cl:radiobutton std:sid="r-button-b3eda44d" id="rdb1" value="value1">
+        <cl:formdata std:sid="f-data-b3d47614" col="0" row="14"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:radiobutton>
+      <cl:radiobutton std:sid="r-button-2f13e680" id="rdb2" enabled="false" value="value1">
+        <cl:formdata std:sid="f-data-2035d514" col="1" row="14"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:radiobutton>
+      <cl:button std:sid="button-b50289e3" id="btnOpen" value="open">
+        <cl:listener std:sid="listener-b63b80e2" handler="onBtnOpenClick" name="click"/>
+        <cl:formdata std:sid="f-data-d2935331" col="0" colspan="1" row="0" rowspan="1"/>
+      </cl:button>
+      <cl:button std:sid="button-a35bbe35" id="btnClose2" value="close">
+        <cl:listener std:sid="listener-16e7f347" handler="onBtnClose2Click" name="click"/>
+        <cl:formdata std:sid="f-data-0f7cc022" col="1" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-7bde37f5" hmargin="24px" hspace="10px" vmargin="24px" vspace="5px">
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="150" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="150" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="true" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-d07d53a7" id="opt20" class="h5" value="Button">
+      <cl:verticaldata std:sid="v-data-2269e8fd" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-2f884496" id="grp36">
+      <cl:verticaldata std:sid="v-data-29a0d9d1" autosize="height" height="290px" width="100%"/>
+      <cl:button std:sid="button-c070b63a" class="btn-search" value="조회">
+        <cl:flowlayoutdata std:sid="f-data-70200ad8" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-7f2763fe" class="btn-new" value="신규">
+        <cl:flowlayoutdata std:sid="f-data-afcdbd2e" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-aec115f9" class="btn-delete" value="삭제">
+        <cl:flowlayoutdata std:sid="f-data-3755f479" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-cadc3d2a" class="btn-restore" value="취소">
+        <cl:flowlayoutdata std:sid="f-data-7088cfea" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-2b09df29" class="btn-save" value="저장">
+        <cl:flowlayoutdata std:sid="f-data-03985b71" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-06ea70ff" class="btn-search" enabled="false" value="조회">
+        <cl:flowlayoutdata std:sid="f-data-c57df4b9" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-aedd11ec" class="btn-new" enabled="false" value="신규">
+        <cl:flowlayoutdata std:sid="f-data-a65d9775" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-9a0e7f8d" class="btn-restore" enabled="false" value="취소">
+        <cl:flowlayoutdata std:sid="f-data-5fce181e" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:button std:sid="button-383e89e4" class="btn-save" enabled="false" value="저장">
+        <cl:flowlayoutdata std:sid="f-data-7cb89841" autosize="none" height="25px" width="60px"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-3428b000" bottommargin="24" leftmargin="24" rightmargin="24" spacing="10" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-914053a3" id="opt28" class="h5" value="Grid">
+      <cl:verticaldata std:sid="v-data-af4f4729" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-88953233" id="grp37">
+      <cl:verticaldata std:sid="v-data-4ba98245" autosize="height" height="290px" width="100%"/>
+      <cl:group std:sid="group-c956007b" id="grp38">
+        <cl:verticaldata std:sid="v-data-081e540c" height="40px" width="400px"/>
+        <cl:button std:sid="button-a6088fc6" id="btn7" value="Add Row">
+          <cl:listener std:sid="listener-a4b024b3" handler="onBtn7Click" name="click"/>
+          <cl:formdata std:sid="f-data-280dbe28" col="1" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-2f8b7322" id="btn9" value="Delete Row">
+          <cl:listener std:sid="listener-ab74d107" handler="onBtn9Click" name="click"/>
+          <cl:formdata std:sid="f-data-42f4cd78" col="2" row="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-9e52e5e2">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="120"/>
+          <cl:columns length="120"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-09993c82" id="grd1" autofit="2, 3, 4" columnMovable="true" columnResizable="true" datasetid="ds1">
+        <cl:verticaldata std:sid="v-data-72b3c75e" height="250px" width="100%"/>
+        <cl:gridcolumn std:sid="g-column-bfe34113" width="35px"/>
+        <cl:gridcolumn std:sid="g-column-303eda67" width="50px"/>
+        <cl:gridcolumn std:sid="g-column-60bbc456"/>
+        <cl:gridcolumn std:sid="g-column-7be1e3ab"/>
+        <cl:gridcolumn std:sid="g-column-0a5bd990"/>
+        <cl:gridheader std:sid="gh-band-62d07a12">
+          <cl:gridrow std:sid="g-row-32ab6346" height="35px"/>
+          <cl:gridcell std:sid="gh-cell-722f514c" colindex="0" rowindex="0" columntype="checkbox" filterable="false" sortable="false"/>
+          <cl:gridcell std:sid="gh-cell-7b4dfd05" colindex="1" rowindex="0" filterable="false" sortable="false"/>
+          <cl:gridcell std:sid="gh-cell-eae70308" colindex="2" rowindex="0" filterable="true" sortable="true" targetcolumnname="label" text="label"/>
+          <cl:gridcell std:sid="gh-cell-4d65030c" colindex="3" rowindex="0" filterable="true" sortable="true" targetcolumnname="value" text="value"/>
+          <cl:gridcell std:sid="gh-cell-11dabd55" colindex="4" rowindex="0" filterable="true" sortable="true" targetcolumnname="parent" text="parent"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-25fe23ae">
+          <cl:gridrow std:sid="g-row-f23e367d" height="35px"/>
+          <cl:gridcell std:sid="gd-cell-cdb1c093" colindex="0" rowindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-e30c681c" colindex="1" rowindex="0" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-37c4b309" colindex="2" rowindex="0" columnname="label">
+            <cl:inputbox std:sid="i-box-4fbd8667" id="ipb3"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-7caf8132" colindex="3" rowindex="0" columnname="value">
+            <cl:inputbox std:sid="i-box-25ff75f5" id="ipb4"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-a8255b68" colindex="4" rowindex="0" columnname="parent">
+            <cl:inputbox std:sid="i-box-dd3c9223" id="ipb5"/>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:verticallayout std:sid="v-layout-bc77964b" bottommargin="24" leftmargin="24" rightmargin="24" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-21b7c874" id="opt18" class="h5" value="Tree">
+      <cl:verticaldata std:sid="v-data-dfa178a3" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-699f629c" id="grp3">
+      <cl:verticaldata std:sid="v-data-2050770d" autosize="height" height="290px" width="100%"/>
+      <cl:tree std:sid="tree-41b68a6d" id="tre1">
+        <cl:flowlayoutdata std:sid="f-data-462663ab" height="242px" width="230px"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:tree std:sid="tree-18cd9885" id="tre2" showlines="true">
+        <cl:flowlayoutdata std:sid="f-data-af3f9901" height="242px" width="230px"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:tree std:sid="tree-06084642" id="tre3" enabled="false">
+        <cl:flowlayoutdata std:sid="f-data-4c9484c9" height="242px" width="230px"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:tree std:sid="tree-2f5acddb" id="tre4" enabled="false" showlines="true">
+        <cl:flowlayoutdata std:sid="f-data-a5da82be" height="242px" width="230px"/>
+        <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:flowlayout std:sid="f-layout-58f8a2d3" bottommargin="24" leftmargin="24" rightmargin="24" spacing="10" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-fc731504" id="opt19" class="h5" value="Tab">
+      <cl:verticaldata std:sid="v-data-148d043c" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-c87e3898" id="grp25">
+      <cl:verticaldata std:sid="v-data-36632f65" autosize="height" height="822px" width="100%"/>
+      <cl:tabfolder std:sid="t-folder-7e47757e" id="tfd1">
+        <cl:verticaldata std:sid="v-data-382d9bbe" height="240px" width="976px"/>
+        <cl:tabitem std:sid="t-item-027f34bb" selected="true" text="tab1">
+          <cl:group std:sid="group-8ed46cf3" id="grp4">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-0185410b"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-d30d3739" text="tab 2">
+          <cl:group std:sid="group-8ad75fb1" id="grp5">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-7bfcfc83"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-0de3c6cf" closable="true" text="tab 3">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-5a7945e9" id="grp6">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-e18da278"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-2c82ee0f" enabled="false" text="tab 4">
+          <cl:group std:sid="group-60f46dbc" id="grp7">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-a5063848"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-d16ccf11" closable="true" enabled="false" text="tab 5">
+          <cl:group std:sid="group-d2c7c9d7" id="grp8">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-07b9885f"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-393f1d95" id="tfd2" headercheckable="true">
+        <cl:verticaldata std:sid="v-data-f9ff65da" autosize="none" height="240px" width="976px"/>
+        <cl:tabitem std:sid="t-item-5a80c39e" selected="true" text="tab1">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-5d87e7dd" id="grp9">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-a17b2dc4"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-e4cdecea" text="tab 2">
+          <cl:group std:sid="group-556eeaca" id="grp10">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-9da1f3ec"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-59fb55b7" closable="true" text="tab 3">
+          <cl:group std:sid="group-db39bbb6" id="grp11">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-f077b3c4"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-bb7b9b97" enabled="false" text="tab 4">
+          <cl:group std:sid="group-dcd7d2b0" id="grp12">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-cbe301f4"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-fbac4282" closable="true" enabled="false" text="tab 5">
+          <cl:group std:sid="group-73460e3e" id="grp13">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-3d679100"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-c4e24a61" id="tfd3" enabled="false">
+        <cl:verticaldata std:sid="v-data-a64ff502" autosize="none" height="240px" width="976px"/>
+        <cl:tabitem std:sid="t-item-c9324204" selected="true" text="tab1">
+          <cl:group std:sid="group-8e4469cb" id="grp14">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-5b5a9737"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-bac3839d" text="tab 2">
+          <cl:group std:sid="group-c0195d51" id="grp15">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-b78c8403"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-b61e93a8" closable="true" text="tab 3">
+          <cl:group std:sid="group-2d1cab75" id="grp16">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-2773812e"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-fcec8b70" enabled="false" text="tab 4">
+          <cl:group std:sid="group-177f60b8" id="grp17">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-a9609455"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-7798e642" closable="true" enabled="false" text="tab 5">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-ea7a21a1" id="grp18">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-abb652a2"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:verticallayout std:sid="v-layout-bad5cc28" bottommargin="24" leftmargin="24" rightmargin="24" spacing="14" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-b1bd8de7" id="opt16" class="h5" value="Menu">
+      <cl:verticaldata std:sid="v-data-9c12993c" autosize="none" height="30px" width="100%"/>
+    </cl:output>
+    <cl:group std:sid="group-2a56bda3" id="grp19">
+      <cl:verticaldata std:sid="v-data-dd7ecb17" autosize="height" height="239px" width="100%"/>
+      <cl:menu std:sid="menu-dc0d1583" id="mnu1">
+        <cl:flowlayoutdata std:sid="f-data-bac3c3c6" autosize="none" height="200px" width="200px"/>
+        <cl:menuitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:menu>
+      <cl:menu std:sid="menu-ce0f352c" id="mnu2" enabled="false">
+        <cl:flowlayoutdata std:sid="f-data-b59fdb3b" autosize="none" height="200px" width="200px"/>
+        <cl:menuitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:menu>
+      <cl:flowlayout std:sid="f-layout-4f4727a7" scrollable="false" bottommargin="24" leftmargin="24" rightmargin="24" spacing="14" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-7dc76c33" id="opt17" class="h5" value="Navigation">
+      <cl:verticaldata std:sid="v-data-7b53702b" autosize="none" height="30px" width="100%"/>
+    </cl:output>
+    <cl:group std:sid="group-5f49a914" id="grp26">
+      <cl:verticaldata std:sid="v-data-b7d2f900" autosize="height" height="200px" width="100%"/>
+      <cl:navigationbar std:sid="n-bar-982b525d" id="ngb1">
+        <cl:verticaldata std:sid="v-data-f41fc9f9" autosize="none" height="40px" width="976px"/>
+        <cl:menuitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:navigationbar>
+      <cl:navigationbar std:sid="n-bar-d5ac93bd" id="ngb2" menutype="megamenu">
+        <cl:verticaldata std:sid="v-data-810d64e0" autosize="none" height="40px" width="976px"/>
+        <cl:menuitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:navigationbar>
+      <cl:navigationbar std:sid="n-bar-bdd3a32c" id="ngb3" enabled="false">
+        <cl:verticaldata std:sid="v-data-f372c5e8" autosize="none" height="40px" width="976px"/>
+        <cl:menuitemset datasetid="ds1" label="label" value="value" parent="parent"/>
+      </cl:navigationbar>
+      <cl:verticallayout std:sid="v-layout-c4e38b7e" scrollable="false" bottommargin="24" leftmargin="24" rightmargin="24" spacing="10" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-e7119fb9" id="opt21" class="h5" value="Alert">
+      <cl:verticaldata std:sid="v-data-e241ab82" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-438e070a" id="grp27">
+      <cl:verticaldata std:sid="v-data-b7644483" autosize="height" height="161px" width="100%"/>
+      <cl:notifier std:sid="notifier-9e02b048" id="nti1" animation="fadein" close="true" dangerclose="true" dangerdelay="10000" delay="10000" infoclose="true" infodelay="10000" maxnotifycount="1" successclose="true" successdelay="10000" warningclose="true" warningdelay="10000">
+        <cl:verticaldata std:sid="v-data-25df7073" autosize="none" height="60px" width="976px"/>
+      </cl:notifier>
+      <cl:group std:sid="group-78dadb92" id="grp20">
+        <cl:verticaldata std:sid="v-data-f4ae357d" autosize="height" height="40px" width="976px"/>
+        <cl:button std:sid="button-596cca2e" id="btnDefault" value="Default">
+          <cl:listener std:sid="listener-051b69e0" handler="onBtnDefaultClick" name="click"/>
+          <cl:flowlayoutdata std:sid="f-data-67209105" height="40px" width="120px"/>
+        </cl:button>
+        <cl:button std:sid="button-f16a69e5" id="btnInfo" value="Info">
+          <cl:listener std:sid="listener-b70fa89b" handler="onBtnInfoClick" name="click"/>
+          <cl:flowlayoutdata std:sid="f-data-d086de2b" height="40px" width="120px"/>
+        </cl:button>
+        <cl:button std:sid="button-4b56bc23" id="btnSuccess" value="Success">
+          <cl:listener std:sid="listener-b31a3273" handler="onBtnSuccessClick" name="click"/>
+          <cl:flowlayoutdata std:sid="f-data-21f9820c" height="40px" width="120px"/>
+        </cl:button>
+        <cl:button std:sid="button-162059ba" id="btnWarning" value="Warning">
+          <cl:listener std:sid="listener-b78bc7e4" handler="onBtnWarningClick" name="click"/>
+          <cl:flowlayoutdata std:sid="f-data-fe56054a" height="40px" width="120px"/>
+        </cl:button>
+        <cl:button std:sid="button-3aaf2484" id="btnDanger" value="Danger">
+          <cl:listener std:sid="listener-de579eee" handler="onBtnDangerClick" name="click"/>
+          <cl:flowlayoutdata std:sid="f-data-e8152c5e" height="40px" width="120px"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-3fcf90e6" scrollable="false"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-73fa12e7" bottommargin="24" leftmargin="24" rightmargin="24" spacing="14" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-4315adfa" id="opt22" class="h5" value="Accordion">
+      <cl:verticaldata std:sid="v-data-4ce28075" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-e92c7330" id="grp28">
+      <cl:verticaldata std:sid="v-data-71a62d24" autosize="height" height="619px" width="100%"/>
+      <cl:accordion std:sid="accordion-dab22ad8" id="acd2">
+        <std:metadata>
+          <std:property key="active-index" value="3"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-0cc76d35" autosize="none" height="300px" width="976px"/>
+        <cl:sectionitem std:sid="s-item-a8662aad" title="item 1">
+          <cl:group std:sid="group-7f3949fd" id="grp23">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-c6e1c95a"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-7c65b27f" title="item 2">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-20a1ff59" id="grp24">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:verticallayout std:sid="v-layout-3576fabf" bottommargin="5" leftmargin="10" rightmargin="10" topmargin="5"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-d2a9e5e5" enabled="false" title="item 3">
+          <cl:group std:sid="group-3a04ea9b" id="grp29">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-3c93a341"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-1c7f8d13" title="item 4">
+          <cl:group std:sid="group-86ba295a" id="grp35">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-5ee239f1"/>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:accordion std:sid="accordion-19f24c78" id="acd1" enabled="false">
+        <cl:verticaldata std:sid="v-data-5348e101" autosize="none" height="300px" width="976px"/>
+        <cl:sectionitem std:sid="s-item-52645056" title="item 1">
+          <cl:group std:sid="group-25916dcf" id="grp21">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-52f2e19d"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-84173a13" title="item 2">
+          <cl:group std:sid="group-f6c1d574" id="grp22">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-462b57c8"/>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:verticallayout std:sid="v-layout-e1fc79b6" bottommargin="24" leftmargin="24" rightmargin="24" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-c28081f7" id="opt23" class="h5" value="Slider">
+      <cl:verticaldata std:sid="v-data-6da9fd41" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-4fa73504" id="grp30">
+      <cl:verticaldata std:sid="v-data-7ceef2ec" autosize="height" height="127px" width="100%"/>
+      <cl:slider std:sid="slider-5b3a85cd" id="slider1">
+        <cl:verticaldata std:sid="v-data-69aea240" autosize="none" height="20px" width="30%"/>
+      </cl:slider>
+      <cl:slider std:sid="slider-76021aad" id="slider2" enabled="false">
+        <cl:verticaldata std:sid="v-data-92f13343" autosize="none" height="20px" width="30%"/>
+      </cl:slider>
+      <cl:verticallayout std:sid="v-layout-6ff66d9b" bottommargin="24" distribution="leading" leftmargin="24" rightmargin="24" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-e3731211" id="opt24" class="h5" value="Progress">
+      <cl:verticaldata std:sid="v-data-d718c0cb" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-be2b089e" id="grp31">
+      <cl:verticaldata std:sid="v-data-78f2044a" autosize="height" height="127px" width="100%"/>
+      <cl:progress std:sid="progress-bf20f20e" id="pgr1" value="50">
+        <cl:verticaldata std:sid="v-data-2834bc06" autosize="none" height="10px" width="293px"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-4b10c94b" id="pgr3" enabled="false" value="50">
+        <cl:verticaldata std:sid="v-data-2c4b64da" autosize="none" height="10px" width="293px"/>
+      </cl:progress>
+      <cl:verticallayout std:sid="v-layout-b8e23383" bottommargin="24" distribution="leading" leftmargin="24" rightmargin="24" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-65c13008" id="opt25" class="h5" value="File Upload">
+      <cl:verticaldata std:sid="v-data-d4c73b3c" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-33a9e05c" id="grp32">
+      <cl:verticaldata std:sid="v-data-fdd61e9b" autosize="height" height="195px" width="100%"/>
+      <cl:fileupload std:sid="f-upload-9a703d5b" id="fud1">
+        <cl:flowlayoutdata std:sid="f-data-689a76ad" height="150px" width="450px"/>
+      </cl:fileupload>
+      <cl:fileupload std:sid="f-upload-131802af" id="fud2" enabled="false">
+        <cl:flowlayoutdata std:sid="f-data-7206fd94" height="150px" width="450px"/>
+      </cl:fileupload>
+      <cl:flowlayout std:sid="f-layout-e279c295" bottommargin="24" leftmargin="24" rightmargin="24" spacing="10" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-7bb0d345" id="opt26" class="h5" value="Calendar">
+      <cl:verticaldata std:sid="v-data-53ff7276" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-9c6958ba" id="grp33">
+      <cl:verticaldata std:sid="v-data-848dc996" autosize="height" height="315px" width="100%"/>
+      <cl:calendar std:sid="calendar-5c8fcfb1" id="cld1">
+        <cl:flowlayoutdata std:sid="f-data-3d121e9d" autosize="height" height="270px" width="230px"/>
+      </cl:calendar>
+      <cl:calendar std:sid="calendar-803d049f" id="cld2" enabled="false">
+        <cl:flowlayoutdata std:sid="f-data-80a6ae24" autosize="height" height="270px" width="230px"/>
+      </cl:calendar>
+      <cl:flowlayout std:sid="f-layout-a050dc2f" bottommargin="24" leftmargin="24" rightmargin="24" spacing="10" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-63a968c3" id="opt27" class="h5" value="Pageindexer">
+      <cl:verticaldata std:sid="v-data-aa21cda8" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:group std:sid="group-e0e7518c" id="grp34">
+      <cl:verticaldata std:sid="v-data-37d14fdd" autosize="height" height="127px" width="100%"/>
+      <cl:pageindexer std:sid="p-indexer-4875cc8a" id="pgi1" pagerowcount="1" totalrowcount="5" viewpagecount="5">
+        <cl:verticaldata std:sid="v-data-acfdf5bd" autosize="none" height="40px" width="350px"/>
+      </cl:pageindexer>
+      <cl:pageindexer std:sid="p-indexer-65541051" id="pgi2" enabled="false" pagerowcount="1" totalrowcount="5" viewpagecount="5">
+        <cl:verticaldata std:sid="v-data-7e14ee01" autosize="none" height="40px" width="350px"/>
+      </cl:pageindexer>
+      <cl:verticallayout std:sid="v-layout-8188edf5" bottommargin="24" distribution="leading" leftmargin="24" rightmargin="24" topmargin="24"/>
+    </cl:group>
+    <cl:output std:sid="output-b28477a9" id="opt29" class="h5" value="Dialog">
+      <cl:verticaldata std:sid="v-data-5959887e" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:button std:sid="button-8c337edb" id="btnDialog" value="Dialog">
+      <cl:listener std:sid="listener-762573d1" handler="onBtnDialogClick" name="click"/>
+      <cl:verticaldata std:sid="v-data-1cbb15b4" height="40px" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-3359b0c0" id="opt30" class="h5" value="Loader">
+      <cl:verticaldata std:sid="v-data-0316b5ff" autosize="none" height="30px" width="976px"/>
+    </cl:output>
+    <cl:verticallayout std:sid="v-layout-49bf525d" bottommargin="24" distribution="leading" leftmargin="24" rightmargin="24" spacing="10" topmargin="24"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,115 @@
+@import "../custom-settings.part.less";
+
+.cl-menu {
+	font: @font-base;
+	
+	/* 메뉴 리스트 */
+	.cl-menu-list {
+		border: @list-border-base;
+		border-radius: @list-border-radius;
+
+		/* 메뉴 아이템 */
+		.cl-menu-item {
+			color: @list-text-color;
+			height: @list-item-height;
+
+			/* 메뉴 아이템 아이콘 */
+			.cl-menu-icon {
+			}
+
+			/* 메뉴 아이템 텍스트 */
+			.cl-text {
+			}
+
+			/* 메뉴 아이템 단축키 */
+			.cl-menu-accesskey {
+			}
+
+			.cl-menu-arrow {
+			}
+			
+			&.cl-folder{
+				>.cl-menu-arrow,
+				>.cl-menu-arrow-wrapper>.cl-menu-arrow{
+					background-image: url(images/controls/menu/icon-chevron-right.png);
+				}
+			}
+
+			/* 서브 메뉴 */ 
+			.cl-sub {
+				border: @list-border-base;
+			}
+
+			/* 메뉴 아이템 - 호버 */
+			&.cl-hover {
+				background-color: @list-item-hover-background-color;
+				color: @list-item-hover-text-color;
+			}
+
+			/* 메뉴 아이템 - disabled */
+			&.cl-disabled {
+				color: @list-item-disabled-text-color;
+
+				/* 메뉴 아이템 - 선택됨, disabled */
+				&.cl-selected {
+					color: @list-item-disabled-selected-text-color;
+					background-color:  @list-item-disabled-selected-background-color;
+				}
+			}
+
+			/* 메뉴 아이템 - 선택됨 */
+			&.cl-selected{
+				background-color: @list-item-selected-background-color;
+				color: @list-item-selected-text-color;
+
+				&.cl-folder{
+					>.cl-menu-arrow,
+					>.cl-menu-arrow-wrapper>.cl-menu-arrow{
+						background-image: url(images/controls/menu/icon-chevron-right.png);
+					}
+				}
+			}
+		}
+	}
+
+	&.cl-focus {
+		/* 메뉴 리스트 - 포커스 */
+		.cl-menu-list {
+			border-color: @list-focus-border-color;
+			
+			.cl-sub {
+				border-color: @list-focus-border-color;
+			}
+		}
+	}
+
+	&.cl-disabled {
+		.cl-menu-list {
+			background-color: @list-disabled-background-color;
+			border-color: @list-disabled-border-color;
+			
+			/* 메뉴 아이템 - disabled */
+			.cl-menu-item  {
+				color : @list-item-disabled-text-color;
+	
+				&.cl-folder{
+					>.cl-menu-arrow,
+					>.cl-menu-arrow-wrapper>.cl-menu-arrow{
+						background-image: url(images/controls/menu/icon-chevron-right-disabled.png);
+					}
+				}
+	
+				/* 메뉴 아이템 - disabled, 선택됨 */
+				&.cl-selected {
+					background-color: @list-item-disabled-selected-background-color;
+					color: @list-item-disabled-selected-text-color;
+	
+					/* 메뉴 아이템 드릴다운 아이콘 - disabled */
+					.cl-menu-arrow {
+						background-image: url(images/controls/menu/icon-chevron-right-disabled.png);
+					}
+				}
+			}
+		}
+	}
+}

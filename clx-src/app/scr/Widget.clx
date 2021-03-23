@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-970e186e" version="1.0.0.0">
+  <head std:sid="head-6ec6750e">
+    <title>Widget</title>
+    <screen std:sid="screen-4ebf2d59" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-eed62638" id="tablet" name="tablet" minwidth="800px" maxwidth="1023px" width="800px" height="768px"/>
+    <screen std:sid="screen-e34d3699" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-bcac0f92">
+      <cl:dataset std:sid="d-set-9cbd6a94" id="dsRcntMn">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="메뉴명" std:sid="d-column-12e7ba52" name="label"/>
+          <cl:datacolumn comment="메뉴값" std:sid="d-column-f259be3a" name="value"/>
+          <cl:datacolumn comment="앱아이디" std:sid="d-column-3c04e931" name="appId"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="대시보드(포틀릿)"/>
+  </head>
+  <body std:sid="body-4427ee50" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-36cd9461" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-2d476730" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-f8acc599" name="before-unload" handler="onBodyBeforeUnload"/>
+    <cl:group std:sid="group-5cb5deab">
+      <cl:attribute name="mobile-column-count" value="3"/>
+      <cl:attribute name="tablet-column-count" value="3"/>
+      <cl:verticaldata std:sid="v-data-d56738a4" width="319px" height="37px" autosize="height"/>
+      <cl:button std:sid="button-1962f841" id="btnReset" class="btn-danger" value="초기화">
+        <cl:listener std:sid="listener-8a258049" name="click" handler="onBtnResetClick"/>
+        <cl:formdata std:sid="f-data-d60568bd" height="0" row="0" col="4"/>
+      </cl:button>
+      <cl:button std:sid="button-71b334e0" id="btnSave" class="btn-info" value="저장">
+        <cl:listener std:sid="listener-748803cb" name="click" handler="onBtnSaveClick"/>
+        <cl:formdata std:sid="f-data-8d2e3cb9" height="0" row="0" col="5"/>
+      </cl:button>
+      <cl:output std:sid="output-7befeb54" class="h3" value="포틀릿 개인화">
+        <cl:formdata std:sid="f-data-65ff9b75" height="0" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-87b7c8b4" value="">
+        <cl:formdata std:sid="f-data-b9704166" height="0" row="0" col="3"/>
+      </cl:output>
+      <cl:output std:sid="output-a36a7d66" value="">
+        <cl:formdata std:sid="f-data-91b8282a" height="0" row="0" col="2"/>
+      </cl:output>
+      <cl:output std:sid="output-8d13a977" value="">
+        <cl:formdata std:sid="f-data-291cd28c" height="0" row="0" col="1"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-e5b7f742" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="35" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="37"/>
+        <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-454d32fa" id="grpPortlet">
+      <cl:attribute name="dataType" value="widget"/>
+      <cl:attribute name="portlet" value="Y"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-c8c873f5" width="984px" height="1051px" autosize="height"/>
+      <cl:group std:sid="group-b3f700ce" id="grpDefault" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:attribute name="isDragable" value="N"/>
+        <cl:formdata std:sid="f-data-f52ea38a" row="0" col="0" rowspan="1" colspan="2"/>
+        <cl:group std:sid="group-33c754ae">
+          <cl:formdata std:sid="f-data-e4337889" row="0" col="0"/>
+          <cl:output std:sid="output-c761c4ed" class="h3 align-bottom" value="업무길잡이">
+            <cl:formdata std:sid="f-data-a0535388" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-3db8b007" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-cf525761" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-be2a05a6" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-55c31f31" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-93d7f974" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:tabfolder std:sid="t-folder-31f37ef7" id="tf1" item-sizing="fill">
+          <cl:formdata std:sid="f-data-f5385b92" topSpacing="10" bottomSpacing="10" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:tabitem std:sid="t-item-fd4efc92" selected="true" text="전체">
+            <cl:group std:sid="group-009fe683">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:output std:sid="output-6695c66c" class="content-subtitle text-danger" value="(중요!) 2021년 공지사항" ellipsis="true">
+                <cl:verticaldata std:sid="v-data-1ee4069d" width="100px" height="25px"/>
+              </cl:output>
+              <cl:output std:sid="output-71313a77" class="content-subtitle" value="코로나19 관련 감염취약 의료기관 감염예방·관리료 산정방법 안내" ellipsis="true">
+                <cl:verticaldata std:sid="v-data-e0493f75" width="100px" height="25px"/>
+              </cl:output>
+              <cl:output std:sid="output-e4b3df52" class="content-subtitle" value="비급여 진료비확인 원외처방 약제비 과다본인부담금 환불절차를 개선사항 안내" ellipsis="true">
+                <cl:verticaldata std:sid="v-data-23a72d0d" width="100px" height="25px"/>
+              </cl:output>
+              <cl:output std:sid="output-4641da3f" class="content-subtitle" value="2021년 급여등재 아카데미 운영 안내" ellipsis="true">
+                <cl:verticaldata std:sid="v-data-426faa84" width="100px" height="25px"/>
+              </cl:output>
+              <cl:output std:sid="output-7950ce10" class="content-subtitle" value="개인정보 처리방침 개정 관련 안내" ellipsis="true">
+                <cl:verticaldata std:sid="v-data-c3fe307d" width="100px" height="25px"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-ab3db450" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-7de92f1b" text="인사발령">
+            <cl:group std:sid="group-566d410d">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:output std:sid="output-b0eb646a" class="text-center text-gray" value="내용이 없습니다 :-)">
+                <cl:verticaldata std:sid="v-data-2ad70497" width="100px" height="25px"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-241f1952" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-1538c38a" text="회의/일정">
+            <cl:group std:sid="group-f08aaeca">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:output std:sid="output-223758b7" class="content-subtitle" value="(10:00 ~ 11:00) 자료교환체계 점검 결과 발표" ellipsis="true">
+                <cl:verticaldata std:sid="v-data-0532fd38" width="430px" height="25px" autosize="none"/>
+              </cl:output>
+              <cl:output std:sid="output-6a41ab8d" class="content-subtitle" value="(14:00 ~ 15:30) 2020 후반기 위촉직(연구사업분야) 모집 공고 설명회" ellipsis="true">
+                <cl:verticaldata std:sid="v-data-bec80ea9" width="430px" height="25px" autosize="none"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-6e213581" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-3e0b88a5" text="경조사">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-9d47883a">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:output std:sid="output-bc19a214" class="content-subtitle" value="[부고] 김태웅(상인시의원)씨 모친상">
+                <cl:verticaldata std:sid="v-data-98d23360" width="100px" height="25px"/>
+              </cl:output>
+              <cl:output std:sid="output-4c10a80c" class="content-subtitle" value="[부고] 김의태(한국시의원)씨 부친상">
+                <cl:verticaldata std:sid="v-data-aba9aa71" width="100px" height="25px"/>
+              </cl:output>
+              <cl:verticallayout std:sid="v-layout-21771ec4" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:formlayout std:sid="f-layout-8118917a" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-915ef96f" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-1b83a552" row="0" col="2"/>
+        <cl:group std:sid="group-ceea6168">
+          <cl:formdata std:sid="f-data-70d52e4b" row="0" col="0"/>
+          <cl:output std:sid="output-a7cc218f" class="h3 align-bottom" value="즐겨찾기 메뉴">
+            <cl:formdata std:sid="f-data-d23ccd49" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-2ccfc5fb" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-a45d67f7" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-3cf2a1b0" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-5800fee3" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-cdfb5e78" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-670264d9" id="grpMnWrap" class="card card-bordered">
+          <cl:formdata std:sid="f-data-2285d2cf" topSpacing="20" bottomSpacing="20" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:flowlayout std:sid="f-layout-6ad5ac23" scrollable="false" valign="middle" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-a3c4eaee" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-42bbe359" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-1ca31ca5" row="1" col="0"/>
+        <cl:group std:sid="group-281752ed">
+          <cl:formdata std:sid="f-data-cb5791d8" row="0" col="0"/>
+          <cl:output std:sid="output-f0b7918d" class="h3 align-bottom" value="편지함">
+            <cl:formdata std:sid="f-data-234bead4" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-f5428f88" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-bc04c58d" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-bda1d7a8" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-ae14037e" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-2e33b426" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f3f59f95">
+          <cl:formdata std:sid="f-data-bb80c607" topSpacing="10" bottomSpacing="10" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:group std:sid="group-7970997a">
+            <cl:verticaldata std:sid="v-data-57d8fa47" width="440px" height="25px"/>
+            <cl:output std:sid="output-429bd57a" value="Re> 마이크로소프트 오피스 엑셀 자격 증명서 발급 안내" ellipsis="true">
+              <cl:formdata std:sid="f-data-f5faa477" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-584adf14" class="text-gray text-right" value="10:25">
+              <cl:formdata std:sid="f-data-0fbb34cb" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-011412bc" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-16e7e1dd">
+            <cl:verticaldata std:sid="v-data-55264075" width="440px" height="25px"/>
+            <cl:output std:sid="output-09f68cd2" value="Re> 안전보건 포스터 개발 용역" ellipsis="true">
+              <cl:formdata std:sid="f-data-1d50058f" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-6039cdd5" class="text-gray text-right" value="09:12">
+              <cl:formdata std:sid="f-data-19ac22cb" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-d7e98257" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-65ae5452">
+            <cl:verticaldata std:sid="v-data-0b44d91a" width="440px" height="25px"/>
+            <cl:output std:sid="output-ed44a28e" value="인사팀 일일업무보고 (11.01)" ellipsis="true">
+              <cl:formdata std:sid="f-data-a929f06d" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-aad439d3" class="text-gray text-right" value="2021.03.15">
+              <cl:formdata std:sid="f-data-14904f5d" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-6146cd49" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-fefc426d">
+            <cl:verticaldata std:sid="v-data-56312492" width="440px" height="25px"/>
+            <cl:output std:sid="output-f64b38ca" class="text-danger" value="[긴급] ERP 유지보수 요청" ellipsis="true">
+              <cl:formdata std:sid="f-data-fcd792ed" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-7d660d26" class="text-gray text-right" value="2021.03.15">
+              <cl:formdata std:sid="f-data-2d3667ee" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-a8d53d8e" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-d2a80b8d"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-321ca381" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-98edb0c3" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-8950a2fd" row="1" col="1"/>
+        <cl:group std:sid="group-3ba64046">
+          <cl:formdata std:sid="f-data-be1dea3f" row="0" col="0"/>
+          <cl:output std:sid="output-0d0707d4" class="h3 align-bottom" value="언론보도">
+            <cl:formdata std:sid="f-data-4ee39576" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-4f8d3402" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-e65a636a" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-63827c42" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-a2ed16f0" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-5bc9d3ee" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-69025cf6">
+          <cl:formdata std:sid="f-data-4cca2e34" topSpacing="10" bottomSpacing="10" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:group std:sid="group-29c98a07">
+            <cl:verticaldata std:sid="v-data-84df5aac" width="440px" height="25px"/>
+            <cl:output std:sid="output-f570b7a5" value="&#x9;2021년 제2차 약제급여평가위원회 심의결과 공개" ellipsis="true">
+              <cl:formdata std:sid="f-data-ab677abe" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-71898c81" class="text-gray text-center" value="2021.03.09">
+              <cl:formdata std:sid="f-data-eee32da0" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-67d67e5b" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-c1f907bf">
+            <cl:verticaldata std:sid="v-data-7c9b916d" width="440px" height="25px"/>
+            <cl:output std:sid="output-6cc48f11" value="&#x9;심사평가원, 국내 첫 코로나19 항체치료제렉키로나주 급여적정성 평가 착수" ellipsis="true">
+              <cl:formdata std:sid="f-data-83047ae6" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-30b53b66" class="text-gray text-center" value="2021.03.04">
+              <cl:formdata std:sid="f-data-304d7fd3" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-ec84d291" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-3808320f">
+            <cl:verticaldata std:sid="v-data-95b8973f" width="440px" height="25px"/>
+            <cl:output std:sid="output-be5a1bf1" value="원료의약품·조제제제 요양기관 업무포털로 관리하세요!" ellipsis="true">
+              <cl:formdata std:sid="f-data-cdae1fb9" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-def20cc8" class="text-gray text-center" value="2021.02.22">
+              <cl:formdata std:sid="f-data-5fded1e7" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-460d5b6f" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-d962044c">
+            <cl:verticaldata std:sid="v-data-dd85e97d" width="440px" height="25px"/>
+            <cl:output std:sid="output-3bf22fd1" value="심사평가원, 빅데이터를 활용한 최초 특허 획득" ellipsis="true">
+              <cl:formdata std:sid="f-data-a7dd48d7" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-fdbc849c" class="text-gray text-center" value="2021.02.17">
+              <cl:formdata std:sid="f-data-4552eeb0" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-44712446" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-52e92a43">
+            <cl:verticaldata std:sid="v-data-cfad4e2c" width="440px" height="25px"/>
+            <cl:output std:sid="output-27dd72c4" value="2021년 계약사업 사전예고 대상" ellipsis="true">
+              <cl:formdata std:sid="f-data-0d1e7ead" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-6cb7df57" class="text-gray text-center" value="2021.02.08">
+              <cl:formdata std:sid="f-data-b45ef096" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-1edf0d18" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-c5065ced"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-db4c473d" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-6e91061c" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-e077c6aa" row="1" col="2"/>
+        <cl:group std:sid="group-94d5046c">
+          <cl:formdata std:sid="f-data-f9438737" row="0" col="0"/>
+          <cl:output std:sid="output-32cd09d7" class="h3 align-bottom" value="최근 접속한 메뉴">
+            <cl:formdata std:sid="f-data-e9b925ff" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-813fd7e9" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-f1813752" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-aaaea719" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-e2c3b0ef" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-78283fbf" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-8d001517" id="grdRcntMn" class="border rounded" readonly="true" datasetid="dsRcntMn" showdeletedrow="false" resizablecolumns="all" columnMovable="true">
+          <cl:formdata std:sid="f-data-ebee496a" topSpacing="20" bottomSpacing="20" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-83e3da6d"/>
+          <cl:gridheader std:sid="gh-band-cbcc1552">
+            <cl:gridrow std:sid="g-row-b1cc3ee1" height="0px"/>
+            <cl:gridcell std:sid="gh-cell-d4b5d2ad" rowindex="0" colindex="0" targetcolumnname="label" sortable="false" filterable="false" text="메뉴명"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-df84d25b">
+            <cl:gridrow std:sid="g-row-0ebe4288" height="28px"/>
+            <cl:gridcell std:sid="gd-cell-e71d3c59" rowindex="0" colindex="0" class="border-0" columnname="label">
+              <cl:output std:sid="output-408f5ab1" class="content-subtitle" value="Output">
+                <cl:celldata std:sid="c-data-9a20aec0" leftSpacing="10" rightSpacing="10"/>
+              </cl:output>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-6b21331f" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-337d5580" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-0a48527c" row="2" col="0"/>
+        <cl:group std:sid="group-58cda3fb">
+          <cl:formdata std:sid="f-data-2eae9148" row="0" col="0"/>
+          <cl:output std:sid="output-bdda1656" class="h3 align-bottom" value="One-Stop 업무지원">
+            <cl:formdata std:sid="f-data-7716850c" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-9fa47fa1" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-cf7702ae" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-bd7d8f5a" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-273d6ca8" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-8f8816c2" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-0305eeec">
+          <cl:formdata std:sid="f-data-70c3bf85" topSpacing="5" bottomSpacing="5" leftSpacing="15" rightSpacing="15" row="1" col="0" rowspan="1" colspan="1"/>
+          <cl:accordion std:sid="accordion-b25e40af" id="acd1" class="border-0" multiple="true">
+            <cl:verticaldata std:sid="v-data-ce61a96f" width="440px" height="189px" autosize="height"/>
+            <cl:sectionitem std:sid="s-item-aa38b4ce" title="행정업무">
+              <std:metadata>
+                <std:property key="is-active-item" value="true"/>
+              </std:metadata>
+              <cl:group std:sid="group-d320d91f">
+                <std:metadata>
+                  <std:property key="locked" value="true"/>
+                </std:metadata>
+                <cl:output std:sid="output-c5ca137e" value="증명서신청" ellipsis="true">
+                  <cl:verticaldata std:sid="v-data-e439bb73" width="100px" height="25px"/>
+                </cl:output>
+                <cl:output std:sid="output-da93bccf" value="복사의뢰" ellipsis="true">
+                  <cl:verticaldata std:sid="v-data-5596b2b5" width="100px" height="25px"/>
+                </cl:output>
+                <cl:output std:sid="output-8fbcefb2" value="외국인출입신청" ellipsis="true">
+                  <cl:verticaldata std:sid="v-data-1ef58285" width="100px" height="25px"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-be3771f6" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+              </cl:group>
+            </cl:sectionitem>
+            <cl:sectionitem std:sid="s-item-df1f8e0d" title="전산자료">
+              <cl:group std:sid="group-e5a24ec6">
+                <std:metadata>
+                  <std:property key="locked" value="true"/>
+                </std:metadata>
+                <cl:output std:sid="output-885c0e49" class="fw-medium text-info" value="불편사항 신고" ellipsis="true">
+                  <cl:verticaldata std:sid="v-data-c4779ad4" width="442px" height="25px" autosize="none"/>
+                </cl:output>
+                <cl:output std:sid="output-2f1578a0" value="프린터 토너신청" ellipsis="true">
+                  <cl:verticaldata std:sid="v-data-6331c87b" width="442px" height="25px" autosize="none"/>
+                </cl:output>
+                <cl:verticallayout std:sid="v-layout-8609366c" leftmargin="5" rightmargin="5" topmargin="5" bottommargin="5"/>
+              </cl:group>
+            </cl:sectionitem>
+          </cl:accordion>
+          <cl:verticallayout std:sid="v-layout-eca18e23"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-7ffabe2a" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-a94b3d06" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-9db68802" row="2" col="1"/>
+        <cl:group std:sid="group-d779286e">
+          <cl:formdata std:sid="f-data-eef3bd99" row="0" col="0"/>
+          <cl:output std:sid="output-b8caa52f" class="h3 align-bottom" value="오늘의 날씨">
+            <cl:formdata std:sid="f-data-bcbaf46b" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-0816395e" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-4ada20a4" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-ee70dec8" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-bfc7976a" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-2dfdbf9d" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f618a275">
+          <cl:formdata std:sid="f-data-e12d47e5" topSpacing="20" bottomSpacing="20" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:group std:sid="group-a30b906a">
+            <cl:formdata std:sid="f-data-3c08eccd" row="0" col="0"/>
+            <cl:button std:sid="button-fbad5dfb" class="btn-azure" value="대기환경">
+              <cl:formdata std:sid="f-data-dbebb337" row="0" col="0"/>
+            </cl:button>
+            <cl:button std:sid="button-6425fcda" class="btn-gray" value="날씨">
+              <cl:formdata std:sid="f-data-0bf4c082" row="0" col="1"/>
+            </cl:button>
+            <cl:output std:sid="output-c8f8c7d9" class="text-right pl-2" value="2021-03-19 16:00" ellipsis="true">
+              <cl:formdata std:sid="f-data-691d93b5" row="0" col="2"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-cac88433" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="100"/>
+              <cl:columns length="100"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-133da186">
+            <cl:formdata std:sid="f-data-330276bd" row="1" col="0" rowspan="1" colspan="1"/>
+            <cl:group std:sid="group-e4f4ab58" class="cl-form-group">
+              <cl:verticaldata std:sid="v-data-16d6f891" width="440px" height="135px" autosize="height"/>
+              <cl:output std:sid="output-9a5f5b5d" class="text-right fw-medium" value="미세먼지">
+                <cl:formdata std:sid="f-data-5e73d28c" row="0" col="1"/>
+              </cl:output>
+              <cl:output std:sid="output-8aca7063" class="text-right fw-medium" value="초미세먼지">
+                <cl:formdata std:sid="f-data-1e2a49b4" row="1" col="1"/>
+              </cl:output>
+              <cl:output std:sid="output-94f6816c" class="text-right fw-medium" value="일산화탄소">
+                <cl:formdata std:sid="f-data-2d2cd4c2" row="2" col="1"/>
+              </cl:output>
+              <cl:output std:sid="output-d3e22834" class="text-right fw-medium" value="오존">
+                <cl:formdata std:sid="f-data-61eb4f38" row="3" col="1"/>
+              </cl:output>
+              <cl:output std:sid="output-eb33fe1d" class="text-right fw-medium" value="이산화질소">
+                <cl:formdata std:sid="f-data-94e63ddd" row="4" col="1"/>
+              </cl:output>
+              <cl:group std:sid="group-fc2a7087">
+                <cl:formdata std:sid="f-data-7032682a" row="0" col="0" rowspan="5" colspan="1"/>
+                <cl:output std:sid="output-286c239b" class="h5 text-center align-top" value="14º 맑음">
+                  <cl:formdata std:sid="f-data-bf2dec2d" row="1" col="0"/>
+                </cl:output>
+                <cl:img std:sid="image-983289c7" src="../../theme/common/images/icon/icon-sun-line.svg">
+                  <cl:formdata std:sid="f-data-90f0ecf5" halign="CENTER" valign="CENTER" width="72" height="72" row="0" col="0"/>
+                </cl:img>
+                <cl:formlayout std:sid="f-layout-886d30ca" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="72"/>
+                  <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="72"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:output std:sid="output-37cd9432" class="text-warning" value="88㎍/㎥">
+                <cl:formdata std:sid="f-data-2d3d5b02" row="0" col="2"/>
+              </cl:output>
+              <cl:output std:sid="output-b2b2fc25" class="text-warning" value="53㎍/㎥">
+                <cl:formdata std:sid="f-data-320cb1c0" row="1" col="2"/>
+              </cl:output>
+              <cl:output std:sid="output-9f5396f0" class="text-success" value="0.9ppm">
+                <cl:formdata std:sid="f-data-2e15e56a" row="2" col="2"/>
+              </cl:output>
+              <cl:output std:sid="output-e99f5ffc" class="text-info" value="0.004ppm">
+                <cl:formdata std:sid="f-data-f2a34a9c" row="3" col="2"/>
+              </cl:output>
+              <cl:output std:sid="output-31f352bc" class="text-info" value="0.053ppm&#x9;">
+                <cl:formdata std:sid="f-data-afd691b6" row="4" col="2"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-993c7885" scrollable="false" hspace="10px" vspace="3px" top-margin="3px" right-margin="3px" bottom-margin="3px" left-margin="3px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+                <cl:rows length="23"/>
+                <cl:rows length="23"/>
+                <cl:rows length="23"/>
+                <cl:rows length="23"/>
+                <cl:rows length="23"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="85" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="80" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-ddf79502"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-5211d7c0" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-94eab4f2" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-a851466f" class="bg-gray-dim rounded" fieldLabel="blank">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-0471e1cc" row="2" col="2"/>
+        <cl:xylayout std:sid="xylayout-fb1c1626"/>
+      </cl:group>
+      <cl:group std:sid="group-8b4bda52" class="bg-gray-dim rounded" fieldLabel="blank">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-f308a353" row="3" col="0"/>
+        <cl:xylayout std:sid="xylayout-babdee85"/>
+      </cl:group>
+      <cl:group std:sid="group-e80a5b4d" class="bg-gray-dim rounded" fieldLabel="blank">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-627347ec" row="3" col="1"/>
+        <cl:xylayout std:sid="xylayout-90f5a449"/>
+      </cl:group>
+      <cl:group std:sid="group-c694c580" class="bg-gray-dim rounded" fieldLabel="blank">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-85c8f551" row="3" col="2"/>
+        <cl:xylayout std:sid="xylayout-49017b65"/>
+      </cl:group>
+      <cl:group std:sid="group-6baefe79" class="card card-bordered" fieldLabel="cafeteria" visible="false">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:attribute name="original-rowindex" value="4"/>
+        <cl:attribute name="original-colindex" value="0"/>
+        <cl:formdata std:sid="f-data-d8a2c5fc" row="4" col="0"/>
+        <cl:group std:sid="group-4b3b7e98">
+          <cl:formdata std:sid="f-data-304db49b" row="0" col="0"/>
+          <cl:output std:sid="output-7aebb34d" class="h3 align-bottom" value="구내식당">
+            <cl:formdata std:sid="f-data-5f0445b4" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-1cbdc100" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-7eac4f33" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-81b75f51" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-eeb8f50c" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-a541490a" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-0714021e">
+          <cl:formdata std:sid="f-data-fa13b082" topSpacing="10" bottomSpacing="10" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:group std:sid="group-eca43844">
+            <cl:verticaldata std:sid="v-data-a2a9c6af" width="440px" height="25px"/>
+            <cl:output std:sid="output-be01358b" value="닭가슴살 샐러드" ellipsis="true">
+              <cl:formdata std:sid="f-data-52b70080" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-3f4866c9" class="badge badge-pill badge-info" value="조식">
+              <cl:formdata std:sid="f-data-440c644a" row="0" col="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-a3ccb282" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-573061a6">
+            <cl:verticaldata std:sid="v-data-72baf07e" width="440px" height="25px"/>
+            <cl:output std:sid="output-f566d041" value="떡볶이" ellipsis="true">
+              <cl:formdata std:sid="f-data-46f43202" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-f296334b" class="badge badge-pill badge-info" value="중식">
+              <cl:formdata std:sid="f-data-dcd8eda7" row="0" col="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-cc163890" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-ae3a3a69">
+            <cl:verticaldata std:sid="v-data-b432cba7" width="440px" height="25px"/>
+            <cl:output std:sid="output-ab24854f" value="돈까쓰&amp;모밀 세트" ellipsis="true">
+              <cl:formdata std:sid="f-data-589d2b6a" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-80fb064c" class="badge badge-pill badge-info" value="석식">
+              <cl:formdata std:sid="f-data-cf8cef7c" row="0" col="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-abe0669b" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-6d66c49f"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-3ea53e14" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-5f52b163" class="card card-bordered" fieldLabel="approval" visible="false">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:attribute name="original-rowindex" value="4"/>
+        <cl:attribute name="original-colindex" value="1"/>
+        <cl:formdata std:sid="f-data-f7f4e28d" row="4" col="1"/>
+        <cl:group std:sid="group-ad66a4b0">
+          <cl:formdata std:sid="f-data-27db46fe" row="0" col="0"/>
+          <cl:output std:sid="output-a56e6fa7" class="h3 align-bottom" value="결재목록">
+            <cl:formdata std:sid="f-data-71c1fc6e" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-24653c83" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-91636050" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-7e25b546" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-d682aae4" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-de0d067a" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-e3092f32">
+          <cl:formdata std:sid="f-data-af4ecf55" topSpacing="10" bottomSpacing="10" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:group std:sid="group-495468a7">
+            <cl:verticaldata std:sid="v-data-ab7fe559" width="440px" height="25px"/>
+            <cl:output std:sid="output-0acdfcad" value="2020년 10월 인사시스템 수행결과 보고" ellipsis="true">
+              <cl:formdata std:sid="f-data-3e40e1df" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-15400a6c" class="text-gray text-center" value="2020.10.27">
+              <cl:formdata std:sid="f-data-9c359a35" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-2e53a051" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-5012772e">
+            <cl:verticaldata std:sid="v-data-beb20e11" width="440px" height="25px"/>
+            <cl:output std:sid="output-f2bd2f5b" value="2020년 10월 사이버 보안진단의 날 행사 계획" ellipsis="true">
+              <cl:formdata std:sid="f-data-e96fdb45" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-809b3f48" class="text-gray text-center" value="2020.10.27">
+              <cl:formdata std:sid="f-data-a6f9bdce" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-876fad6f" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-1831d09f">
+            <cl:verticaldata std:sid="v-data-9653c3bc" width="440px" height="25px"/>
+            <cl:output std:sid="output-4ebad2aa" value="2010년 부서별 개인정보 처리 실태 점검표" ellipsis="true">
+              <cl:formdata std:sid="f-data-85b67ed8" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-03562ef5" class="text-gray text-center" value="2020.10.27">
+              <cl:formdata std:sid="f-data-7996139e" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-c2b24a2f" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-bc61ea97"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-5240600f" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-39564143" class="card card-bordered" fieldLabel="encyclopedia" visible="false">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:attribute name="original-rowindex" value="4"/>
+        <cl:attribute name="original-colindex" value="2"/>
+        <cl:formdata std:sid="f-data-1ad84837" row="4" col="2"/>
+        <cl:group std:sid="group-f2325813">
+          <cl:formdata std:sid="f-data-21a4ceb0" row="0" col="0"/>
+          <cl:output std:sid="output-e7390cb5" class="h3 align-bottom" value="생활백과">
+            <cl:formdata std:sid="f-data-410b4b6b" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-c2442008" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-settings-3-fill.svg">
+            <cl:formdata std:sid="f-data-3eb0d8df" row="0" col="1"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:button std:sid="button-7fe9ca58" class="btn-lightgray border-bottom border-top-0 border-right-0" value="" icon="../../theme/common/images/button/icon-refresh-line.svg">
+            <cl:formdata std:sid="f-data-8a669471" row="0" col="2"/>
+            <cl:iconstyle style="width:24px; height:24px;"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-9c0d05b6" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="20px" vseparatorwidth="1" vseparatortype="CUSTOM" vseparatorcolor="#E1E4E8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="40"/>
+            <cl:columns length="40"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-2bc7b46e">
+          <cl:formdata std:sid="f-data-2daf8294" topSpacing="10" bottomSpacing="10" leftSpacing="20" rightSpacing="20" row="1" col="0"/>
+          <cl:group std:sid="group-12c03335">
+            <cl:verticaldata std:sid="v-data-41b8fb03" width="440px" height="25px"/>
+            <cl:output std:sid="output-7b649e52" value="인사시스템 메뉴얼" ellipsis="true">
+              <cl:formdata std:sid="f-data-f174f34f" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-2959371c" class="text-gray text-center" value="2020.07.01">
+              <cl:formdata std:sid="f-data-89887ac3" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-19106195" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-4b823dda">
+            <cl:verticaldata std:sid="v-data-cd46df96" width="440px" height="25px"/>
+            <cl:output std:sid="output-5843c338" value="Windows7 오류 해결 메뉴얼" ellipsis="true">
+              <cl:formdata std:sid="f-data-dcb3d991" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-36890f0e" class="text-gray text-center" value="2020.06.26">
+              <cl:formdata std:sid="f-data-b6e00b70" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-7048b4dc" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-7e53e35a">
+            <cl:verticaldata std:sid="v-data-f888a5b2" width="440px" height="25px"/>
+            <cl:output std:sid="output-c2c1c966" value="구내식당 이용 안내" ellipsis="true">
+              <cl:formdata std:sid="f-data-bcd1595d" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-f016727c" class="text-gray text-center" value="2020.06.19">
+              <cl:formdata std:sid="f-data-35815b1f" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-6433ddfc" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-85459226">
+            <cl:verticaldata std:sid="v-data-17ef528d" width="440px" height="25px"/>
+            <cl:output std:sid="output-1c88d3aa" value="상용소프트웨어 도입현황" ellipsis="true">
+              <cl:formdata std:sid="f-data-3391b224" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-fa303031" class="text-gray text-center" value="2020.06.19">
+              <cl:formdata std:sid="f-data-95d661a4" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-a47f8d93" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-6cc731d4">
+            <cl:verticaldata std:sid="v-data-586704a8" width="440px" height="25px"/>
+            <cl:output std:sid="output-094e5489" value="튼튼 건강 헬스케어 제도 안내" ellipsis="true">
+              <cl:formdata std:sid="f-data-c1632a5c" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-4f47b552" class="text-gray text-center" value="2020.06.02">
+              <cl:formdata std:sid="f-data-a6d1c295" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-09e1261f" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-8e6d56e8"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-7637bce6" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c2d6add1" hspace="20px" vspace="20px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION" hidden="true"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-87f15da7" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6ls586b5" version="1.0.0.0">
+  <head std:sid="head-tp7u46pj">
+    <title></title>
+    <screen std:sid="screen-h01b4wer" id="default" name="default" minwidth="1235px" width="1235px" height="675px"/>
+    <screen std:sid="screen-hfk5aowq" id="notebook" name="notebook" minwidth="1020px" maxwidth="1234px" width="1020px" height="540px"/>
+    <screen std:sid="screen-j622rd1m" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-3c841wa6" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-30ej8272">
+      <cl:dataset std:sid="d-set-477i38os" id="ds1">
+        <cl:datacolumnlist/>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7o4ejfuz" id="ds2">
+        <cl:datacolumnlist/>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-bndorf9s" id="dmReqList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-51f2e9e3" name="column1"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-dsco66j4" id="dmResOnLoad">
+        <cl:datacolumnlist/>
+      </cl:datamap>
+      <cl:submission std:sid="submission-d9o8p39f" id="subOnLoad" action="" mediatype="application/x-www-form-urlencoded">
+        <cl:responsedata dataid="dmResOnLoad"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-r06iw2q7" id="subList" action="" mediatype="application/x-www-form-urlencoded">
+        <cl:requestdata dataid="dmReqList"/>
+        <cl:responsedata dataid="ds1"/>
+        <cl:responsedata dataid="ds2"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-aj3sx9ty" id="subSave" action="" mediatype="application/x-www-form-urlencoded">
+        <cl:requestdata dataid="ds1"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-sfwkndy2" id="subListDtl" action="" mediatype="application/x-www-form-urlencoded">
+        <cl:requestdata dataid="dmReqList"/>
+        <cl:responsedata dataid="ds2"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-96fl552q" id="subSaveDtl" action="" mediatype="application/x-www-form-urlencoded">
+        <cl:requestdata dataid="ds2"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7lsqza7a" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-3818e017" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-w0le99on" id="appheader1" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-c3519313" width="1225px" height="30px"/>
+    </cl:udc>
+    <cl:group std:sid="group-55m0d08l" id="grpSearch2" class="search-box">
+      <cl:verticaldata std:sid="v-data-606d0a80" width="1235px" height="35px" autosize="height"/>
+      <cl:output std:sid="output-8d00d271" id="opt3" value="Output">
+        <cl:formdata std:sid="f-data-019c2947" row="0" col="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-b0ddbfe1" id="ipb1">
+        <cl:datamapbind property="value" datacontrolid="dmReqList" columnname="column1"/>
+        <cl:formdata std:sid="f-data-4da3407a" row="0" col="1"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-679f7b18" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-2bf4b178" id="grpData">
+      <cl:verticaldata std:sid="v-data-968654e5" width="400px" height="598px"/>
+      <cl:group std:sid="group-fbf02f44" id="grpDataMain">
+        <cl:formdata std:sid="f-data-7645e618" row="0" col="0"/>
+        <cl:group std:sid="group-d2269975" id="grp2">
+          <cl:formdata std:sid="f-data-506fee5f" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-x649ta7i" type="udc.com.comTitle">
+            <cl:formdata std:sid="f-data-049a8eca" row="0" col="0"/>
+            <cl:property name="ctrl" value="grdMain" type="control"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-1d4a1079" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="250" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-62385hu3" id="grdMain" datasetid="ds1" autofit="2">
+          <cl:formdata std:sid="f-data-7753fd08" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-ht5y3q86" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-047w4h2m" width="40px"/>
+          <cl:gridcolumn std:sid="g-column-6b6f69be"/>
+          <cl:gridheader std:sid="gh-band-biz1i027">
+            <cl:gridrow std:sid="g-row-nc2f0z1g" height="27px"/>
+            <cl:gridcell std:sid="gh-cell-q912vlw4" rowindex="0" colindex="0" text="F"/>
+            <cl:gridcell std:sid="gh-cell-80hzk1ga" rowindex="0" colindex="1" text="No"/>
+            <cl:gridcell std:sid="gh-cell-3b2ca61c" rowindex="0" colindex="2"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-nw14f361">
+            <cl:gridrow std:sid="g-row-7e3a25f7" height="25px"/>
+            <cl:gridcell std:sid="gd-cell-457wmjn2" rowindex="0" colindex="0">
+              <cl:output std:sid="output-n21y325w" id="opt1" style="text-align:center;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-480d71c7" rowindex="0" colindex="1" style="text-align:center;" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-321eadc2" rowindex="0" colindex="2"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-d0f31755" hspace="5px" vspace="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-bd740d9e" id="grpDataSub">
+        <cl:formdata std:sid="f-data-1449cdf6" row="1" col="0"/>
+        <cl:grid std:sid="grid-5ev3w9cn" id="grdSub" datasetid="ds2" autofit="3">
+          <cl:formdata std:sid="f-data-fe0a6e71" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-54t42y2g" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-dmuc0913" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-9282d20b" width="40px"/>
+          <cl:gridcolumn std:sid="g-column-cfbf3e8c"/>
+          <cl:gridheader std:sid="gh-band-7x8y3eo6">
+            <cl:gridrow std:sid="g-row-82a550aq" height="27px"/>
+            <cl:gridcell std:sid="gh-cell-34ip9919" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-5474b9hc" rowindex="0" colindex="1" text="F"/>
+            <cl:gridcell std:sid="gh-cell-07w31uvf" rowindex="0" colindex="2" text="번호"/>
+            <cl:gridcell std:sid="gh-cell-d47b6225" rowindex="0" colindex="3"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-v0tkp3j1">
+            <cl:gridrow std:sid="g-row-7l10un27" height="25px"/>
+            <cl:gridcell std:sid="gd-cell-7p4jn959" rowindex="0" colindex="0" style="text-align:center;" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-0b28iw9h" rowindex="0" colindex="1">
+              <cl:output std:sid="output-nvp2609o" id="opt2" style="text-align:center;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-jzlyv3v7" rowindex="0" colindex="2" style="text-align:center;" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-ac4274ce" rowindex="0" colindex="3"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:group std:sid="group-bd035ba3" id="grp1">
+          <cl:formdata std:sid="f-data-785ba938" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-poquw6v7" type="udc.com.comTitle">
+            <cl:formdata std:sid="f-data-130c1c6f" row="0" col="0"/>
+            <cl:property name="ctrl" value="grdSub" type="control"/>
+          </cl:udc>
+          <cl:udc std:sid="ud-control-99dfa9c9" id="combutton1" type="udc.com.comButton">
+            <cl:formdata std:sid="f-data-4abb31fa" row="0" col="2"/>
+            <cl:property name="ctrl" value="grdSub" type="control"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-e757a427" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="250" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="195" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-871b9a90" hspace="5px" vspace="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-ec34a024" hspace="5px" vspace="5px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-61d7f0e0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

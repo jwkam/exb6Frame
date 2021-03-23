@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cb738d90" version="1.0.0.0">
+  <head std:sid="head-e33865ba">
+    <title>Accordion</title>
+    <screen std:sid="screen-de5a2fbc" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-e3dbcf74" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-056b1a75" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-13fb80cd"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e97ef7d1" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-b1b318a6" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Accordions">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,ACCORDIONS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-0d9a4b5c" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-88cb4e7b" autosize="height" height="434px" width="400px"/>
+      <cl:accordion std:sid="accordion-3fbafe2d" id="acd1">
+        <std:metadata>
+          <std:property key="active-index" value="3"/>
+        </std:metadata>
+        <cl:verticaldata std:sid="v-data-430c4f9c" autosize="height" height="300px" width="200px"/>
+        <cl:sectionitem std:sid="s-item-aef473a8" title="What is eXbuilder6?">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-2c60152b">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-a0f255cf" class="p-2" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#xD;&#xA;&#xD;&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+              <cl:xylayoutdata std:sid="xyl-data-e5dc750e" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-15635487"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-7641d32a" title="What are some of the benefits of using UI tool?">
+          <cl:group std:sid="group-72501589">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-d0b90b16" class="p-2" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#xD;&#xA;&#xD;&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+              <cl:xylayoutdata bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-8e6c1163"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-c080bcec" title="What is the relationship between eXbuilder and productivity?">
+          <cl:group std:sid="group-5aa667f3">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-256a6db1" class="p-2" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#xD;&#xA;&#xD;&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+              <cl:xylayoutdata bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-c857d516"/>
+          </cl:group>
+        </cl:sectionitem>
+        <cl:sectionitem std:sid="s-item-0a64cb63" title="What are the benefits of purchasing eXbuilder6 UI solution?">
+          <cl:group std:sid="group-3bb5106d">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-ad44e931" class="p-2" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#xD;&#xA;&#xD;&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+              <cl:xylayoutdata bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-55763548"/>
+          </cl:group>
+        </cl:sectionitem>
+      </cl:accordion>
+      <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="10" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

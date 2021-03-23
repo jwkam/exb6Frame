@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9ef27062" version="1.0.0.0">
+  <head std:sid="head-ddaeb454">
+    <title>Button</title>
+    <screen std:sid="screen-085876e4" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-b505b989" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-2b525d83" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-c4923aec"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-cf1def50" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-01164537" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Buttons">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,BUTTONS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Example with variations">
+      <cl:verticaldata std:sid="v-data-6e23d735" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-5238bfd7" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-ffb99b89" autosize="height" height="168px" width="984px"/>
+      <cl:group std:sid="group-bac3e12f" clipcontent="false">
+        <cl:verticaldata std:sid="v-data-af28c103" height="125px" width="400px"/>
+        <cl:output std:sid="output-959f9605" class="card-subtitle fw-bold" value="PRIMARY">
+          <cl:formdata std:sid="f-data-c392e445" col="0" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-c0787e6a" id="btn1" class="btn-primary" value="Primary">
+          <cl:formdata std:sid="f-data-d81e9a08" col="0" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-8489458c" class="card-subtitle fw-bold" value="SECONDARY">
+          <cl:formdata std:sid="f-data-5e0d6741" col="1" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-8ef32e58" id="btn2" class="btn-secondary" value="Secondary">
+          <cl:formdata std:sid="f-data-0718adbf" col="1" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-cff76b32" class="card-subtitle fw-bold" value="SUCCESS">
+          <cl:formdata std:sid="f-data-f315e070" col="2" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-80213ddb" id="btn3" class="btn-success" value="Success">
+          <cl:formdata std:sid="f-data-db9fbe7a" col="2" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-70cbae4e" class="card-subtitle fw-bold" value="DANGER">
+          <cl:formdata std:sid="f-data-0a5d2312" col="3" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-43093ea1" id="btn4" class="btn-danger" value="Danger">
+          <cl:formdata std:sid="f-data-aaa513bf" col="3" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-37b5b7cb" class="card-subtitle fw-bold" value="WARNING">
+          <cl:formdata std:sid="f-data-f1cd4eea" col="0" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-4a7bd399" id="btn8" class="btn-warning" value="Warning">
+          <cl:formdata std:sid="f-data-977cce8f" col="0" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-31db438c" class="card-subtitle fw-bold" value="INFO">
+          <cl:formdata std:sid="f-data-1d5f7938" col="1" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-fe15ccb3" id="btn7" class="btn-info" value="Info">
+          <cl:formdata std:sid="f-data-570d8b6a" col="1" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-cb80d86d" class="card-subtitle fw-bold" value="LIGHT">
+          <cl:formdata std:sid="f-data-b073bb58" col="2" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-20323c85" id="btn6" class="btn-light" value="Light">
+          <cl:formdata std:sid="f-data-236a49de" col="2" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-0c599f48" class="card-subtitle fw-bold" value="DAKR">
+          <cl:formdata std:sid="f-data-18fd8db9" col="3" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-a63268fb" id="btn5" class="btn-dark" value="Dark">
+          <cl:formdata std:sid="f-data-04a93621" col="3" row="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-294580ba" scrollable="false" hspace="1fr" vspace="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-e6511f99" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-e192b4fd" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-89e1e69b" autosize="height" height="168px" width="984px"/>
+      <cl:group std:sid="group-209adf80" clipcontent="false">
+        <cl:verticaldata std:sid="v-data-c9f24b3c" height="125px" width="400px"/>
+        <cl:output std:sid="output-1e6e3542" class="card-subtitle fw-bold" value="PRIMARY">
+          <cl:formdata std:sid="f-data-692892a2" col="0" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-d9d08eb6" id="btn9" class="btn-primary btn-dim" value="Primary">
+          <cl:formdata std:sid="f-data-7eb8a80c" col="0" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-31e52e26" class="card-subtitle fw-bold" value="SECONDARY">
+          <cl:formdata std:sid="f-data-e276b197" col="1" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-096585f6" id="btn10" class="btn-secondary btn-dim" value="Secondary">
+          <cl:formdata std:sid="f-data-25ef2356" col="1" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-fbf36d1e" class="card-subtitle fw-bold" value="SUCCESS">
+          <cl:formdata std:sid="f-data-83f18fe3" col="2" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-36591c67" id="btn11" class="btn-success btn-dim" value="Success">
+          <cl:formdata std:sid="f-data-b071bfe7" col="2" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-2e88b36b" class="card-subtitle fw-bold" value="DANGER">
+          <cl:formdata std:sid="f-data-8d71c969" col="3" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-95d7a274" id="btn12" class="btn-danger btn-dim" value="Danger">
+          <cl:formdata std:sid="f-data-987ac0f2" col="3" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-8d1bbea0" class="card-subtitle fw-bold" value="WARNING">
+          <cl:formdata std:sid="f-data-6d7481b7" col="0" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-de5e07f7" id="btn13" class="btn-warning btn-dim" value="Warning">
+          <cl:formdata std:sid="f-data-3044bf6b" col="0" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-8846d561" class="card-subtitle fw-bold" value="INFO">
+          <cl:formdata std:sid="f-data-65eb6b77" col="1" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-d1ef4093" id="btn14" class="btn-info btn-dim" value="Info">
+          <cl:formdata std:sid="f-data-b7284095" col="1" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-f919dc6c" class="card-subtitle fw-bold" value="LIGHT">
+          <cl:formdata std:sid="f-data-e4c1532b" col="2" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-f9110a61" id="btn15" class="btn-light btn-dim" value="Light">
+          <cl:formdata std:sid="f-data-68e3a1da" col="2" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-800a37dd" class="card-subtitle fw-bold" value="DAKR">
+          <cl:formdata std:sid="f-data-17102119" col="3" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-3b7bface" id="btn16" class="btn-dark btn-dim" value="Dark">
+          <cl:formdata std:sid="f-data-46556dda" col="3" row="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-2b28fcad" scrollable="false" hspace="1fr" vspace="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-7c608683" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-6013325e" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-4ed9617c" autosize="height" height="168px" width="984px"/>
+      <cl:group std:sid="group-e36683df" clipcontent="false">
+        <cl:verticaldata std:sid="v-data-498d571d" height="125px" width="400px"/>
+        <cl:output std:sid="output-185b73aa" class="card-subtitle fw-bold" value="PRIMARY">
+          <cl:formdata std:sid="f-data-b1170269" col="0" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-cdba8ab0" id="btn17" class="btn-outline-primary" value="Primary">
+          <cl:formdata std:sid="f-data-5b667838" col="0" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-d8844762" class="card-subtitle fw-bold" value="SECONDARY">
+          <cl:formdata std:sid="f-data-5338eeea" col="1" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-11756443" id="btn18" class="btn-outline-secondary" value="Secondary">
+          <cl:formdata std:sid="f-data-17d12027" col="1" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-562579e6" class="card-subtitle fw-bold" value="SUCCESS">
+          <cl:formdata std:sid="f-data-6654ec54" col="2" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-276738f4" id="btn19" class="btn-outline-success" value="Success">
+          <cl:formdata std:sid="f-data-d4640347" col="2" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-51e0ad35" class="card-subtitle fw-bold" value="DANGER">
+          <cl:formdata std:sid="f-data-50261500" col="3" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-6958e8b5" id="btn20" class="btn-outline-danger" value="Danger">
+          <cl:formdata std:sid="f-data-ef8ffe6e" col="3" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-06deae6e" class="card-subtitle fw-bold" value="WARNING">
+          <cl:formdata std:sid="f-data-0beed987" col="0" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-934b4631" id="btn21" class="btn-outline-warning" value="Warning">
+          <cl:formdata std:sid="f-data-64de9d40" col="0" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-238e1f94" class="card-subtitle fw-bold" value="INFO">
+          <cl:formdata std:sid="f-data-d8dd612c" col="1" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-b5cc6034" id="btn22" class="btn-outline-info" value="Info">
+          <cl:formdata std:sid="f-data-fb6231c1" col="1" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-58fc7991" class="card-subtitle fw-bold" value="LIGHT">
+          <cl:formdata std:sid="f-data-8e70fd99" col="2" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-0d0d7d49" id="btn23" class="btn-outline-light" value="Light">
+          <cl:formdata std:sid="f-data-cd57512c" col="2" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-1c2eaa7d" class="card-subtitle fw-bold" value="DAKR">
+          <cl:formdata std:sid="f-data-6c16a5ce" col="3" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-edeaada4" id="btn24" class="btn-outline-dark" value="Dark">
+          <cl:formdata std:sid="f-data-37a0ca02" col="3" row="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-2f6ed41f" scrollable="false" hspace="1fr" vspace="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-821dac56" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-61bf1742" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-58c46765" autosize="height" height="168px" width="984px"/>
+      <cl:group std:sid="group-b4d8eeb3" clipcontent="false">
+        <cl:verticaldata std:sid="v-data-f68524bb" height="125px" width="400px"/>
+        <cl:output std:sid="output-19ef604e" class="card-subtitle fw-bold" value="PRIMARY">
+          <cl:formdata std:sid="f-data-eaa015a6" col="0" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-afc853ed" id="btn25" class="btn-outline-primary btn-dim" value="Primary">
+          <cl:formdata std:sid="f-data-2b35ac3b" col="0" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-bec5dbc6" class="card-subtitle fw-bold" value="SECONDARY">
+          <cl:formdata std:sid="f-data-05743c1b" col="1" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-0464763e" id="btn26" class="btn-outline-secondary btn-dim" value="Secondary">
+          <cl:formdata std:sid="f-data-e44289bb" col="1" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-c8d25c5e" class="card-subtitle fw-bold" value="SUCCESS">
+          <cl:formdata std:sid="f-data-e7596036" col="2" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-c3ab4855" id="btn27" class="btn-outline-success btn-dim" value="Success">
+          <cl:formdata std:sid="f-data-e70858fb" col="2" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-bab9d1a4" class="card-subtitle fw-bold" value="DANGER">
+          <cl:formdata std:sid="f-data-2e0465d2" col="3" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-3b3c18e8" id="btn28" class="btn-outline-danger btn-dim" value="Danger">
+          <cl:formdata std:sid="f-data-85aeb50a" col="3" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-c1801364" class="card-subtitle fw-bold" value="WARNING">
+          <cl:formdata std:sid="f-data-9b1e00d0" col="0" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-2b0de6b3" id="btn29" class="btn-outline-warning btn-dim" value="Warning">
+          <cl:formdata std:sid="f-data-38f595fc" col="0" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-2d187f4d" class="card-subtitle fw-bold" value="INFO">
+          <cl:formdata std:sid="f-data-e2a72be2" col="1" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-4c6870c0" id="btn30" class="btn-outline-info btn-dim" value="Info">
+          <cl:formdata std:sid="f-data-d38e55db" col="1" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-70b04cd4" class="card-subtitle fw-bold" value="LIGHT">
+          <cl:formdata std:sid="f-data-a02db8a6" col="2" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-1d2786e9" id="btn31" class="btn-outline-light btn-dim" value="Light">
+          <cl:formdata std:sid="f-data-39cb90db" col="2" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-23efbb57" class="card-subtitle fw-bold" value="DAKR">
+          <cl:formdata std:sid="f-data-30314cf6" col="3" row="2"/>
+        </cl:output>
+        <cl:button std:sid="button-8cc45e9b" id="btn32" class="btn-outline-dark btn-dim" value="Dark">
+          <cl:formdata std:sid="f-data-8d7254d0" col="3" row="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-f29d7e86" scrollable="false" hspace="1fr" vspace="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+          <cl:columns length="100"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-304a617e" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-1e66e22e" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-f4ce2270" autosize="none" height="237px" width="984px"/>
+      <cl:output std:sid="output-a5a6688b" class="overline-title" value="CLASS REFERENCE">
+        <cl:formdata std:sid="f-data-d7468782" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-32403284" class="overline-title" value="DETAILS">
+        <cl:formdata std:sid="f-data-68d19d9b" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-75ba2659" class="code" value=".btn-{state}">
+        <cl:formdata std:sid="f-data-39dd9bca" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-a4ac294a" value="Use {state} as primary, secodary, success, info, warning, dnager, gray, light.">
+        <cl:formdata std:sid="f-data-635b96ca" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-21a5e80e" class="code" value=".btn-outline-{state}">
+        <cl:formdata std:sid="f-data-53c63eca" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-d0dbc4ac" value="Same as above {state}.">
+        <cl:formdata std:sid="f-data-e3ac73bb" col="1" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-8bc4f5c2" class="code" value=".btn-dim">
+        <cl:formdata std:sid="f-data-7ade6ec5" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-7acc367b" value="Use with .btn-{state} or .btn-outline-{state} class.">
+        <cl:formdata std:sid="f-data-401aca1b" col="1" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-a1964a7a" class="code" value=".btn-square">
+        <cl:formdata std:sid="f-data-378ae819" col="0" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-de50389c" value="Use with .btn-{state} or .btn-outline-{statue} class squared button style.">
+        <cl:formdata std:sid="f-data-f73d4ad9" col="1" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-48e20cfe" class="code" value=".btn-round">
+        <cl:formdata std:sid="f-data-07aa158e" col="0" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-7d8d9e8e" value="Use with .btn-{state} or .btn-outline-{statue} class rounded button style.">
+        <cl:formdata std:sid="f-data-44b20e84" col="1" row="5"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-3ef5c986" bottom-margin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" left-margin="20px" right-margin="20px" top-margin="5px" vspace="10px">
+        <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-7e1eb536" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-5ba2ec30" autosize="height" height="118px" width="984px"/>
+      <cl:group std:sid="group-9fa1b3f4" clipcontent="false">
+        <cl:verticaldata std:sid="v-data-bbd7289a" height="75px" width="400px"/>
+        <cl:output std:sid="output-11269c9e" class="card-subtitle fw-bold" value="BUTTON EXTRA LARGE">
+          <cl:formdata std:sid="f-data-5657c67d" col="0" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-abc36c75" id="btn33" class="btn-xl" value="Large">
+          <cl:formdata std:sid="f-data-25825e01" col="0" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-64e60d05" class="card-subtitle fw-bold" value="BUTTON REGULAR">
+          <cl:formdata std:sid="f-data-59afaf2c" col="2" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-bb749da0" id="btn34" class="btn-" value="Regular">
+          <cl:formdata std:sid="f-data-fd29ca35" halign="LEFT" height="35" valign="TOP" col="2" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-2666b43a" class="card-subtitle fw-bold" value="BUTTON SMALL">
+          <cl:formdata std:sid="f-data-23824b6b" col="3" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-8a053870" id="btn35" class="btn-sm" value="small">
+          <cl:formdata std:sid="f-data-36f3774a" halign="LEFT" valign="TOP" width="80" col="3" row="1"/>
+        </cl:button>
+        <cl:output std:sid="output-953e9085" class="card-subtitle fw-bold" value="BUTTON LARGE">
+          <cl:formdata std:sid="f-data-a44168b9" col="1" row="0"/>
+        </cl:output>
+        <cl:button std:sid="button-ce77a09e" id="btn36" class="btn-lg" value="Large">
+          <cl:formdata std:sid="f-data-f32bfdbc" halign="LEFT" height="40" valign="TOP" width="120" col="1" row="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-1ac85228" scrollable="false" hspace="1fr" vspace="5px">
+          <cl:rows length="20"/>
+          <cl:rows autoSizing="false" length="50" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="150" minlength="0" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-e228c1a7" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-f22a6ccd" bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

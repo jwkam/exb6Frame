@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-079900d2" version="1.0.0.0">
+  <head std:sid="head-caee7660">
+    <title>Color</title>
+    <screen std:sid="screen-1687767d" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-d5b84190" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-9be6a85a" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-869945ff"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7c1f94df" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-0d1c1cc8" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Color Systems">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,UTILS,COLOR SYSTEMS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Background Color">
+      <cl:verticaldata std:sid="v-data-3a467bf2" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-937b45b9" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-7736b524" autosize="height" height="267px" width="400px"/>
+      <cl:output std:sid="output-7e4463dd" value="THEME COLOR">
+        <cl:verticaldata std:sid="v-data-914b1b1c" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-26a45e83">
+        <cl:verticaldata std:sid="v-data-3cf4f602" height="35px" width="400px"/>
+        <cl:output std:sid="output-fc1826e0" class="text-center text-white bg-primary" value="primary">
+          <cl:flowlayoutdata std:sid="f-data-b53464b2" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-90fd3734" class="text-center text-white bg-secondary" value="secondary">
+          <cl:flowlayoutdata std:sid="f-data-48dd94b2" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-41c3eeb8" class="text-center text-white bg-dark" value="dark">
+          <cl:flowlayoutdata std:sid="f-data-f0bd6a73" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-eb8381fa" class="text-center text-white bg-gray" value="gray">
+          <cl:flowlayoutdata std:sid="f-data-13f72d71" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-632b720b" class="text-center text-white bg-success" value="success">
+          <cl:flowlayoutdata std:sid="f-data-2136c1cc" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-94b5589d" class="text-center text-white bg-danger" value="danger">
+          <cl:flowlayoutdata std:sid="f-data-35b62e86" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-1a469457" class="text-center bg-warning" value="warning">
+          <cl:flowlayoutdata std:sid="f-data-72cc0567" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-2fd779dd" class="text-center text-white bg-info" value="info">
+          <cl:flowlayoutdata std:sid="f-data-874f1cdf" height="35px" width="100px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-be187522" scrollable="false" spacing="0"/>
+      </cl:group>
+      <cl:output std:sid="output-d12292ec" value="THEME PALE COLOR">
+        <cl:verticaldata std:sid="v-data-4754710c" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-642c881e">
+        <cl:verticaldata std:sid="v-data-d08c7961" height="35px" width="400px"/>
+        <cl:output std:sid="output-56f422e5" class="text-center text-primary bg-primary-dim" value="primary">
+          <cl:flowlayoutdata std:sid="f-data-0eed9301" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-b17d94c5" class="text-center text-secondary bg-secondary-dim" value="secondary">
+          <cl:flowlayoutdata std:sid="f-data-af6f2562" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-1d7821d0" class="text-center text-dark bg-dark-dim" value="dark">
+          <cl:flowlayoutdata std:sid="f-data-44e7bb39" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-5d08d6be" class="text-center text-gray bg-gray-dim" value="gray">
+          <cl:flowlayoutdata std:sid="f-data-d6b5fbed" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-91300c6f" class="text-center text-success bg-success-dim" value="success">
+          <cl:flowlayoutdata std:sid="f-data-f372b917" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-d14b5de9" class="text-center text-danger bg-danger-dim" value="danger">
+          <cl:flowlayoutdata std:sid="f-data-488ba2f8" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-c81b9f49" class="text-center text-warning bg-warning-dim" value="warning">
+          <cl:flowlayoutdata std:sid="f-data-10afb61c" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-e7584e37" class="text-center text-info bg-info-dim" value="info">
+          <cl:flowlayoutdata std:sid="f-data-875cb1bf" height="35px" width="100px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-6c6988e2" scrollable="false" spacing="0"/>
+      </cl:group>
+      <cl:output std:sid="output-05694205" value="THEME LIGHTEN COLOR">
+        <cl:verticaldata std:sid="v-data-abd29664" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-ec3085b2">
+        <cl:verticaldata std:sid="v-data-308fe690" height="35px" width="400px"/>
+        <cl:output std:sid="output-7b2677d4" class="text-center bg-light" value="light">
+          <cl:flowlayoutdata std:sid="f-data-044e2540" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-078e145c" class="text-center bg-lighter" value="lighter">
+          <cl:flowlayoutdata std:sid="f-data-f28591f6" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-6b02a17a" class="text-center border bg-white" value="white">
+          <cl:flowlayoutdata std:sid="f-data-fd8bedaa" height="35px" width="100px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-5fb45a68" scrollable="false" spacing="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-fd36533d" bottommargin="20" leftmargin="20" rightmargin="20" spacing="10" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-1bdb9eb4" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-e93b77e2" autosize="height" height="193px" width="400px"/>
+      <cl:output std:sid="output-c1bef9b8" value="THEME COLOR">
+        <cl:verticaldata std:sid="v-data-8961817e" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-1109b96b">
+        <cl:verticaldata std:sid="v-data-5ebc9356" height="35px" width="400px"/>
+        <cl:output std:sid="output-12f64913" class="text-center text-white bg-blue" value="blue">
+          <cl:flowlayoutdata std:sid="f-data-7b171608" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-697ac2c3" class="text-center text-white bg-azure" value="azure">
+          <cl:flowlayoutdata std:sid="f-data-597ebdf9" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-9f019d28" class="text-center text-white bg-indigo" value="indigo">
+          <cl:flowlayoutdata std:sid="f-data-9008afd0" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-7a2e9f67" class="text-center text-white bg-purple" value="purple">
+          <cl:flowlayoutdata std:sid="f-data-863d26f9" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-f5c9e28f" class="text-center text-white bg-pink" value="pink">
+          <cl:flowlayoutdata std:sid="f-data-882bf582" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-702dba39" class="text-center text-white bg-orange" value="orange">
+          <cl:flowlayoutdata std:sid="f-data-b71f79d1" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-e2cd5a41" class="text-center text-white bg-teal" value="teal">
+          <cl:flowlayoutdata std:sid="f-data-a7c88dfd" height="35px" width="100px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-6bc113a3" scrollable="false" spacing="0"/>
+      </cl:group>
+      <cl:output std:sid="output-2988ac02" value="THEME PALE COLOR">
+        <cl:verticaldata std:sid="v-data-19602fb8" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-09f99824">
+        <cl:verticaldata std:sid="v-data-97902694" height="35px" width="400px"/>
+        <cl:output std:sid="output-1ecb5714" class="text-center text-blue bg-blue-dim" value="blue">
+          <cl:flowlayoutdata std:sid="f-data-1fb5278e" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-11efd767" class="text-center text-azure bg-azure-dim" value="azure">
+          <cl:flowlayoutdata std:sid="f-data-e5064e02" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-82dd72d4" class="text-center text-indigo bg-indigo-dim" value="indigo">
+          <cl:flowlayoutdata std:sid="f-data-b10479dc" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-09a17bbb" class="text-center text-purple bg-purple-dim" value="purple">
+          <cl:flowlayoutdata std:sid="f-data-7a877e4a" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-10e17f1d" class="text-center text-pink bg-pink-dim" value="pink">
+          <cl:flowlayoutdata std:sid="f-data-ee18e4e9" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-37aeb685" class="text-center text-orange bg-orange-dim" value="orange">
+          <cl:flowlayoutdata std:sid="f-data-c0da076f" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-52cf346c" class="text-center text-teal bg-teal-dim" value="teal">
+          <cl:flowlayoutdata std:sid="f-data-94d0ddf6" height="35px" width="100px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-29f89f9d" scrollable="false" spacing="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-c35a9e93" bottommargin="20" leftmargin="20" rightmargin="20" spacing="10" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-1e66e22e" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-8b43fd99" autosize="none" height="357px" width="984px"/>
+      <cl:output std:sid="output-a5a6688b" class="overline-title" value="CLASS REFERENCE">
+        <cl:formdata std:sid="f-data-d7468782" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-32403284" class="overline-title" value="DETAILS">
+        <cl:formdata std:sid="f-data-68d19d9b" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-75ba2659" class="code" value=".bg-{theme}">
+        <cl:formdata std:sid="f-data-39dd9bca" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-a4ac294a" value="primary | secondary | success | info | warning | danger | dark | gray">
+        <cl:formdata std:sid="f-data-635b96ca" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-21a5e80e" class="code" value=".bg-{theme}-dim">
+        <cl:formdata std:sid="f-data-53c63eca" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-d0dbc4ac" value="Use for pale/dim color and {theme} same as above">
+        <cl:formdata std:sid="f-data-e3ac73bb" col="1" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-8bc4f5c2" class="code" value=".bg-{color}">
+        <cl:formdata std:sid="f-data-7ade6ec5" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-7acc367b" value="blue | azure | indigo | purple | pink | orange | teal">
+        <cl:formdata std:sid="f-data-401aca1b" col="1" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-c7defa46" class="code" value=".bg-{color}-dim">
+        <cl:formdata std:sid="f-data-6bbb3169" col="0" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-de50389c" value="Use for pale/dim color and {color} same as above">
+        <cl:formdata std:sid="f-data-ce13c208" col="1" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-a1964a7a" class="code" value=".bg-light">
+        <cl:formdata col="0" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-7d8d9e8e" value="Use for light background">
+        <cl:formdata std:sid="f-data-44b20e84" col="1" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-48e20cfe" class="code" value=".bg-lighter">
+        <cl:formdata col="0" row="6"/>
+      </cl:output>
+      <cl:output std:sid="output-caeb5668" value="Use for extra light background">
+        <cl:formdata std:sid="f-data-61624323" col="1" row="6"/>
+      </cl:output>
+      <cl:output std:sid="output-b697022f" class="code" value=".bg-white">
+        <cl:formdata col="0" row="7"/>
+      </cl:output>
+      <cl:output std:sid="output-0b7cccf5" value="Use for white background">
+        <cl:formdata std:sid="f-data-095cab5b" col="1" row="7"/>
+      </cl:output>
+      <cl:output std:sid="output-766393e6" class="code" value=".bg-transparent">
+        <cl:formdata col="0" row="8"/>
+      </cl:output>
+      <cl:output std:sid="output-bf12f72e" value="Use for transparent background">
+        <cl:formdata col="1" row="8"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-3ef5c986" bottom-margin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" left-margin="20px" right-margin="20px" top-margin="5px" vspace="10px">
+        <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-66964259" class="h6" value="Gray &amp; Dark Color">
+      <cl:verticaldata std:sid="v-data-b4d6ac29" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-961306b1" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-58eba3b8" autosize="height" height="76px" width="984px"/>
+      <cl:group std:sid="group-1d3ab8c5">
+        <cl:verticaldata std:sid="v-data-2721a4c7" height="35px" width="400px"/>
+        <cl:output std:sid="output-81dffedc" class="text-center bg-gray-100" value="100">
+          <cl:flowlayoutdata std:sid="f-data-4a0e458c" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-b7b1dbc8" class="text-center bg-gray-200" value="200">
+          <cl:flowlayoutdata std:sid="f-data-6c1a913e" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-552f972d" class="text-center bg-gray-300" value="300">
+          <cl:flowlayoutdata std:sid="f-data-e3dbc4f9" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-9987f38b" class="text-center bg-gray-400" value="400">
+          <cl:flowlayoutdata std:sid="f-data-3e1a1c47" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-8cb927fa" class="text-center text-white bg-gray-500" value="500">
+          <cl:flowlayoutdata std:sid="f-data-b38437cf" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-ff4ba25b" class="text-center text-white bg-gray-600" value="600">
+          <cl:flowlayoutdata std:sid="f-data-a0f29573" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-8dbdbd32" class="text-center text-white bg-gray-700" value="700">
+          <cl:flowlayoutdata std:sid="f-data-c3516a0b" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-a167ac82" class="text-center text-white bg-gray-800" value="800">
+          <cl:flowlayoutdata std:sid="f-data-eb77ffed" height="35px" width="100px"/>
+        </cl:output>
+        <cl:output std:sid="output-4ec651a3" class="text-center text-white bg-gray-900" value="900">
+          <cl:flowlayoutdata std:sid="f-data-cd1c77f6" height="35px" width="100px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-1134575f" scrollable="false" spacing="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-23374dde" bottommargin="20" leftmargin="20" rightmargin="20" spacing="10" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-709bfe31" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-3512e74a" autosize="none" height="77px" width="984px"/>
+      <cl:output std:sid="output-f802ac14" class="overline-title" value="CLASS REFERENCE">
+        <cl:formdata std:sid="f-data-7103442b" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-e1c7d040" class="overline-title" value="DETAILS">
+        <cl:formdata std:sid="f-data-194c778b" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-0032d8ef" class="code" value=".bg-gray-{value}">
+        <cl:formdata std:sid="f-data-c8ab97f5" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-0790b371" value="100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900">
+        <cl:formdata std:sid="f-data-982a1fe4" col="1" row="1"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-c3f99621" bottom-margin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" left-margin="20px" right-margin="20px" top-margin="5px" vspace="10px">
+        <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:rows length="30"/>
+        <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-b06a3f58" class="h6" value="Text Color">
+      <cl:verticaldata std:sid="v-data-820ce63e" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-9bbbdcce" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-04e32055" autosize="none" height="537px" width="984px"/>
+      <cl:output std:sid="output-e85271d8" class="overline-title" value="CLASS REFERENCE">
+        <cl:formdata std:sid="f-data-a6a66314" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-2fd1fc6c" class="overline-title" value="PREVIEW">
+        <cl:formdata std:sid="f-data-50a7090f" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-3d8d6c9b" class="code" value=".text-primary">
+        <cl:formdata std:sid="f-data-1dec6ff0" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-23a18a6f" class="text-primary" value="Text in primary color">
+        <cl:formdata std:sid="f-data-477a9c13" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-d7c25d32" class="code" value=".text-secondary">
+        <cl:formdata std:sid="f-data-118cdce5" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-11eb0d06" class="code" value=".text-success">
+        <cl:formdata std:sid="f-data-4167c0cb" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-eec02f10" class="code" value=".text-danger">
+        <cl:formdata std:sid="f-data-f17c599b" col="0" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-8101b0e8" class="code" value=".text-warning">
+        <cl:formdata std:sid="f-data-393bb413" col="0" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-a2cd5cba" class="code" value=".text-info">
+        <cl:formdata std:sid="f-data-41ac3066" col="0" row="6"/>
+      </cl:output>
+      <cl:output std:sid="output-e0b3cbe0" class="code" value=".text-dark">
+        <cl:formdata std:sid="f-data-4ebd6cf7" col="0" row="7"/>
+      </cl:output>
+      <cl:output std:sid="output-e85af73f" class="code" value=".text-light">
+        <cl:formdata std:sid="f-data-011fdfb3" col="0" row="8"/>
+      </cl:output>
+      <cl:output std:sid="output-481829ad" class="code" value=".text-lighter">
+        <cl:formdata std:sid="f-data-8ffc8896" col="0" row="9"/>
+      </cl:output>
+      <cl:output std:sid="output-c53f63be" class="code" value=".text-white">
+        <cl:formdata std:sid="f-data-1982bb1d" col="0" row="10"/>
+      </cl:output>
+      <cl:output std:sid="output-50110dff" class="code" value=".text-{theme}&#xD;&#xA;.text-{theme}-dim">
+        <cl:formdata std:sid="f-data-4ebf925f" col="0" row="11"/>
+      </cl:output>
+      <cl:output std:sid="output-1c0d7c0a" class="code" value=".text-{color}&#xD;&#xA;.text-{color}-dim">
+        <cl:formdata std:sid="f-data-43bb32d3" col="0" row="12"/>
+      </cl:output>
+      <cl:output std:sid="output-78747e33" class="text-secondary" value="Text in secondary color">
+        <cl:formdata std:sid="f-data-fdede870" col="1" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-13a4ab82" class="text-success" value="Text in success color">
+        <cl:formdata std:sid="f-data-a3a2b8b3" col="1" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-86d0c23a" class="text-danger" value="Text in danger color">
+        <cl:formdata std:sid="f-data-6d256f8e" col="1" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-0e454d3f" class="text-warning" value="Text in warning color">
+        <cl:formdata std:sid="f-data-c213598f" col="1" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-d6eba715" class="text-info" value="Text in info color">
+        <cl:formdata std:sid="f-data-03891ac4" col="1" row="6"/>
+      </cl:output>
+      <cl:output std:sid="output-f2000754" class="text-dark" value="Text in dark color">
+        <cl:formdata std:sid="f-data-8b00b121" col="1" row="7"/>
+      </cl:output>
+      <cl:output std:sid="output-737f95bc" class="bg-dark text-light" value="Text in light color">
+        <cl:formdata std:sid="f-data-fd048277" col="1" row="8"/>
+      </cl:output>
+      <cl:output std:sid="output-96a91656" class="bg-dark text-lighter" value="Text in lighter color">
+        <cl:formdata std:sid="f-data-c997a93c" col="1" row="9"/>
+      </cl:output>
+      <cl:output std:sid="output-d178b441" class="bg-dark text-white" value="Text in white color">
+        <cl:formdata std:sid="f-data-d44958b7" col="1" row="10"/>
+      </cl:output>
+      <cl:output std:sid="output-b2b64d1e" value="Use for text color &amp; -dim user for pale color.&#xD;&#xA;{theme} use as primary, secondary, success, info, warning, danger, dark, gray">
+        <cl:formdata std:sid="f-data-373e7844" col="1" row="11"/>
+      </cl:output>
+      <cl:output std:sid="output-3880e5b5" value="Use for text color &amp; -dim user for pale color.&#xD;&#xA;{color} use as blue, azure, indigo, purple, pink, orange, teal">
+        <cl:formdata std:sid="f-data-303f9de6" col="1" row="12"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-6ee40a87" bottom-margin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" left-margin="20px" right-margin="20px" top-margin="5px" vspace="10px">
+        <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="40" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

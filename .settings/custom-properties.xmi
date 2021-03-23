@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:settings="kr.co.tomatosystem.exbuilder.model.ui.settings">
+  <settings:CustomProperties type="All"/>
+  <settings:CustomProperties type="Accordion"/>
+  <settings:CustomProperties type="Audio"/>
+  <settings:CustomProperties type="Button"/>
+  <settings:CustomProperties type="Calendar"/>
+  <settings:CustomProperties type="CheckBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="CheckBoxGroup">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="ComboBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="editablePK" desc="PK컬럼 수정가능여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="DataColumn"/>
+  <settings:CustomProperties type="DataMap"/>
+  <settings:CustomProperties type="DataSet"/>
+  <settings:CustomProperties type="DataView"/>
+  <settings:CustomProperties type="DateInput">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="editablePK" desc="PK컬럼 수정가능여부('Y' or empty)&#xD;&#xA;">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="compare" desc="상대값 비교&#xD;&#xA;"/>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="EmbeddedApp"/>
+  <settings:CustomProperties type="EmbeddedPage"/>
+  <settings:CustomProperties type="FileInput"/>
+  <settings:CustomProperties type="FileUpload"/>
+  <settings:CustomProperties type="Grid">
+    <controlProperties name="bindDataFormId" desc="그리드에 바인딩되는 폼컨트롤ID(프리폼)&#xD;&#xA;"/>
+    <controlProperties name="columnSortFix" desc="헤더 컬럼 소팅 불가여부">
+      <predefinedValues>true</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="Group">
+    <controlProperties name="mobile-column-count" desc="모바일일 경우 그룹의 로우에 보여줄 컬럼수"/>
+    <controlProperties name="tablet-column-count" desc="테블릿일 경우 그룹의 로우에 보여줄 컬럼수"/>
+    <controlProperties name="hide-on-mobile" desc="모바일일 경우 숨김컨트롤 여부">
+      <predefinedValues>true</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="HTMLObject"/>
+  <settings:CustomProperties type="HTMLSnippet"/>
+  <settings:CustomProperties type="Image"/>
+  <settings:CustomProperties type="InputBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)&#xD;&#xA;">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="editablePK" desc="PK컬럼 수정가능여부('Y' or empty)&#xD;&#xA;">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="columnType" desc="해당 컨트롤의 value에 대한 타입체크(email, phone, ssn, bizno, url)&#xD;&#xA;">
+      <predefinedValues>email</predefinedValues>
+      <predefinedValues>ssn</predefinedValues>
+      <predefinedValues>bizno</predefinedValues>
+      <predefinedValues>phone</predefinedValues>
+      <predefinedValues>tel</predefinedValues>
+      <predefinedValues>url</predefinedValues>
+    </controlProperties>
+    <controlProperties name="ignorePk" desc="신규시 PK 필수값 체크 제외여부('Y' or empty)&#xD;&#xA;">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="autoKeydownSearch" desc="인풋박스 컨트롤이 조회조건 영역에 있을 때, Enter키 입력시 자동조회할지 여부('Y' or empty) &#xD;&#xA;">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="LinkedComboBox"/>
+  <settings:CustomProperties type="LinkedListBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="ListBox">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="MaskEditor">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="columnType" desc="해당 컨트롤의 value에 대한 타입체크(email, phone, ssn, bizno, url)">
+      <predefinedValues>email</predefinedValues>
+      <predefinedValues>ssn</predefinedValues>
+      <predefinedValues>bizno</predefinedValues>
+      <predefinedValues>phone</predefinedValues>
+      <predefinedValues>tel</predefinedValues>
+      <predefinedValues>url</predefinedValues>
+    </controlProperties>
+    <controlProperties name="ignorePk" desc="신규시 PK 필수값 체크 제외여부('Y' or empty)">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="MatrixSubmission"/>
+  <settings:CustomProperties type="MDIFolder"/>
+  <settings:CustomProperties type="Menu"/>
+  <settings:CustomProperties type="NavigationBar"/>
+  <settings:CustomProperties type="Notifier"/>
+  <settings:CustomProperties type="NumberEditor">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)&#xD;&#xA;">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+    <controlProperties name="compare" desc="상대값 비교&#xD;&#xA;"/>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="Output">
+    <controlProperties name="need-auto-height" desc="스크린 사이즈변경시 자동 높이 지정여부">
+      <predefinedValues>true</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="PageIndexer"/>
+  <settings:CustomProperties type="Progress"/>
+  <settings:CustomProperties type="RadioButton"/>
+  <settings:CustomProperties type="SectionItem"/>
+  <settings:CustomProperties type="Slider"/>
+  <settings:CustomProperties type="Submission"/>
+  <settings:CustomProperties type="TabFolder"/>
+  <settings:CustomProperties type="TabItem"/>
+  <settings:CustomProperties type="TextArea">
+    <controlProperties name="required" desc="필수값 지정여부('Y' or empty)&#xD;&#xA;">
+      <predefinedValues>Y</predefinedValues>
+    </controlProperties>
+  </settings:CustomProperties>
+  <settings:CustomProperties type="Tree"/>
+  <settings:CustomProperties type="TreeCell"/>
+  <settings:CustomProperties type="UIControlShell"/>
+  <settings:CustomProperties type="Video"/>
+  <settings:CustomProperties type="ComplexMatrixNode"/>
+  <settings:CustomProperties type="DataControlContextMatrixNode"/>
+  <settings:CustomProperties type="MatrixNode"/>
+  <settings:CustomProperties type="NumberLiteralMatrixNode"/>
+  <settings:CustomProperties type="PathMatrixNode"/>
+  <settings:CustomProperties type="SearchInput"/>
+  <settings:CustomProperties type="StringLiteralMatrixNode"/>
+</xmi:XMI>

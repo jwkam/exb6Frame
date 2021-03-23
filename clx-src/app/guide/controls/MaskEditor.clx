@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ccf50f87" version="1.0.0.0">
+  <head std:sid="head-36af639d">
+    <title>InputBox</title>
+    <screen std:sid="screen-86f08349" id="default" name="default" minwidth="1235px" width="1235px" height="675px"/>
+    <screen std:sid="screen-baae5930" id="notebook" name="notebook" minwidth="1020px" maxwidth="1234px" width="1020px" height="540px"/>
+    <screen std:sid="screen-be0f89c0" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-2cb04679" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-8a447e37">
+      <cl:datamap std:sid="d-map-76f1b4fb" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b54bff29" name="column1" datatype="string" defaultvalue="1234567891234"/>
+          <cl:datacolumn std:sid="d-column-bb4ba3e8" name="column2" datatype="string" defaultvalue="1234567891234"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-656f5d75" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-030de306" top="44px" left="44px" width="900px" height="70px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-37f32a80" id="opt1" value="마스크 처리(주민등록번호)">
+        <cl:formdata std:sid="f-data-bcbc6d7d" row="0" col="0"/>
+      </cl:output>
+      <cl:maskeditor std:sid="m-editor-e86260bd" id="edm1" mask="000000-0000000">
+        <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+        <cl:formdata std:sid="f-data-9238f479" row="0" col="1"/>
+      </cl:maskeditor>
+      <cl:output std:sid="output-24b3157b" id="opt2" value="마스크 처리(주민등록번호 뒷자리 마스킹)">
+        <cl:formdata std:sid="f-data-7a37ad7b" row="1" col="0"/>
+      </cl:output>
+      <cl:maskeditor std:sid="m-editor-d513169c" id="edm2" mask="000000-0******">
+        <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+        <cl:formdata std:sid="f-data-681927de" row="1" col="1"/>
+      </cl:maskeditor>
+      <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:columns length="250" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-c75b85d4" id="opt7" value="자주 사용되는 마스크에디터 속성 지정 방법입니다.">
+      <cl:xylayoutdata std:sid="xyl-data-ebde5e4a" top="9px" left="44px" width="900px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:img std:sid="image-af966c44" id="img1" src="마스킹.PNG">
+      <cl:xylayoutdata std:sid="xyl-data-cf2cfdd6" top="149px" left="44px" width="876px" height="329px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:img>
+    <cl:xylayout std:sid="xylayout-3225b378"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

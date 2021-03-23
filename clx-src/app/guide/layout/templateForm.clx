@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-63ldy405" version="1.0.0.0">
+  <head std:sid="head-u61k78j9">
+    <title></title>
+    <screen std:sid="screen-zv64jxp1" id="default" name="default" minwidth="1235px" width="1235px" height="675px"/>
+    <screen std:sid="screen-91za9hl2" id="notebook" name="notebook" minwidth="1020px" maxwidth="1234px" width="1020px" height="540px"/>
+    <screen std:sid="screen-o54yq842" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-ip3oz5nt" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-1s60f269">
+      <cl:dataset std:sid="d-set-o2hslowx" id="dsYearList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-9b1bc944" name="CD"/>
+          <cl:datacolumn std:sid="d-column-9b1bc944" name="CD_NM"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-442ieme5" id="dsSmtList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-9b1bc944" name="CD"/>
+          <cl:datacolumn std:sid="d-column-9b1bc944" name="CD_NM"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-2d010f0e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-86071490" name="CD_PRP1"/>
+          <cl:datacolumn std:sid="d-column-81b746ef" name="CD_PRP2"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-q3xb9944" id="dmResOnLoad">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-386864ae" name="defYearSmtList" datatype="string"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-028zk686" id="subOnLoad" action="cmn/StdCmnYearSmt/" mediatype="application/x-www-form-urlencoded">
+        <cl:responsedata dataid="dsYearList"/>
+        <cl:responsedata dataid="dsSmtList"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-5717he94" id="subSave" action="cmn/StdCmnYearSmt/" mediatype="application/x-www-form-urlencoded"/>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-81661a83" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-3a3d45f5" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-dkpyt767" id="appheader1" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-32b61843" width="1225px" height="30px"/>
+    </cl:udc>
+    <cl:group std:sid="group-7k5g703s" id="grpData">
+      <cl:verticaldata std:sid="v-data-76bc0282" width="1225px" height="639px"/>
+      <cl:group std:sid="group-9ba0b50c" id="frfForm" class="form-box">
+        <cl:datarowcontext datacontrolid="ds1" rowindex="0"/>
+        <cl:formdata std:sid="f-data-100bd9df" row="1" col="1"/>
+        <cl:output std:sid="output-j23m8ay1" id="optYear" class="require" value="">
+          <cl:langbind property="value" category="PROPERTY" keypath="UI-GLS-SCH_YEAR"/>
+          <cl:formdata std:sid="f-data-ec38338b" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-2cois23a" id="optSmt" class="require" value="">
+          <cl:langbind property="value" category="PROPERTY" keypath="UI-GLS-SMT"/>
+          <cl:formdata std:sid="f-data-77cc17ea" row="1" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-yqwff9mk" id="cbbYear">
+          <cl:attribute name="require" value="Y"/>
+          <cl:expbind property="fieldLabel" category="PROPERTY" expression="#optYear.value"/>
+          <cl:relativebind property="value" columnname="CD_PRP1"/>
+          <cl:formdata std:sid="f-data-63886431" row="0" col="1"/>
+          <cl:itemset datasetid="dsYearList" label="CD_NM" value="CD"/>
+        </cl:combobox>
+        <cl:combobox std:sid="c-box-odcz8030" id="cbbSmt">
+          <cl:attribute name="require" value="Y"/>
+          <cl:expbind property="fieldLabel" category="PROPERTY" expression="#optSmt.value"/>
+          <cl:relativebind property="value" columnname="CD_PRP2"/>
+          <cl:formdata std:sid="f-data-cae36a7d" row="1" col="1"/>
+          <cl:itemset datasetid="dsSmtList" label="CD_NM" value="CD"/>
+        </cl:combobox>
+        <cl:group std:sid="group-8f643040" id="grp1">
+          <cl:formdata std:sid="f-data-4328b83d" row="2" col="0" rowspan="1" colspan="2"/>
+          <cl:button std:sid="button-1l4o2ifb" id="btnSave" class="btn-save" value="">
+            <cl:listener std:sid="listener-4674ceef" name="click" handler="onBtnSaveClick"/>
+            <cl:langbind property="value" category="PROPERTY" keypath="UI-SCR-WRKSAVE"/>
+            <cl:formdata std:sid="f-data-7d171ad8" row="0" col="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-f25705b2" hspace="1px" vspace="1px" top-margin="1px" right-margin="1px" bottom-margin="1px" left-margin="1px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-ecae4140" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="150" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-0490406d" hspace="5px" vspace="5px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="95" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="265" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-c0d0dfe9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

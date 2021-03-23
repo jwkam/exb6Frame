@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-95d5fb03" version="1.0.0.0">
+  <head std:sid="head-51369d84">
+    <title>Pagination</title>
+    <screen std:sid="screen-7b6e7828" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-66fa7138" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-5df5def3" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-f62d4ca4"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-cb9b8394" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-eeaaca86" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Pigination">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,PAGINATIONS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Basic Examples">
+      <cl:verticaldata std:sid="v-data-2a211fc5" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-d6ae1dc2" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-e6b5acd4" autosize="height" height="132px" width="400px"/>
+      <cl:pageindexer std:sid="p-indexer-73c1baf8" id="pgx1" pagerowcount="1" totalrowcount="5">
+        <cl:verticaldata std:sid="v-data-475b0e60" height="40px" width="320px"/>
+      </cl:pageindexer>
+      <cl:pageindexer std:sid="p-indexer-95f03b2b" id="pgx2" enabled="false" pagerowcount="1" totalrowcount="5">
+        <cl:verticaldata std:sid="v-data-8072fafa" height="40px" width="320px"/>
+      </cl:pageindexer>
+      <cl:verticallayout bottommargin="20" distribution="leading" leftmargin="20" rightmargin="20" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>네이버 :: Smart Editor 2 &#8482;</title>
+<script type="text/javascript" src="./js/service/HuskyEZCreator.js" charset="utf-8"></script>
+<script type="text/javascript">
+var _contentHeight = 0;
+function resize(){
+	var height = document.documentElement.clientHeight || window.innerHeight;
+	var ch = height - 70;
+	if(_contentHeight ==ch ){
+		return;
+	}
+	_contentHeight = ch;
+	console.log(ch);
+	if(oEditors.length > 0){
+		oEditors.getById["ir1"].exec("MSG_EDITING_AREA_RESIZE_STARTED", []);
+		oEditors.getById["ir1"].exec("RESIZE_EDITING_AREA",[0,ch]);
+		oEditors.getById["ir1"].exec("MSG_EDITING_AREA_RESIZE_ENDED", []);
+	}
+}
+
+function initIFrame(){
+	var ele = document.querySelector("#editor > iframe");
+	ele.style.position = "absolute";
+	ele.style.height = "100%";
+	ele.style.left = "0px";
+	ele.style.top = "0px";
+	resize();
+}
+
+function initTextarea(){
+	var ele = document.querySelector("#ir1");
+	var height = document.documentElement.clientHeight || window.innerHeight;
+	var ch = height - 70;
+	if(_contentHeight ==ch ){
+		return;
+	}
+	_contentHeight = ch;
+	ele.style.height = ch+"px"
+}
+</script>
+</head>
+<body>
+	<div id="editor">
+		<textarea name="ir1" id="ir1" rows="10" cols="100" style="width:100%; height:300px; display:none;"></textarea>
+	</div>
+
+<script type="text/javascript">
+	initTextarea();
+	
+	var oEditors = [];
+	
+	var sLang = "ko_KR";	// 언어 (ko_KR/ en_US/ ja_JP/ zh_CN/ zh_TW), default = ko_KR
+	
+	// 추가 글꼴 목록
+	//var aAdditionalFontSet = [["MS UI Gothic", "MS UI Gothic"], ["Comic Sans MS", "Comic Sans MS"],["TEST","TEST"]];
+	
+	nhn.husky.EZCreator.createInIFrame({
+		oAppRef: oEditors,
+		elPlaceHolder: "ir1",
+		sSkinURI: "SmartEditor2Skin.html",	
+		htParams : {
+			bUseToolbar : true,				// 툴바 사용 여부 (true:사용/ false:사용하지 않음)
+			bUseVerticalResizer : true,		// 입력창 크기 조절바 사용 여부 (true:사용/ false:사용하지 않음)
+			bUseModeChanger : true,			// 모드 탭(Editor | HTML | TEXT) 사용 여부 (true:사용/ false:사용하지 않음)
+			//bSkipXssFilter : true,		// client-side xss filter 무시 여부 (true:사용하지 않음 / 그외:사용)
+			//aAdditionalFontList : aAdditionalFontSet,		// 추가 글꼴 목록
+			fOnBeforeUnload : function(){
+				//alert("완료!");
+			},
+			I18N_LOCALE : sLang
+		}, //boolean
+		fOnAppLoad : function(){
+			//예제 코드
+			//oEditors.getById["ir1"].exec("PASTE_HTML", ["로딩이 완료된 후에 본문에 삽입되는 text입니다."]);
+			var vsEditorValue = "<p><span style='font-size: 18pt; color: rgb(0, 0, 0);'>안녕하세요!</span></p><p><span style='font-size: 24pt; color: rgb(0, 117, 200); background-color: rgb(255, 255, 255);'><b>eXBuilder6&nbsp;</b></span><span style='font-size: 24pt;'><span style='color: rgb(0, 117, 200);'><span style='color: rgb(255, 0, 0);'>HTML 에디터</span> <span style='color: rgb(0, 0, 0);'>연동 샘플</span></span><span style='color: rgb(0, 0, 0);'>입니다.</span></span></p><p><br></p><div id='gtx-trans' style='position: absolute; left: -260px; top: -7px;'><div class='gtx-trans-icon'></div></div>"
+			oEditors.getById["ir1"].exec("PASTE_HTML", [vsEditorValue]);
+			initIFrame();
+		},
+		fCreator: "createSEditor2"
+	});
+	
+	
+	function setValue(psValue) {
+		oEditors.getById["ir1"].exec("PASTE_HTML", [psValue]);
+	}
+	
+	function getValue() {
+		return oEditors.getById["ir1"].getIR();
+	}
+	
+	function resetEditor(){
+		oEditors.getById["ir1"].exec("SET_IR", [""]);
+	}
+	
+	
+	
+		
+	function submitContents(elClickedObj) {
+		oEditors.getById["ir1"].exec("UPDATE_CONTENTS_FIELD", []);	// 에디터의 내용이 textarea에 적용됩니다.
+		
+		// 에디터의 내용에 대한 값 검증은 이곳에서 document.getElementById("ir1").value를 이용해서 처리하면 됩니다.
+		
+		try {
+			elClickedObj.form.submit();
+		} catch(e) {}
+	}
+	
+	function setDefaultFont(psFont, pnFontSize) {
+		var sDefaultFont = psFont != null ? psFont : '궁서';
+		var nFontSize = pnFontSize != null ? psFontSize : 24;
+		oEditors.getById["ir1"].setDefaultFont(sDefaultFont, nFontSize);
+	}
+	
+	function hideToolbar(){
+		oEditors.getById["ir1"].exec("SE_TOGGLE_TOOLBAR", []);
+	}
+	
+	window.addEventListener("resize",function(e){
+		resize();
+	});
+</script>
+
+</body>
+</html>

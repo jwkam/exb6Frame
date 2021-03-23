@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d30a5b8c" version="1.0.0.0">
+  <head std:sid="head-171f809b">
+    <title>Tab</title>
+    <screen std:sid="screen-f8633665" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-ae477868" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-0b5b1779" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-c15d0d0f"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-18c4848e" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-4a1978d3" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Tabs">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,TABS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Basic Examples">
+      <cl:verticaldata std:sid="v-data-91da881d" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-02bdef26" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-ee2043de" height="200px" width="400px"/>
+      <cl:tabfolder std:sid="t-folder-e325e15e" id="tf1">
+        <cl:xylayoutdata std:sid="xyl-data-9deff61e" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+        <cl:tabitem std:sid="t-item-0c3138a0" selected="true" text="Personal">
+          <cl:group std:sid="group-fbb9ca38">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-c2350576" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-d555b0b8"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-c4b61ca6" text="Security">
+          <cl:group std:sid="group-57b9c40d">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-8b73c68a" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-ffce3da8" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-0717d2b7"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-393a1fbd" text="Notifications">
+          <cl:group std:sid="group-e3dfca6b">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-dc7ff474" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-2fd6d5cc"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-ece035bd" text="Connect">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-98eeee2c">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-58dd7c46" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-017a1af2"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:xylayout std:sid="xylayout-c47ec537"/>
+    </cl:group>
+    <cl:output std:sid="output-ac3aec1a" class="h6" value="Item align">
+      <cl:verticaldata std:sid="v-data-b1d82bfd" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-924429a8" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-26d866c0" autosize="none" height="368px" width="984px"/>
+      <cl:tabfolder std:sid="t-folder-672e4c73" id="tf2" item-align="center">
+        <cl:xylayoutdata std:sid="xyl-data-2b766090" height="158px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+        <cl:tabitem std:sid="t-item-f5a66645" selected="true" text="Personal">
+          <cl:group std:sid="group-4fcdbdb3">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-0a18591b" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata std:sid="xyl-data-88836f50" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-9244e2de"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-47876a77" text="Security">
+          <cl:group std:sid="group-b28db1fa">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-910ab334" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-7623be9c" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-aa94dfeb"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-9e923d99" text="Notifications">
+          <cl:group std:sid="group-0814795a">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-33255d4d" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata std:sid="xyl-data-04d275ee" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-573a69f5"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-4dfd134e" text="Connect">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-07364653">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-77568f49" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata std:sid="xyl-data-0cdf2695" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-37b4498c"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-3d70b9cc" id="tf3" item-align="trailing">
+        <cl:xylayoutdata std:sid="xyl-data-47ceebde" height="158px" horizontalAnchor="BOTH" left="33px" right="7px" top="188px" verticalAnchor="TOP"/>
+        <cl:tabitem std:sid="t-item-f022f243" selected="true" text="Personal">
+          <cl:group std:sid="group-edbfd35d">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-70b82cb6" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata std:sid="xyl-data-a43763a6" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-a88cb05b"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-5d4fc431" text="Security">
+          <cl:group std:sid="group-a4194959">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-c7a88706" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-45a01eb9" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-2a7b09a3"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-8aa801fe" text="Notifications">
+          <cl:group std:sid="group-034b4574">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-e947ebc1" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata std:sid="xyl-data-21fde318" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-caf74b05"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-64f30910" text="Connect">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-c973a91c">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-ed43a583" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata std:sid="xyl-data-a913fa50" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-23d2ac3d"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:xylayout std:sid="xylayout-8ce37ede"/>
+    </cl:group>
+    <cl:output std:sid="output-ca3753ba" class="h6" value="Item Sizing">
+      <cl:verticaldata std:sid="v-data-e1b73d1a" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-16112061" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-067568b5" autosize="none" height="368px" width="984px"/>
+      <cl:tabfolder std:sid="t-folder-c3b82da0" id="tf4" item-sizing="fill" use-item-text-ellipsis="true">
+        <cl:xylayoutdata std:sid="xyl-data-050a2c9b" height="158px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+        <cl:tabitem std:sid="t-item-3e1415e4" selected="true" text="Personal">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-e61fe097">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-372a4dd6" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata std:sid="xyl-data-626d5106" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-d77b66e7"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-a02d60b1" text="Security">
+          <cl:group std:sid="group-54a22a1b">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-443dd652" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-fccd5af1" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-cf84ffe6"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-cc59e383" text="Notifications">
+          <cl:group std:sid="group-e61e8c15">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-03b3e60d" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata std:sid="xyl-data-64bb347d" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-ef227d7c"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-476037ae" text="Connect">
+          <cl:group std:sid="group-d58b25bd">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-27f04004" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata std:sid="xyl-data-fd36a5db" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-e4f2bcd1"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-9726392e" id="tf5" item-sizing="fixed" preferred-item-width="150">
+        <cl:xylayoutdata std:sid="xyl-data-69cef572" height="158px" horizontalAnchor="BOTH" left="33px" right="7px" top="188px" verticalAnchor="TOP"/>
+        <cl:tabitem std:sid="t-item-49e96a30" selected="true" text="Personal">
+          <cl:group std:sid="group-e321ca42">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-2e0ce8ac" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata std:sid="xyl-data-1a2f3d8b" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-a5fa6e61"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-a4e90ee0" text="Security">
+          <cl:group std:sid="group-aea7d058">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-d531fd88" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-dcde7876" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-10e83ae4"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-13f80217" text="Notifications">
+          <cl:group std:sid="group-fce243f6">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-86e465b1" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata std:sid="xyl-data-85bf516b" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-d9d252cd"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-efc1dfde" text="Connect">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-200bdce1">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-b5200e31" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata std:sid="xyl-data-ad65c6ca" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-8a65c625"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:xylayout std:sid="xylayout-eae451f7"/>
+    </cl:group>
+    <cl:output std:sid="output-3e69639e" class="h6" value="Header Position">
+      <cl:verticaldata std:sid="v-data-9857d184" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-b5a8e936" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-2d202ed9" autosize="none" height="368px" width="984px"/>
+      <cl:tabfolder std:sid="t-folder-2b6e5506" id="tf6" use-item-text-ellipsis="true">
+        <cl:xylayoutdata std:sid="xyl-data-f8385c86" height="158px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+        <cl:tabitem std:sid="t-item-024266dd" selected="true" text="Personal">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-61f13576">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-2459b12d" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata std:sid="xyl-data-99bac9a8" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-97f63076"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-02006f19" text="Security">
+          <cl:group std:sid="group-ceb47108">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-3c406480" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-c8659146" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-fb253d02"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-dfacbeca" text="Notifications">
+          <cl:group std:sid="group-1a13f718">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-c5f73728" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata std:sid="xyl-data-38245e32" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-bf17e91e"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-4b7d75e0" text="Connect">
+          <cl:group std:sid="group-9ca4a16b">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-13f8fe86" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata std:sid="xyl-data-7f89c6b0" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-a1cff6e6"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:tabfolder std:sid="t-folder-fef519fa" id="tf7" headerposition="bottom">
+        <cl:xylayoutdata std:sid="xyl-data-01b72307" height="158px" horizontalAnchor="BOTH" left="20px" right="20px" top="188px" verticalAnchor="TOP"/>
+        <cl:tabitem std:sid="t-item-7c804df1" selected="true" text="Personal">
+          <cl:group std:sid="group-0b036844">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-934c9cbd" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata std:sid="xyl-data-63380780" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-3a4a651b"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-818eb9d8" text="Security">
+          <cl:group std:sid="group-9f37513f">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-a2b6414f" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-883d2e73" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-c64e6e3a"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-8dc07a91" text="Notifications">
+          <cl:group std:sid="group-5f88bb80">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-453b54cd" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata std:sid="xyl-data-9e8ec6ea" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-556e016d"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-6988e017" text="Connect">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-24c61c55">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-7e0fffc9" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata std:sid="xyl-data-1067fc9d" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-82a182ac"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:xylayout std:sid="xylayout-18083b8b"/>
+    </cl:group>
+    <cl:output std:sid="output-874e4dca" class="h6" value="Header Controls">
+      <cl:verticaldata std:sid="v-data-afe5db9d" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-9ba43f67" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-3bb80b2c" autosize="none" height="200px" width="984px"/>
+      <cl:tabfolder std:sid="t-folder-286606a7" id="tf8">
+        <cl:xylayoutdata std:sid="xyl-data-e1e68d03" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+        <cl:tabitem std:sid="t-item-77968ea7" selected="true" text="Personal">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-e8bda682">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-cf418cfe" value="Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.">
+              <cl:xylayoutdata std:sid="xyl-data-094e7c66" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-98adcd56"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-102d1bef" text="Security">
+          <cl:group std:sid="group-1d3075a0">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-3a3bb359" value="Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.">
+              <cl:xylayoutdata std:sid="xyl-data-fc39e442" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-064542bd"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-4e66c2b3" text="Notifications">
+          <cl:group std:sid="group-d744f3a4">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-64b6b129" value="Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.">
+              <cl:xylayoutdata std:sid="xyl-data-b3e0e2de" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-6589643a"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-bd552756" text="Connect">
+          <cl:group std:sid="group-71d43ba2">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:output std:sid="output-abaa11fb" value="Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.">
+              <cl:xylayoutdata std:sid="xyl-data-7e9cd196" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+            </cl:output>
+            <cl:xylayout std:sid="xylayout-eedf55f8"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:group std:sid="group-ed7dcdcc">
+          <cl:headercontroldata std:sid="thc-data-9a85374f" width="85" position="left"/>
+          <cl:button std:sid="button-f62bfcf1" id="btn1" class="btn-outline-primary btn-dim btn-square" value="left">
+            <cl:xylayoutdata std:sid="xyl-data-86303f9f" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-8b403905"/>
+        </cl:group>
+        <cl:group std:sid="group-525f81e9">
+          <cl:headercontroldata std:sid="thc-data-68be67aa" width="85" position="inner-left"/>
+          <cl:button std:sid="button-702216f3" id="btn2" class="btn-outline-primary btn-dim btn-square" value="inner-left">
+            <cl:xylayoutdata std:sid="xyl-data-1d11eaaa" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-ad353d14"/>
+        </cl:group>
+        <cl:group std:sid="group-e2402398">
+          <cl:headercontroldata std:sid="thc-data-5aff6196" width="85" position="inner-right"/>
+          <cl:button std:sid="button-9ff5a60b" id="btn5" class="btn-outline-primary btn-dim btn-square" value="inner-right">
+            <cl:xylayoutdata std:sid="xyl-data-8a489ac2" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-83289561"/>
+        </cl:group>
+        <cl:group std:sid="group-cef4a800">
+          <cl:headercontroldata std:sid="thc-data-739f3167" width="85" position="right"/>
+          <cl:button std:sid="button-f67b55ce" id="btn6" class="btn-outline-primary btn-dim btn-square" value="right">
+            <cl:xylayoutdata std:sid="xyl-data-42529c30" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-cadedc1b"/>
+        </cl:group>
+        <cl:group std:sid="group-8ea83b4b">
+          <cl:headercontroldata std:sid="thc-data-37f85d1e" width="85" position="heading"/>
+          <cl:button std:sid="button-bce5391c" id="btn3" class="btn-outline-primary btn-dim btn-square" value="heading">
+            <cl:xylayoutdata std:sid="xyl-data-abb4a24f" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-6ac0f0f0"/>
+        </cl:group>
+        <cl:group std:sid="group-3dc3d658">
+          <cl:headercontroldata std:sid="thc-data-9ae74399" width="85" position="trailing"/>
+          <cl:button std:sid="button-95728a44" id="btn4" class="btn-outline-primary btn-dim btn-square" value="tailing">
+            <cl:xylayoutdata std:sid="xyl-data-df7f9703" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-2919882f"/>
+        </cl:group>
+      </cl:tabfolder>
+      <cl:xylayout std:sid="xylayout-57d2d43d"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

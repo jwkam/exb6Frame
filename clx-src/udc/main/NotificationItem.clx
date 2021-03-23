@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f035539b" version="1.0.0.0">
+  <head std:sid="head-cd8bacdb">
+    <title>NotificationItem</title>
+    <screen std:sid="screen-ace197c8" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-d575b1bf" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-29fb845a" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-ad7d6c2f"/>
+    <cl:appspec>
+      <cl:property bindable="true" default="default" name="status" type="enumeration">
+        <cl:available-value>DEFAULT</cl:available-value>
+        <cl:available-value>INFO</cl:available-value>
+        <cl:available-value>SUCCESS</cl:available-value>
+        <cl:available-value>WARNING</cl:available-value>
+        <cl:available-value>DANGER</cl:available-value>
+      </cl:property>
+      <cl:property bindable="true" name="text" type="string"/>
+      <cl:property bindable="true" name="time" type="string"/>
+      <cl:event name="clickM" type="cpr.events.CMouseEvent"/>
+      <cl:event name="close" type="cpr.events.CMouseEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-82d1603c" class="border-bottom" style="top:0px; left:0px; width:300px; height:50px;">
+    <cl:listener std:sid="listener-645ac1da" handler="onBodyClick" name="click"/>
+    <cl:listener std:sid="listener-68a534f7" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:listener std:sid="listener-92c1d401" handler="onBodyLoad" name="load"/>
+    <cl:output std:sid="output-265ad6fb" id="optNotiCn" ellipsis="true" fieldLabel="텍스트" unselectable="false" value="you have requested to complete a task">
+      <cl:apppropbind property="value" app-property="text"/>
+      <cl:formdata std:sid="f-data-174227bf" col="1" row="0"/>
+    </cl:output>
+    <cl:output std:sid="output-dbdbaaf3" id="optNotiTime" class="text-gray small" fieldLabel="시간" value="2 hrs ago">
+      <cl:apppropbind property="value" app-property="time"/>
+      <cl:formdata std:sid="f-data-f52fb860" col="1" row="1"/>
+    </cl:output>
+    <cl:output std:sid="output-dac10d78" id="optNotiSt" class="rounded-circle" value="">
+      <cl:apppropbind property="fieldLabel" app-property="status"/>
+      <cl:formdata height="10" valign="CENTER" col="0" colspan="1" row="0" rowspan="2"/>
+    </cl:output>
+    <cl:button std:sid="button-af064efe" id="btnClose" class="bg-transparent border-0 btn-icon btn-icon-close" value="">
+      <cl:listener std:sid="listener-03960e2c" handler="onBtnCloseClick" name="click"/>
+      <cl:formdata height="20" valign="CENTER" col="2" colspan="1" row="0" rowspan="2"/>
+    </cl:button>
+    <cl:formlayout std:sid="f-layout-ed19553f" bottom-margin="5px" hspace="10px" left-margin="10px" right-margin="10px" top-margin="5px" vspace="0px">
+      <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:columns autoSizing="false" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

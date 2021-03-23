@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.w3.org/1999/xhtml">
+  <Screen id="eXFrame" name="eXFrame" minWidth="1320px" width="1320px" height="680px"/>
+  <Screen id="default" name="default" minWidth="1020px" maxWidth="1319px" width="1020px" height="540px"/>
+  <Screen id="tablet" name="tablet" minWidth="760px" maxWidth="1019px" width="760px" height="820px"/>
+  <Screen id="mobile" name="mobile" maxWidth="759px" width="320px" height="568px"/>
+</xmi:XMI>

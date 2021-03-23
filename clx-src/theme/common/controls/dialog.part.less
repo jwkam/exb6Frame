@@ -1,0 +1,99 @@
+@import "../custom-settings.part.less";
+
+ /* 다이얼로그 루트 */
+.cl-dialog {
+	border: @modal-border-base;
+	border-radius: @modal-border-radius;
+	box-shadow: @modal-box-shadow;
+	/* 다이얼로그 헤더 */
+	.cl-dialog-header {
+		background-color: @modal-header-background-color;
+		border-bottom-color: @modal-header-border-color;
+		border-radius: @modal-border-radius @modal-border-radius 0 0;
+		color: @modal-header-text-color;
+		padding: @modal-header-padding-y @modal-header-padding-x;
+		font-weight: @font-weight-medium;
+		font-size: @font-size-base * 1.25;
+		height:40px;
+
+		/* 다이얼로그 헤더 텍스트 */
+		.cl-text {
+		}
+
+		/* 다이얼로그 닫기 버튼 */
+		.cl-dialog-close {
+			// background-image: url(images/controls/dialog/icon-close.png);
+		}
+
+		/* 다이얼로그 닫기 버튼 - 호버 */
+		.cl-dialog-close:hover{
+			// background-image: url(images/controls/dialog/icon-close-hover.png);
+		}
+
+		/* 다이얼로그 닫기 버튼 - 액티브 */
+		.cl-dialog-close:active {
+			// background-image: url(images/controls/dialog/icon-close-active.png);
+		}
+		
+		/* 다이얼로그 최소화 버튼 */
+		.cl-dialog-min {
+			// background-image: url(images/controls/dialog/icon-minimize.png);
+		}
+		
+		/* 다이얼로그 최소화 버튼 - 호버 */
+		.cl-dialog-min:hover {
+			// background-image: url(images/controls/dialog/icon-minimize-hover.png);
+		}
+
+		/* 다이얼로그 최소화 버튼 - 액티브 */
+		.cl-dialog-min:active {
+			// background-image: url(images/controls/dialog/icon-minimize-active.png);
+		}
+		
+		/* 다이얼로그 최대화 버튼 */
+		.cl-dialog-max {
+			// background-image: url(images/controls/dialog/icon-maximize.png);
+		}
+		
+		/* 다이얼로그 최대화 버튼 - 호버 */
+		.cl-dialog-max:hover {
+			// background-image: url(images/controls/dialog/icon-maximize-hover.png);
+		}
+		
+		/* 다이얼로그 최대화 버튼 - 액티브 */
+		.cl-dialog-max:active {
+			// background-image: url(images/controls/dialog/icon-maximize-active.png);
+		}
+		
+		/* 다이얼로그 복구 버튼 */
+		.cl-dialog-restore {
+			// background-image: url(images/controls/dialog/icon-restore.png);
+		}
+		
+		/* 다이얼로그 복구 버튼 - 호버 */
+		.cl-dialog-restore {
+			// background-image: url(images/controls/dialog/icon-restore-hover.png);
+		}
+		
+		/* 다이얼로그 복구 버튼 - 액티브 */
+		.cl-dialog-restore:active {
+			// background-image: url(images/controls/dialog/icon-restore-active.png);
+		}
+	}
+	
+	.cl-dialog-body {
+		padding : 0px 5px 5px 5px;
+	}
+}
+
+.cl-overlay {
+	background-color: @modal-overlay-background-color;
+}
+
+.cl-overlay.light {
+	background-color: @modal-light-overlay-background-color;
+}
+
+.cl-overlay.dark {
+	background-color: @modal-dark-overlay-background-color;
+}

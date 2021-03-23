@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cmn-base01">
+	
+	  <select id="selectCmnCodeList" parameterType="HashMap" resultType="HashMap">
+        <![CDATA[
+        SELECT 
+               CD                       /*코드*/ 
+             , UCD                      /*상위코드*/ 
+             , CD_CLS                   /*코드분류*/ 
+             , CONCAT(CD_NM, CASE WHEN USE_YN = 'Y' THEN '' ELSE '【폐지】' END) AS CD_NM /*코드명*/ 
+             , CD_SHORT_NM              /*코드약칭*/ 
+          FROM TST_COM_CD 
+         WHERE CD_CLS = #{CD_CLS}
+        ]]>
+          <if test="CD != null and CD != ''" >
+          AND CD = #{CD} 
+          </if>
+          <if test="UCD != null and UCD != ''" >
+          AND UCD = #{UCD} 
+          </if>
+          <if test="EFFT_STAT_DT != null and EFFT_STAT_DT != ''" >
+          AND SYSDATE BETWEEN EFFT_STAT_DT AND EFFT_END_DT 
+          </if>             
+          <if test="USE_YN != null and USE_YN != ''" >
+          AND USE_YN = #{USE_YN} 
+          </if>     
+          <if test="CD_NM != null and CD_NM != ''" >
+          AND (   CD_NM LIKE CONCAT('%',#{CD_NM},'%') 
+               OR CD  LIKE CONCAT('%',#{CD_NM},'%')
+               OR ENG_NM  LIKE CONCAT('%',#{CD_NM},'%')                    
+              )
+          </if> 
+          <if test="UNIT_SYSTEM_RCD != null and UNIT_SYSTEM_RCD != ''" >
+          AND UNIT_SYSTEM_RCD = #{UNIT_SYSTEM_RCD} 
+          </if> 
+          <if test="CD != null and CD != ''" >
+          AND CD = #{CD} 
+          </if>         
+          <if test="CD_PRP1 != null and CD_PRP1!= ''" >
+          AND CD_PRP1 = #{CD_PRP1} 
+          </if> 
+          <if test="CD_PRP2 != null and CD_PRP2!= ''" >
+          AND CD_PRP2 = #{CD_PRP2} 
+          </if> 
+          <if test="CD_PRP3 != null and CD_PRP3!= ''" >
+          AND CD_PRP3 = #{CD_PRP3} 
+          </if> 
+          <if test="CD_PRP4 != null and CD_PRP4!= ''" >
+          AND CD_PRP4 = #{CD_PRP4} 
+          </if> 
+          <if test="CD_PRP5 != null and CD_PRP5!= ''" >
+          AND CD_PRP5 = #{CD_PRP5} 
+          </if> 
+          <if test="CD_PRP6 != null and CD_PRP6!= ''" >
+          AND CD_PRP6 = #{CD_PRP6} 
+          </if> 
+          <if test="CD_PRP7 != null and CD_PRP7!= ''" >
+          AND CD_PRP7 = #{CD_PRP7} 
+          </if> 
+          <if test="CD_PRP8 != null and CD_PRP8!= ''" >
+          AND CD_PRP8 = #{CD_PRP8} 
+          </if> 
+          <if test="CD_PRP9 != null and CD_PRP9!= ''" >
+          AND CD_PRP9 = #{CD_PRP9} 
+          </if> 
+          <if test="CD_PRP10 != null and CD_PRP10!= ''" >
+          AND CD_PRP10 = #{CD_PRP10} 
+          </if> 
+          <if test="CD_PRP11 != null and CD_PRP11!= ''" >
+          AND CD_PRP11 = #{CD_PRP11} 
+          </if> 
+          <if test="CD_PRP12 != null and CD_PRP12!= ''" >
+          AND CD_PRP12 = #{CD_PRP12} 
+          </if> 
+          <if test="CD_PRP13 != null and CD_PRP13!= ''" >
+          AND CD_PRP13 = #{CD_PRP13} 
+          </if> 
+          <if test="CD_PRP14 != null and CD_PRP14!= ''" >
+          AND CD_PRP14 = #{CD_PRP14} 
+          </if> 
+          <if test="CD_PRP15 != null and CD_PRP15!= ''" >
+          AND CD_PRP15 = #{CD_PRP15} 
+          </if> 
+          <if test="CD_PRP16 != null and CD_PRP16!= ''" >
+          AND CD_PRP16 = #{CD_PRP16} 
+          </if>           
+          <if test="CD_PRP17 != null and CD_PRP17!= ''" >
+          AND CD_PRP17 = #{CD_PRP17} 
+          </if>           
+          <if test="CD_PRP18 != null and CD_PRP18!= ''" >
+          AND CD_PRP18 = #{CD_PRP18} 
+          </if>           
+          <if test="CD_PRP19 != null and CD_PRP19!= ''" >
+          AND CD_PRP19 = #{CD_PRP19} 
+          </if>           
+          <if test="CD_PRP20 != null and CD_PRP20!= ''" >
+          AND CD_PRP20 = #{CD_PRP20} 
+          </if>                     
+          <if test="ORDER_BY != null and ORDER_BY != ''" >
+          ORDER BY  ${ORDER_BY}
+          </if>
+    </select>  
+    
+	<!--
+	설명       : 공통코드 목록을 조회한다.
+	파라미터   : 코드/코드명, 단위시스템
+	주사용처	: 코드조회
+	변경이력   : 2020. 3. 16. 강석민 최초작성
+	-->
+	<select id="selectTstComCdForCombo" parameterType="HashMap" resultType="HashMap">
+		<![CDATA[
+			SELECT CD			/*코드*/ 
+			     , UCD 			/*상위코드*/ 
+			     , CD_CLS 			/*코드분류*/ 
+			     , CD_NM 			/*코드명*/ 
+			     , CD_SHORT_NM 			/*코드약칭*/ 
+			     , CD_LEN 			/*코드길이*/ 
+			     , PRT_ORD 			/*출력순서*/ 
+			     , EFFT_STAT_DT 			/*유효시작일자*/ 
+			     , EFFT_END_DT 			/*유효종료일자*/ 
+			     , CD_DESC 			/*코드내역*/ 
+			     , UNIT_SYSTEM_RCD 			/*단위시스템코드[CMN003]*/ 
+			     , USE_YN 			/*사용여부*/ 
+			     , CD_PRP1 			/*코드용도1*/ 
+			     , CD_PRP2 			/*코드용도2*/ 
+			     , CD_PRP3 			/*코드용도3*/ 
+			     , CD_PRP4 			/*코드용도4*/ 
+			     , CD_PRP5 			/*코드용도5*/ 
+			     , CD_PRP6 			/*코드용도6*/ 
+			     , CD_PRP7 			/*코드용도7*/ 
+			     , CD_PRP8 			/*코드용도8*/ 
+			     , CD_PRP9 			/*코드용도9*/ 
+			     , CD_PRP10 			/*코드용도10*/ 
+			     , CD_PRP11 			/*코드용도11*/ 
+			     , CD_PRP12 			/*코드용도12*/ 
+			     , CD_PRP13 			/*코드용도13*/ 
+			     , CD_PRP14 			/*코드용도14*/ 
+			     , CD_PRP15 			/*코드용도15*/ 
+			     , CD_PRP16 			/*코드용도16*/ 
+			     , CD_PRP17 			/*코드용도17*/ 
+			     , CD_PRP18 			/*코드용도18*/ 
+			     , CD_PRP19 			/*코드용도19*/ 
+			     , CD_PRP20 			/*코드용도20*/ 
+			     , (CONCAT(CD)) AS KEY_VALUE 			/* 고유번호*/ 
+			  FROM TST_COM_CD
+			  WHERE CD_CLS = #{CD_CLS} 
+			 ]]>
+			 ORDER BY PRT_ORD
+
+	</select>
+	
+	 <!--
+	설명                 : 공통코드 목록 조회.
+	주사용처             : 공통코드 단건 검색 및 검색팝업용
+	정렬순서             : 
+	파라미터             : 
+-->
+    <select id="selectCmnCodeListForSearch" resultType="HashMap">
+    /* QueryId : cmn-base01.selectCmnCodeListForSearch */
+    <![CDATA[
+		SELECT CD			/*코드*/ 
+		     , UCD 			/*상위코드*/ 
+		     , CD_CLS 			/*코드분류*/ 
+		     , CD_NM 			/*코드명*/ 
+		     , CD_SHORT_NM 			/*코드약칭*/ 
+		     , CD_LEN 			/*코드길이*/ 
+		     , PRT_ORD 			/*출력순서*/ 
+		     , EFFT_STAT_DT 			/*유효시작일자*/ 
+		     , EFFT_END_DT 			/*유효종료일자*/ 
+		     , CD_DESC 			/*코드내역*/ 
+		     , UNIT_SYSTEM_RCD 			/*단위시스템코드[CMN003]*/ 
+		     , USE_YN 			/*사용여부*/ 
+		     , CD_PRP1 			/*코드용도1*/ 
+		     , CD_PRP2 			/*코드용도2*/ 
+		     , CD_PRP3 			/*코드용도3*/ 
+		     , CD_PRP4 			/*코드용도4*/ 
+		     , CD_PRP5 			/*코드용도5*/ 
+		     , CD_PRP6 			/*코드용도6*/ 
+		     , CD_PRP7 			/*코드용도7*/ 
+		     , CD_PRP8 			/*코드용도8*/ 
+		     , CD_PRP9 			/*코드용도9*/ 
+		     , CD_PRP10 			/*코드용도10*/ 
+		     , CD_PRP11 			/*코드용도11*/ 
+		     , CD_PRP12 			/*코드용도12*/ 
+		     , CD_PRP13 			/*코드용도13*/ 
+		     , CD_PRP14 			/*코드용도14*/ 
+		     , CD_PRP15 			/*코드용도15*/ 
+		     , CD_PRP16 			/*코드용도16*/ 
+		     , CD_PRP17 			/*코드용도17*/ 
+		     , CD_PRP18 			/*코드용도18*/ 
+		     , CD_PRP19 			/*코드용도19*/ 
+		       CD_PRP20 			/*코드용도20*/ 
+		  FROM TST_COM_CD
+		]]>
+		<choose>
+		<when test="strCodeScope != null and strCodeScope eq 'CFG'.toString()">
+		WHERE CD_CLS = 'CFG'
+		</when>
+		<otherwise>
+		<![CDATA[
+		WHERE CD_CLS <> 'CFG' 
+		]]>
+		</otherwise>
+		</choose>
+		  <if test="strUseYn != null and strUseYn != ''" >
+		  AND USE_YN = #{strUseYn} 
+		  </if>		
+		  <if test="strCdNm != null and strCdNm != ''" >
+		  AND (CD_NM LIKE CONCAT('%',#{strCdNm},'%')
+		       OR CD  LIKE CONCAT('%',#{strCdNm},'%')
+		      )
+		  </if> 
+		  <if test="strUnitSystemRcd != null and strUnitSystemRcd != ''" >
+		  AND UNIT_SYSTEM_RCD = #{strUnitSystemRcd} 
+		  </if>
+		  <if test="strCdCls != null and strCdCls != ''" >
+		  AND CD_CLS = #{strCdCls} 
+		  </if> 
+		  <if test="strCd != null and strCd != ''" >
+		  AND CD = #{strCd} 
+		  </if>
+		  ORDER BY PRT_ORD, CD
+    </select>
+
+	<!--
+	설명       : 공통코드 상세 목록을 조회한다.
+	파라미터   : 코드/코드명, 단위시스템
+	주사용처	: 코드조회
+	변경이력   : 2020. 3. 16. 강석민 최초작성
+	-->    
+	<select id="selectTstComCdMainList" parameterType="HashMap" resultType="HashMap">
+		<![CDATA[
+			SELECT CD			/*코드*/ 
+			     , UCD 			/*상위코드*/ 
+			     , CD_CLS 			/*코드분류*/ 
+			     , CD_NM 			/*코드명*/ 
+			     , CD_SHORT_NM 			/*코드약칭*/ 
+			     , CD_LEN 			/*코드길이*/ 
+			     , PRT_ORD 			/*출력순서*/ 
+			     , EFFT_STAT_DT 			/*유효시작일자*/ 
+			     , EFFT_END_DT 			/*유효종료일자*/ 
+			     , CD_DESC 			/*코드내역*/ 
+			     , UNIT_SYSTEM_RCD 	/*단위시스템코드[CMN003]*/ 
+			     , USE_YN 			/*사용여부*/ 
+			     , CD_PRP1 			/*코드용도1*/ 
+			     , CD_PRP2 			/*코드용도2*/ 
+			     , CD_PRP3 			/*코드용도3*/ 
+			     , CD_PRP4 			/*코드용도4*/ 
+			     , CD_PRP5 			/*코드용도5*/ 
+			     , CD_PRP6 			/*코드용도6*/ 
+			     , CD_PRP7 			/*코드용도7*/ 
+			     , CD_PRP8 			/*코드용도8*/ 
+			     , CD_PRP9 			/*코드용도9*/ 
+			     , CD_PRP10 			/*코드용도10*/ 
+			     , CD_PRP11 			/*코드용도11*/ 
+			     , CD_PRP12 			/*코드용도12*/ 
+			     , CD_PRP13 			/*코드용도13*/ 
+			     , CD_PRP14 			/*코드용도14*/ 
+			     , CD_PRP15 			/*코드용도15*/ 
+			     , CD_PRP16 			/*코드용도16*/ 
+			     , CD_PRP17 			/*코드용도17*/ 
+			     , CD_PRP18 			/*코드용도18*/ 
+			     , CD_PRP19 			/*코드용도19*/ 
+			     , CD_PRP20 			/*코드용도20*/ 
+			     , (CONCAT(CD)) AS KEY_VALUE 			/* 고유번호*/ 
+			  FROM TST_COM_CD TA
+			  WHERE CD_CLS = #{CD_CLS}
+			 ]]>
+          <if test="CD_NM != null and CD_NM != ''" >
+          AND (    CD_NM LIKE CONCAT('%',#{CD_NM},'%') 
+                OR CD  LIKE CONCAT('%',#{CD_NM},'%')
+                OR EXISTS ( SELECT 1 
+                              FROM TST_COM_CD TB
+                             WHERE (    TB.CD_NM LIKE CONCAT('%',#{CD_NM},'%') 
+                                     OR TB.CD LIKE CONCAT('%',#{CD_NM},'%')
+                                   )
+                                AND TA.CD = TB.CD_CLS
+                                 ) 
+              )
+          </if> 
+          <if test="UNIT_SYSTEM_RCD != null and UNIT_SYSTEM_RCD != ''" >
+          AND UNIT_SYSTEM_RCD = #{UNIT_SYSTEM_RCD} 
+          </if> 
+          <if test="CD_PRP8 != null and CD_PRP8 != ''" >
+          AND CD_PRP8 LIKE '%'||#{CD_PRP8}||'%'
+          </if>
+          <if test="CD_CLS != null and CD_CLS != ''" >
+          AND CD_CLS = #{CD_CLS} 
+          </if>
+          <if test="ORDER_BY != null and ORDER_BY != ''" >
+          ORDER BY  ${ORDER_BY}
+          </if>
+
+	</select>
+
+	<!--
+	설명       : 공통코드를 추가한다.
+	파라미터   : 코드/코드명
+	주사용처	: 코드추가
+	변경이력   : 2020. 3. 16. 강석민 최초작성
+	-->  
+	<insert id="insertTstComCd" parameterType="HashMap">
+	/* QueryId : insertTstComCd */
+	INSERT INTO TST_COM_CD(
+		CD
+	<if test="UCD != null and UCD != ''" >
+		, UCD
+	</if>
+		, CD_CLS
+		, CD_NM
+	<if test="CD_SHORT_NM != null and CD_SHORT_NM != ''" >
+		, CD_SHORT_NM
+	</if>
+	<if test="CD_LEN != null and CD_LEN != ''" >
+		, CD_LEN
+	</if>
+	<if test="PRT_ORD != null and PRT_ORD != ''" >
+		, PRT_ORD
+	</if>
+	<if test="EFFT_STAT_DT != null and EFFT_STAT_DT != ''" >
+		, EFFT_STAT_DT
+	</if>
+	<if test="EFFT_END_DT != null and EFFT_END_DT != ''" >
+		, EFFT_END_DT
+	</if>
+	<if test="CD_DESC != null and CD_DESC != ''" >
+		, CD_DESC
+	</if>
+	<if test="UNIT_SYSTEM_RCD != null and UNIT_SYSTEM_RCD != ''" >
+		, UNIT_SYSTEM_RCD
+	</if>
+	<if test="USE_YN != null and USE_YN != ''" >
+		, USE_YN
+	</if>
+	<if test="CD_PRP1 != null and CD_PRP1 != ''" >
+		, CD_PRP1
+	</if>
+	<if test="CD_PRP2 != null and CD_PRP2 != ''" >
+		, CD_PRP2
+	</if>
+	<if test="CD_PRP3 != null and CD_PRP3 != ''" >
+		, CD_PRP3
+	</if>
+	<if test="CD_PRP4 != null and CD_PRP4 != ''" >
+		, CD_PRP4
+	</if>
+	<if test="CD_PRP5 != null and CD_PRP5 != ''" >
+		, CD_PRP5
+	</if>
+	<if test="CD_PRP6 != null and CD_PRP6 != ''" >
+		, CD_PRP6
+	</if>
+	<if test="CD_PRP7 != null and CD_PRP7 != ''" >
+		, CD_PRP7
+	</if>
+	<if test="CD_PRP8 != null and CD_PRP8 != ''" >
+		, CD_PRP8
+	</if>
+	<if test="CD_PRP9 != null and CD_PRP9 != ''" >
+		, CD_PRP9
+	</if>
+	<if test="CD_PRP10 != null and CD_PRP10 != ''" >
+		, CD_PRP10
+	</if>
+	<if test="CD_PRP11 != null and CD_PRP11 != ''" >
+		, CD_PRP11
+	</if>
+	<if test="CD_PRP12 != null and CD_PRP12 != ''" >
+		, CD_PRP12
+	</if>
+	<if test="CD_PRP13 != null and CD_PRP13 != ''" >
+		, CD_PRP13
+	</if>
+	<if test="CD_PRP14 != null and CD_PRP14 != ''" >
+		, CD_PRP14
+	</if>
+	<if test="CD_PRP15 != null and CD_PRP15 != ''" >
+		, CD_PRP15
+	</if>
+	<if test="CD_PRP16 != null and CD_PRP16 != ''" >
+		, CD_PRP16
+	</if>
+	<if test="CD_PRP17 != null and CD_PRP17 != ''" >
+		, CD_PRP17
+	</if>
+	<if test="CD_PRP18 != null and CD_PRP18 != ''" >
+		, CD_PRP18
+	</if>
+	<if test="CD_PRP19 != null and CD_PRP19 != ''" >
+		, CD_PRP19
+	</if>
+	<if test="CD_PRP20 != null and CD_PRP20 != ''" >
+		, CD_PRP20
+	</if>
+		, CRT_DTHR 
+		, CRT_USER_ID 
+		, CRT_PGM_ID 
+		, CRT_IP_MAC 
+		, UPD_DTHR 
+		, UPD_USER_ID 
+		, UPD_PGM_ID 
+		, UPD_IP_MAC 
+	)VALUES(
+		#{CD}
+	<if test="UCD != null and UCD != ''" >
+		, #{UCD}
+	</if>
+		, #{CD_CLS}
+		, #{CD_NM}
+	<if test="CD_SHORT_NM != null and CD_SHORT_NM != ''" >
+		, #{CD_SHORT_NM}
+	</if>
+	<if test="CD_LEN != null and CD_LEN != ''" >
+		, #{CD_LEN}
+	</if>
+	<if test="PRT_ORD != null and PRT_ORD != ''" >
+		, #{PRT_ORD}
+	</if>
+	<if test="EFFT_STAT_DT != null and EFFT_STAT_DT != ''" >
+		, #{EFFT_STAT_DT}
+	</if>
+	<if test="EFFT_END_DT != null and EFFT_END_DT != ''" >
+		, #{EFFT_END_DT}
+	</if>
+	<if test="CD_DESC != null and CD_DESC != ''" >
+		, #{CD_DESC}
+	</if>
+	<if test="UNIT_SYSTEM_RCD != null and UNIT_SYSTEM_RCD != ''" >
+		, #{UNIT_SYSTEM_RCD}
+	</if>
+	<if test="USE_YN != null and USE_YN != ''" >
+		, #{USE_YN}
+	</if>
+	<if test="CD_PRP1 != null and CD_PRP1 != ''" >
+		, #{CD_PRP1}
+	</if>
+	<if test="CD_PRP2 != null and CD_PRP2 != ''" >
+		, #{CD_PRP2}
+	</if>
+	<if test="CD_PRP3 != null and CD_PRP3 != ''" >
+		, #{CD_PRP3}
+	</if>
+	<if test="CD_PRP4 != null and CD_PRP4 != ''" >
+		, #{CD_PRP4}
+	</if>
+	<if test="CD_PRP5 != null and CD_PRP5 != ''" >
+		, #{CD_PRP5}
+	</if>
+	<if test="CD_PRP6 != null and CD_PRP6 != ''" >
+		, #{CD_PRP6}
+	</if>
+	<if test="CD_PRP7 != null and CD_PRP7 != ''" >
+		, #{CD_PRP7}
+	</if>
+	<if test="CD_PRP8 != null and CD_PRP8 != ''" >
+		, #{CD_PRP8}
+	</if>
+	<if test="CD_PRP9 != null and CD_PRP9 != ''" >
+		, #{CD_PRP9}
+	</if>
+	<if test="CD_PRP10 != null and CD_PRP10 != ''" >
+		, #{CD_PRP10}
+	</if>
+	<if test="CD_PRP11 != null and CD_PRP11 != ''" >
+		, #{CD_PRP11}
+	</if>
+	<if test="CD_PRP12 != null and CD_PRP12 != ''" >
+		, #{CD_PRP12}
+	</if>
+	<if test="CD_PRP13 != null and CD_PRP13 != ''" >
+		, #{CD_PRP13}
+	</if>
+	<if test="CD_PRP14 != null and CD_PRP14 != ''" >
+		, #{CD_PRP14}
+	</if>
+	<if test="CD_PRP15 != null and CD_PRP15 != ''" >
+		, #{CD_PRP15}
+	</if>
+	<if test="CD_PRP16 != null and CD_PRP16 != ''" >
+		, #{CD_PRP16}
+	</if>
+	<if test="CD_PRP17 != null and CD_PRP17 != ''" >
+		, #{CD_PRP17}
+	</if>
+	<if test="CD_PRP18 != null and CD_PRP18 != ''" >
+		, #{CD_PRP18}
+	</if>
+	<if test="CD_PRP19 != null and CD_PRP19 != ''" >
+		, #{CD_PRP19}
+	</if>
+	<if test="CD_PRP20 != null and CD_PRP20 != ''" >
+		, #{CD_PRP20}
+	</if>
+		, NOW() 
+		, #{CRT_USER_ID} 
+		, #{CRT_PGM_ID} 
+		, #{CRT_IP_MAC} 
+		, NOW() 
+		, #{UPD_USER_ID} 
+		, #{UPD_PGM_ID} 
+		, #{UPD_IP_MAC} 
+	)
+	</insert>
+	
+	<!--
+	 * 김민규 추가
+	 * 생성일시 : 2020-03-19
+	-->
+	<select id="selectCmnCodeClsList" parameterType="HashMap" resultType="HashMap">
+    /* QueryId : cmn-base01.selectCmnCodeClsList */
+    <![CDATA[
+	SELECT CD
+	     , UCD
+	     , CD_CLS
+	     , CD_NM
+	     , CD_SHORT_NM
+	     , PRT_ORD
+	     , CD_DESC
+	     , UNIT_SYSTEM_RCD
+	     , CD_PRP1
+	     , CD_PRP2
+	     , CD_PRP3
+	     , CD_PRP4
+	     , CD_PRP5
+	     , CD_PRP6
+	     , CD_PRP7
+	     , CD_PRP8
+	     , CD_PRP9
+	     , CD_PRP10
+	     , CD_PRP11
+	     , CD_PRP12 
+	     , CD_PRP13
+	     , CD_PRP14
+	     , CD_PRP15
+	     , CD_PRP16
+	     , CD_PRP17
+	     , CD_PRP18
+	     , CD_PRP19
+	     , CD_PRP20
+	  FROM TST_COM_CD 
+	WHERE 1=1
+	]]>
+	  AND CD_CLS IN <foreach collection="listCdCls" item="item" index="index" separator="," open="(" close=")">
+	  #{item}
+	  </foreach>
+	  <if test="USE_YN != null and USE_YN != ''" >
+	  AND USE_YN = #{USE_YN} 
+	  </if>
+	ORDER BY CD
+	</select>
+
+
+	<!--
+	설명       : 공통코드를 수정한다.
+	파라미터   : 코드/코드명
+	주사용처	: 코드수정
+	변경이력   : 2020. 3. 16. 강석민 최초작성
+	-->  
+	<update id="updateTstComCd" parameterType="HashMap">
+	/* QueryId : updateTstComCd */
+	UPDATE TST_COM_CD SET
+		 UPD_DTHR = NOW()
+		, UPD_USER_ID = #{UPD_USER_ID}
+		, UPD_PGM_ID = #{UPD_PGM_ID}
+		, UPD_IP_MAC = #{UPD_IP_MAC}
+	<if test="UCD != null and UCD != ''" >
+		, UCD = #{UCD}
+	</if>
+	<if test="CD_CLS != null" >
+		, CD_CLS = #{CD_CLS}
+	</if>
+	<if test="CD_NM != null" >
+		, CD_NM = #{CD_NM}
+	</if>
+	<if test="CD_SHORT_NM != null" >
+		, CD_SHORT_NM = #{CD_SHORT_NM}
+	</if>
+	<if test="CD_LEN != null" >
+		, CD_LEN = #{CD_LEN}
+	</if>
+	<if test="PRT_ORD != null" >
+		, PRT_ORD = #{PRT_ORD}
+	</if>
+	<if test="EFFT_STAT_DT != null" >
+		, EFFT_STAT_DT = #{EFFT_STAT_DT}
+	</if>
+	<if test="EFFT_END_DT != null" >
+		, EFFT_END_DT = #{EFFT_END_DT}
+	</if>
+	<if test="CD_DESC != null" >
+		, CD_DESC = #{CD_DESC}
+	</if>
+	<if test="UNIT_SYSTEM_RCD != null" >
+		, UNIT_SYSTEM_RCD = #{UNIT_SYSTEM_RCD}
+	</if>
+	<if test="USE_YN != null" >
+		, USE_YN = #{USE_YN}
+	</if>
+	<if test="CD_PRP1 != null" >
+		, CD_PRP1 = #{CD_PRP1}
+	</if>
+	<if test="CD_PRP2 != null" >
+		, CD_PRP2 = #{CD_PRP2}
+	</if>
+	<if test="CD_PRP3 != null" >
+		, CD_PRP3 = #{CD_PRP3}
+	</if>
+	<if test="CD_PRP4 != null" >
+		, CD_PRP4 = #{CD_PRP4}
+	</if>
+	<if test="CD_PRP5 != null" >
+		, CD_PRP5 = #{CD_PRP5}
+	</if>
+	<if test="CD_PRP6 != null" >
+		, CD_PRP6 = #{CD_PRP6}
+	</if>
+	<if test="CD_PRP7 != null" >
+		, CD_PRP7 = #{CD_PRP7}
+	</if>
+	<if test="CD_PRP8 != null" >
+		, CD_PRP8 = #{CD_PRP8}
+	</if>
+	<if test="CD_PRP9 != null" >
+		, CD_PRP9 = #{CD_PRP9}
+	</if>
+	<if test="CD_PRP10 != null" >
+		, CD_PRP10 = #{CD_PRP10}
+	</if>
+	<if test="CD_PRP11 != null" >
+		, CD_PRP11 = #{CD_PRP11}
+	</if>
+	<if test="CD_PRP12 != null" >
+		, CD_PRP12 = #{CD_PRP12}
+	</if>
+	<if test="CD_PRP13 != null" >
+		, CD_PRP13 = #{CD_PRP13}
+	</if>
+	<if test="CD_PRP14 != null" >
+		, CD_PRP14 = #{CD_PRP14}
+	</if>
+	<if test="CD_PRP15 != null" >
+		, CD_PRP15 = #{CD_PRP15}
+	</if>
+	<if test="CD_PRP16 != null" >
+		, CD_PRP16 = #{CD_PRP16}
+	</if>
+	<if test="CD_PRP17 != null" >
+		, CD_PRP17 = #{CD_PRP17}
+	</if>
+	<if test="CD_PRP18 != null" >
+		, CD_PRP18 = #{CD_PRP18}
+	</if>
+	<if test="CD_PRP19 != null" >
+		, CD_PRP19 = #{CD_PRP19}
+	</if>
+	<if test="CD_PRP20 != null" >
+		, CD_PRP20 = #{CD_PRP20}
+	</if>
+	WHERE CD = #{CD__origin}
+	</update>
+
+	<!--
+	설명       : 공통코드를 삭제한다.
+	파라미터   : 코드/코드명
+	주사용처	: 코드삭제
+	변경이력   : 2020. 3. 16. 강석민 최초작성
+	-->    
+	<delete id="deleteTstComCd" parameterType="HashMap">
+	/* QueryId : deleteTstComCd */
+	DELETE
+		FROM TST_COM_CD
+	WHERE CD = #{CD__origin}
+	</delete>
+
+    <select id="selectCmnUserDivCdList" resultType="HashMap">
+    /* QueryId : cmn-base01.selectCmnUserDivCdList */
+    <![CDATA[
+		SELECT USER_DIV_CD AS CD
+		     , USER_DIV_NM AS CD_NM
+		  FROM CMN_USER_DIV
+		ORDER BY PRT_ORD
+	]]>
+    </select>
+
+	<!--
+	설명       : 사용자 목록을 조회한다.
+	파라미터   : 사용자구분, 사용자ID, 사용자명
+	주사용처	: 사용자 조회
+	변경이력   : 2020. 3. 17. 강석민 최초작성
+	-->
+	<select id="selectCmnUseUserList" parameterType="HashMap" resultType="HashMap" fetchSize="100">
+    /* QueryId : cmn-base01.selectCmnUseUserList */
+		<![CDATA[
+		SELECT U.USER_ID			/*사용자ID[학번/교직번]*/ 
+		     , U.PARTY_ID 			/*구성원ID*/ 
+		     , U.LOGIN_ID 			/*로그인ID*/
+		     , U.LOGIN_ID AS ORI_LOGIN_ID
+		     , P.NM_KOR 
+		     , U.USER_DIV_CD 			/*사용자구분코드[CMN0701테이블]*/ 
+		     , U.PWD 			/*비밀번호*/
+		     , U.STAT_RCD 			/*상태*/
+		     , U.PWD AS ORI_PWD 
+		     , U.PWD_CHG_DTTM 			/*비밀번호변경일시*/ 
+		     , U.PWD_EFFT_DAYS 			/*비밀번호유효일수*/ 
+		     , U.TMP_PWD 			/*임시비밀번호*/ 
+		     , U.TMP_PWD_COPY 			/*임시비밀번호2(비밀번호변경시)*/ 
+		     , U.LOGIN_FAIL 			/*로그인실패*/ 
+		     , U.LOGIN_FAIL_DTTM 			/*로그인실패일시*/ 
+		     , U.LOGIN_PBY_DTTM 			/*로그인가능일시*/ 
+		     , U.LOGIN_SUCCSS 			/*로그인성공*/ 
+		     , U.USE_YN 			/*사용여부*/ 
+		     , U.SYS_MGR_YN 			/*시스템관리자여부*/ 
+		     , U.DUP_PERMIT_YN 			/*중복허용여부*/ 
+		     , U.EFFT_ST_DT 			/*유효시작일자*/ 
+		     , U.EFFT_ED_DT 			/*유효종료일자*/ 
+		     , U.RMK 			/*비고*/ 
+		     , U.PSN_CTFC_ORI_NM 			/*인증서DN*/ 
+		     , U.AD_CHECK 			/*AD체크여부*/ 
+		     , (CONCAT(U.USER_ID)) AS KEY_VALUE 			/* 고유번호*/ 
+		  FROM CMN_USE_USER U
+		  , CMN_PARTY P
+		  WHERE 1=1
+		  AND U.PARTY_ID = P.PARTY_ID 
+		 ]]>
+	 <if test="USER_DIV_CD != null and USER_DIV_CD != ''" >
+		  AND U.USER_DIV_CD = #{USER_DIV_CD}
+	 </if>
+	 <if test="USER_ID != null and USER_ID != ''" >
+		  AND UPPER(U.USER_ID) LIKE CONCAT('%',UPPER(#{USER_ID}),'%')
+	 </if>
+	 <if test="KOR_NM != null and KOR_NM != ''" >
+		 AND UPPER(P.NM_KOR) LIKE CONCAT('%',UPPER(#{KOR_NM}),'%')
+	 </if>
+	 <if test="STAT_RCD != null and STAT_RCD != ''" >
+	 <if test='!"CMN049.0001".equals(STAT_RCD)'>
+		 AND U.STAT_RCD = #{STAT_RCD}
+	 </if>
+	 </if>
+	 
+	</select>
+
+	<!--
+	설명         : 사용자 목록을 추가한다.
+	파라미터   : 
+	주사용처   : 사용자 추가
+	변경이력   : 2020. 3. 17. 강석민 최초작성
+	-->	
+	<insert id="insertCmnUseUser" parameterType="HashMap">
+	/* QueryId : cmn-base01.insertCmnUseUser */
+	INSERT INTO CMN_USE_USER(
+		USER_ID
+	<if test="PARTY_ID != null and PARTY_ID != ''" >
+		, PARTY_ID
+	</if>
+	<if test="LOGIN_ID != null and LOGIN_ID != ''" >
+		, LOGIN_ID
+	</if>
+	<if test="USER_DIV_CD != null and USER_DIV_CD != ''" >
+		, USER_DIV_CD
+	</if>
+	<if test="PWD != null and PWD != ''" >
+		, PWD
+	</if>
+	<if test="STAT_RCD != null and STAT_RCD != ''" >
+		, STAT_RCD
+	</if>	
+	<if test="PWD_CHG_DTTM != null and PWD_CHG_DTTM != ''" >
+		, PWD_CHG_DTTM
+	</if>
+	<if test="PWD_EFFT_DAYS != null and PWD_EFFT_DAYS != ''" >
+		, PWD_EFFT_DAYS
+	</if>
+	<if test="TMP_PWD != null and TMP_PWD != ''" >
+		, TMP_PWD
+	</if>
+	<if test="TMP_PWD_COPY != null and TMP_PWD_COPY != ''" >
+		, TMP_PWD_COPY
+	</if>
+	<if test="LOGIN_FAIL != null and LOGIN_FAIL != ''" >
+		, LOGIN_FAIL
+	</if>
+	<if test="LOGIN_FAIL_DTTM != null and LOGIN_FAIL_DTTM != ''" >
+		, LOGIN_FAIL_DTTM
+	</if>
+	<if test="LOGIN_PBY_DTTM != null and LOGIN_PBY_DTTM != ''" >
+		, LOGIN_PBY_DTTM
+	</if>
+	<if test="LOGIN_SUCCSS != null and LOGIN_SUCCSS != ''" >
+		, LOGIN_SUCCSS
+	</if>
+	<if test="USE_YN != null and USE_YN != ''" >
+		, USE_YN
+	</if>
+	<if test="SYS_MGR_YN != null and SYS_MGR_YN != ''" >
+		, SYS_MGR_YN
+	</if>
+	<if test="DUP_PERMIT_YN != null and DUP_PERMIT_YN != ''" >
+		, DUP_PERMIT_YN
+	</if>
+	<if test="EFFT_ST_DT != null and EFFT_ST_DT != ''" >
+		, EFFT_ST_DT
+	</if>
+	<if test="EFFT_ED_DT != null and EFFT_ED_DT != ''" >
+		, EFFT_ED_DT
+	</if>
+	<if test="RMK != null and RMK != ''" >
+		, RMK
+	</if>
+	<if test="PSN_CTFC_ORI_NM != null and PSN_CTFC_ORI_NM != ''" >
+		, PSN_CTFC_ORI_NM
+	</if>
+	<if test="AD_CHECK != null and AD_CHECK != ''" >
+		, AD_CHECK
+	</if>
+		, CRT_DTHR 
+		, CRT_USER_ID 
+		, CRT_PGM_ID 
+		, CRT_IP_MAC 
+		, UPD_DTHR 
+		, UPD_USER_ID 
+		, UPD_PGM_ID 
+		, UPD_IP_MAC 
+	)VALUES(
+		#{USER_ID}
+	<if test="PARTY_ID != null and PARTY_ID != ''" >
+		, #{PARTY_ID}
+	</if>
+	<if test="LOGIN_ID != null and LOGIN_ID != ''" >
+		, #{LOGIN_ID}
+	</if>
+	<if test="USER_DIV_CD != null and USER_DIV_CD != ''" >
+		, #{USER_DIV_CD}
+	</if>
+	<if test="PWD != null and PWD != ''" >
+		, #{PWD}
+	</if>
+	<if test="STAT_RCD != null and STAT_RCD != ''" >
+		, #{STAT_RCD}
+	</if>	
+	<if test="PWD_CHG_DTTM != null and PWD_CHG_DTTM != ''" >
+		, F_TO_DATE(#{PWD_CHG_DTTM})
+	</if>
+	<if test="PWD_EFFT_DAYS != null and PWD_EFFT_DAYS != ''" >
+		, #{PWD_EFFT_DAYS}
+	</if>
+	<if test="TMP_PWD != null and TMP_PWD != ''" >
+		, #{TMP_PWD}
+	</if>
+	<if test="TMP_PWD_COPY != null and TMP_PWD_COPY != ''" >
+		, #{TMP_PWD_COPY}
+	</if>
+	<if test="LOGIN_FAIL != null and LOGIN_FAIL != ''" >
+		, #{LOGIN_FAIL}
+	</if>
+	<if test="LOGIN_FAIL_DTTM != null and LOGIN_FAIL_DTTM != ''" >
+		, F_TO_DATE(#{LOGIN_FAIL_DTTM})
+	</if>
+	<if test="LOGIN_PBY_DTTM != null and LOGIN_PBY_DTTM != ''" >
+		, F_TO_DATE(#{LOGIN_PBY_DTTM})
+	</if>
+	<if test="LOGIN_SUCCSS != null and LOGIN_SUCCSS != ''" >
+		, F_TO_DATE(#{LOGIN_SUCCSS})
+	</if>
+	<if test="USE_YN != null and USE_YN != ''" >
+		, #{USE_YN}
+	</if>
+	<if test="SYS_MGR_YN != null and SYS_MGR_YN != ''" >
+		, #{SYS_MGR_YN}
+	</if>
+	<if test="DUP_PERMIT_YN != null and DUP_PERMIT_YN != ''" >
+		, #{DUP_PERMIT_YN}
+	</if>
+	<if test="EFFT_ST_DT != null and EFFT_ST_DT != ''" >
+		, #{EFFT_ST_DT}
+	</if>
+	<if test="EFFT_ED_DT != null and EFFT_ED_DT != ''" >
+		, #{EFFT_ED_DT}
+	</if>
+	<if test="RMK != null and RMK != ''" >
+		, #{RMK}
+	</if>
+	<if test="PSN_CTFC_ORI_NM != null and PSN_CTFC_ORI_NM != ''" >
+		, #{PSN_CTFC_ORI_NM}
+	</if>
+	<if test="AD_CHECK != null and AD_CHECK != ''" >
+		, NVL(#{AD_CHECK}, N)
+	</if>
+		, NOW() 
+		, #{CRT_USER_ID} 
+		, #{CRT_PGM_ID} 
+		, #{CRT_IP_MAC} 
+		, NOW() 
+		, #{UPD_USER_ID} 
+		, #{UPD_PGM_ID} 
+		, #{UPD_IP_MAC} 
+	)
+	</insert>
+	
+	
+	<!--
+	설명         : 사용자 목록을 수정한다.
+	파라미터   : 
+	주사용처   : 사용자 수정
+	변경이력   : 2020. 3. 17. 강석민 최초작성
+	-->	
+	<update id="updateCmnUseUser" parameterType="HashMap">
+	/* QueryId : cmn-base01.updateCmnUseUser */
+	UPDATE CMN_USE_USER SET
+		 UPD_DTHR = NOW()
+		, UPD_USER_ID = #{UPD_USER_ID}
+		, UPD_PGM_ID = #{UPD_PGM_ID}
+		, UPD_IP_MAC = #{UPD_IP_MAC}
+	<if test="PARTY_ID != null" >
+		, PARTY_ID = #{PARTY_ID}
+	</if>
+	<if test="LOGIN_ID != null" >
+		, LOGIN_ID = #{LOGIN_ID}
+	</if>
+	<if test="USER_DIV_CD != null" >
+		, USER_DIV_CD = #{USER_DIV_CD}
+	</if>
+	<if test="PWD != null" >
+		, PWD = #{PWD}
+	</if>
+	<if test="STAT_RCD != null" >
+		, STAT_RCD = #{STAT_RCD}
+	</if>	
+	<if test="PWD_CHG_DTTM != null"  >
+		, PWD_CHG_DTTM = F_TO_DATE(#{PWD_CHG_DTTM})
+	</if>
+	<if test="PWD_EFFT_DAYS != null" >
+		, PWD_EFFT_DAYS = #{PWD_EFFT_DAYS}
+	</if>
+	<if test="TMP_PWD != null" >
+		, TMP_PWD = #{TMP_PWD}
+	</if>
+	<if test="TMP_PWD_COPY != null" >
+		, TMP_PWD_COPY = #{TMP_PWD_COPY}
+	</if>
+	<if test="LOGIN_FAIL != null" >
+		, LOGIN_FAIL = #{LOGIN_FAIL}
+	</if>
+	<if test="LOGIN_FAIL_DTTM != null" >
+		, LOGIN_FAIL_DTTM = F_TO_DATE(#{LOGIN_FAIL_DTTM})
+	</if>
+	<if test="LOGIN_PBY_DTTM != null" >
+		, LOGIN_PBY_DTTM = F_TO_DATE(#{LOGIN_PBY_DTTM})
+	</if>
+	<if test="LOGIN_SUCCSS != null" >
+		, LOGIN_SUCCSS = F_TO_DATE(#{LOGIN_SUCCSS})
+	</if>
+	<if test="USE_YN != null" >
+		, USE_YN = #{USE_YN}
+	</if>
+	<if test="SYS_MGR_YN != null" >
+		, SYS_MGR_YN = #{SYS_MGR_YN}
+	</if>
+	<if test="DUP_PERMIT_YN != null" >
+		, DUP_PERMIT_YN = #{DUP_PERMIT_YN}
+	</if>
+	<if test="EFFT_ST_DT != null" >
+		, EFFT_ST_DT = #{EFFT_ST_DT}
+	</if>
+	<if test="EFFT_ED_DT != null" >
+		, EFFT_ED_DT = #{EFFT_ED_DT}
+	</if>
+	<if test="RMK != null" >
+		, RMK = #{RMK}
+	</if>
+	<if test="PSN_CTFC_ORI_NM != null" >
+		, PSN_CTFC_ORI_NM = #{PSN_CTFC_ORI_NM}
+	</if>
+	<if test="AD_CHECK != null" >
+		, AD_CHECK = NVL(#{AD_CHECK}, N)
+	</if>
+	WHERE USER_ID = #{USER_ID__origin}
+	</update>
+
+	<!--
+	설명         : 사용자 목록을 삭제한다.
+	파라미터   : 
+	주사용처   : 사용자 삭제
+	변경이력   : 2020. 3. 17. 강석민 최초작성
+	-->
+	<delete id="deleteCmnUseUser" parameterType="HashMap">
+	/* QueryId : deleteCmnUseUser */
+	DELETE
+		FROM CMN_USE_USER
+	WHERE USER_ID = #{USER_ID__origin}
+	</delete>
+
+	<!--
+	설명         : 사용자 목록을 삭제한다.
+	파라미터   : 
+	주사용처   : 사용자 삭제
+	변경이력   : 2020. 3. 17. 강석민 최초작성
+	-->	
+    <select id="checkCmnUseUserDupLoginId" parameterType="HashMap" resultType="String">
+    /* QueryId : cmn-base01.checkCmnUseUserDupLoginId */
+    <![CDATA[
+        SELECT COUNT(*) AS CNT
+            FROM CMN_USE_USER
+        WHERE LOGIN_ID = #{LOGIN_ID}
+        LIMIT 1
+    ]]>
+    </select>
+    
+    <select id="selCmnUseUserEncPasswd" parameterType="HashMap" resultType="String">
+    <![CDATA[
+		SELECT XDB_ENC('hash64', #{PWD}) AS INPUT_PWD 
+			FROM DUAL
+    ]]>
+   </select>
+   
+   <select id="selectClientMessageList" parameterType="HashMap" resultType="HashMap">
+    /* QueryId : cmn-base01.selectClientMessageList */
+    <![CDATA[
+		SELECT MSG_CD
+		     , LANG_DIV_RCD
+		     , MSG_DIV_RCD
+		     , MSG_TEXT
+		  FROM CMN_MLANGUAGE
+		]]>
+		<where>
+  		<if test="MSG_DIV_RCD != null and MSG_DIV_RCD!= ''" >
+		   AND MSG_DIV_RCD = #{MSG_DIV_RCD} 
+  		</if>  
+  		<if test="LANG_DIV_RCD != null and LANG_DIV_RCD!= ''" >
+		   AND LANG_DIV_RCD = #{LANG_DIV_RCD} 
+  		</if> 
+  		<if test="MSG_TEXT != null and MSG_TEXT!= ''" >
+		   AND MSG_TEXT LIKE CONCAT('%',#{MSG_TEXT},'%')
+  		</if>
+  		</where>
+		<![CDATA[
+		 ORDER BY LANG_DIV_RCD, MSG_CD
+		]]>
+    </select>
+    
+    <!--
+		설명		: 클라이언트 메시지코드 신규채번
+		파라미터	: 
+		주사용처	: 클라이언트메시지
+		변경이력	: 2020. 3. 23. 김성혁 수정
+	-->	
+	<insert id="insertClientMessage" parameterType="HashMap">
+	/* QueryId : insertClientMessage */
+	INSERT INTO CMN_MLANGUAGE(
+		MSG_CD
+		, LANG_DIV_RCD
+		, MSG_DIV_RCD
+		, MSG_TEXT
+		, CRT_DTHR 
+		, CRT_USER_ID 
+		, CRT_PGM_ID 
+		, CRT_IP_MAC 
+		, UPD_DTHR 
+		, UPD_USER_ID 
+		, UPD_PGM_ID 
+		, UPD_IP_MAC 
+	)VALUES(
+		#{MSG_CD}
+		, #{LANG_DIV_RCD}
+		, #{MSG_DIV_RCD}
+		, #{MSG_TEXT}
+		, NOW() 
+		, #{CRT_USER_ID} 
+		, #{CRT_PGM_ID} 
+		, #{CRT_IP_MAC} 
+		, NOW() 
+		, #{UPD_USER_ID} 
+		, #{UPD_PGM_ID} 
+		, #{UPD_IP_MAC} 
+	)
+	</insert>
+	
+	<!--
+		설명		: 클라이언트 메시지코드 수정
+		파라미터	: 
+		주사용처	: 클라이언트메시지
+		변경이력	: 2020. 3. 23. 김성혁 수정
+	-->		
+	<update id="updateClientMessage" parameterType="HashMap">
+	/* QueryId : updateClimentMessage */
+		UPDATE CMN_MLANGUAGE SET
+		 	   UPD_DTHR = NOW()
+		 	 , UPD_USER_ID = #{UPD_USER_ID}
+			 , UPD_PGM_ID = #{UPD_PGM_ID}
+			 , UPD_IP_MAC = #{UPD_IP_MAC}
+		<if test="MSG_DIV_RCD != null" >
+			 , MSG_DIV_RCD = #{MSG_DIV_RCD}
+		</if>
+		<if test="MSG_TEXT != null" >
+			 , MSG_TEXT = #{MSG_TEXT}
+		</if>
+		WHERE MSG_CD = #{MSG_CD}
+		  AND LANG_DIV_RCD = #{LANG_DIV_RCD}
+	</update>
+	
+	<!--
+		설명		: 클라이언트 메시지코드 삭제
+		파라미터	: 
+		주사용처	: 클라이언트메시지
+		변경이력	: 2020. 3. 23. 김성혁 수정
+	-->		
+	<delete id="deleteClientMessage" parameterType="HashMap">
+	/* QueryId : deleteClimentMessage */
+		DELETE
+		  FROM CMN_MLANGUAGE
+		 WHERE MSG_CD = #{MSG_CD}
+		   AND LANG_DIV_RCD = #{LANG_DIV_RCD}
+	</delete>
+	
+    <!--
+		설명       : 서버 메시지관리 추가
+		파라미터 : 단위시스템코드, 언어구분코드, 메세지구분코드, 메세지텍스트, 메세지코드
+		주사용처 : 서버 메시지관리
+		변경이력 : 2020.03.23. 김수현 최초작성
+	-->	
+	<insert id="insertCmnMessage" parameterType="HashMap">
+	/* QueryId : cmn-base01.insertCmnMessage */
+	INSERT INTO CMN_MESSAGE(
+		UNIT_SYS_RCD
+		, MSG_CD
+		, LANG_DIV_RCD
+		, MSG_DIV_RCD
+		, MSG_TEXT
+		, CRT_DTHR 
+		, CRT_USER_ID 
+		, CRT_PGM_ID 
+		, CRT_IP_MAC 
+		, UPD_DTHR 
+		, UPD_USER_ID 
+		, UPD_PGM_ID 
+		, UPD_IP_MAC 
+	)VALUES(
+		#{UNIT_SYS_RCD}
+		, #{MSG_CD}
+		, #{LANG_DIV_RCD}
+		, #{MSG_DIV_RCD}
+		, #{MSG_TEXT}
+		, NOW() 
+		, #{CRT_USER_ID} 
+		, #{CRT_PGM_ID} 
+		, #{CRT_IP_MAC} 
+		, NOW() 
+		, #{UPD_USER_ID} 
+		, #{UPD_PGM_ID} 
+		, #{UPD_IP_MAC} 
+	)
+	</insert>
+	
+	<!--
+		설명       : 서버 메시지관리 수정
+		파라미터 : 단위시스템코드, 언어구분코드, 메세지구분코드, 메세지텍스트, 메세지코드
+		주사용처 : 서버 메시지관리
+		변경이력 : 2020.03.23. 김수현 최초작성
+	-->	
+	<update id="updateCmnMessage" parameterType="HashMap">
+	/* QueryId : cmn-base01.updateCmnMessage */
+		UPDATE CMN_MESSAGE SET
+		 	   UPD_DTHR = NOW()
+		 	 , UPD_USER_ID = #{UPD_USER_ID}
+			 , UPD_PGM_ID = #{UPD_PGM_ID}
+			 , UPD_IP_MAC = #{UPD_IP_MAC}
+		<if test="MSG_DIV_RCD != null" >
+			 , MSG_DIV_RCD = #{MSG_DIV_RCD}
+		</if>
+		<if test="MSG_TEXT != null" >
+			 , MSG_TEXT = #{MSG_TEXT}
+		</if>
+		WHERE UNIT_SYS_RCD = #{UNIT_SYS_RCD}
+		  AND MSG_CD = #{MSG_CD}
+		  AND LANG_DIV_RCD = #{LANG_DIV_RCD}
+	</update>
+	
+	<!--
+		설명       : 서버 메시지관리 삭제
+		파라미터 : 단위시스템코드, 언어구분코드, 메세지코드
+		주사용처 : 서버 메시지관리
+		변경이력 : 2020.03.23. 김수현 최초작성
+	-->	
+	<delete id="deleteCmnMessage" parameterType="HashMap">
+	/* QueryId : cmn-base01.deleteCmnMessage */
+		DELETE
+		  FROM CMN_MESSAGE
+		 WHERE UNIT_SYS_RCD = #{UNIT_SYS_RCD}
+		   AND MSG_CD = #{MSG_CD}
+		   AND LANG_DIV_RCD = #{LANG_DIV_RCD}
+	</delete>
+	
+	<!--
+		설명       : 서버 메시지관리 조회
+		파라미터 : 단위시스템코드, 언어구분코드, 메세지구분코드, 메세지텍스트
+		주사용처 : 서버 메시지관리
+		변경이력 : 2020.03.23. 김수현 최초작성
+	-->
+	<select id="selectMessageList" parameterType="HashMap" resultType="HashMap">
+    /* QueryId : cmn-base01.selectMessageList */
+        <![CDATA[
+        SELECT 
+             UNIT_SYS_RCD     		/*단위시스템코드*/ 
+             , MSG_CD               /*메세지코드*/ 
+             , LANG_DIV_RCD         /*언어구분코드*/ 
+             , MSG_DIV_RCD          /*메세지구분코드*/ 
+             , MSG_TEXT             /*메세지텍스트*/ 
+         FROM CMN_MESSAGE 
+         WHERE 1 = 1
+        ]]>
+        <if test="UNIT_SYS_RCD != null and UNIT_SYS_RCD != ''" >
+           AND UNIT_SYS_RCD = #{UNIT_SYS_RCD} 
+        </if>
+        <if test="MSG_DIV_RCD != null and MSG_DIV_RCD != ''" >
+           AND MSG_DIV_RCD = #{MSG_DIV_RCD} 
+        </if>  
+        <if test="LANG_DIV_RCD != null and LANG_DIV_RCD != ''" >
+           AND LANG_DIV_RCD = #{LANG_DIV_RCD} 
+        </if> 
+        <if test="MSG_TEXT != null and MSG_TEXT != ''" >
+           AND MSG_TEXT LIKE CONCAT('%',#{MSG_TEXT},'%')
+        </if>
+        <![CDATA[
+         ORDER BY LANG_DIV_RCD, UNIT_SYS_RCD, MSG_CD
+        ]]>
+    </select>
+    
+    <!--
+		설명		: 서버메시지 메시지코드 신규채번
+		파라미터	: 단위시스템코드
+		주사용처    : 서버 메시지관리
+		변경이력    : 2020.03.23. 김수현 최초작성
+	-->			
+	<select id="selectCmnNewSvrMsgCd" parameterType="HashMap" resultType="String">
+	/* QueryId : cmn-base01.selectCmnNewSvrMsgCd 서버메시지 메시지코드 신규채번 */
+	<![CDATA[
+		SELECT CONCAT(SUBSTR(#{UNIT_SYS_RCD},- 3) 
+		    	,LPAD(cast(ifnull(MAX(SUBSTR(MSG_CD,-3)),'0')+1 as unsigned),3,'0')) AS CD
+		 FROM 
+		 	CMN_MESSAGE
+		 WHERE 
+		 	UNIT_SYS_RCD = #{UNIT_SYS_RCD}
+		   	AND MSG_CD REGEXP CONCAT(SUBSTR(#{UNIT_SYS_RCD},- 3),'[0-9]') 
+	]]>
+	</select>
+	
+	<!--
+		설명		: 클라이언트 메시지코드 신규채번
+		파라미터	: 
+		주사용처	: 클라이언트메시지
+		변경이력	: 2020. 03. 23. 김성혁 수정
+	-->		
+	<select id="selectCmnNewClientMsgCd" parameterType="HashMap" resultType="String">
+	/* QueryId : cmn-base01.selectCmnNewClientMsgCd 클라이언트 메시지코드 신규채번 */
+	<![CDATA[
+		SELECT CONCAT(SUBSTR(#{MSG_DIV_RCD},- 3) , '-M' 
+		    , LPAD(CAST(IFNULL(MAX(SUBSTR(MSG_CD,-3)),'0') AS UNSIGNED) +1 ,3,'0')) AS CD
+		  FROM CMN_MLANGUAGE
+		 WHERE MSG_DIV_RCD = #{MSG_DIV_RCD}
+	       AND MSG_CD REGEXP CONCAT(SUBSTR(#{MSG_DIV_RCD},- 3),'(-|_)M[0-9]')   
+	]]> 
+	</select>
+
+	<!--
+	설명       : 사용자구분 코드 목록을 조회한다.
+	파라미터   : 사용자구분 코드/코드명
+	주사용처	: 사용자구분 코드조회
+	변경이력   : 2020. 3. 23. 강석민 최초작성
+	-->
+	<select id="selectUserDivList" parameterType="HashMap" resultType="HashMap">
+    /* QueryId : cmn-base01.selectUserDivList */
+    <![CDATA[
+		SELECT USER_DIV_CD
+		     , USER_DIV_NM
+		     , STTS_LCLS_RCD
+		     , STTS_MCLS_RCD
+		     , STTS_SCLS_RCD
+		     , EXPL
+		     , PRT_ORD
+		  FROM CMN_USER_DIV
+		]]>
+		<where>
+  		<if test="USER_DIV_CD_NM != null and USER_DIV_CD_NM!= ''" >
+		   AND UPPER(USER_DIV_CD) LIKE CONCAT('%',UPPER(#{USER_DIV_CD_NM}),'%') OR UPPER(USER_DIV_NM) LIKE CONCAT('%',UPPER(#{USER_DIV_CD_NM}),'%') 
+  		</if>  
+  		</where>
+		ORDER BY PRT_ORD
+    </select>
+    
+	<!--
+	설명       : 사용자구분 코드 상세 목록을 조회한다.
+	파라미터   : 사용자구분 코드/코드명
+	주사용처	: 사용자구분 코드 상세조회
+	변경이력   : 2020. 3. 23. 강석민 최초작성
+	-->
+	<select id="selectUserDivDtlList" parameterType="HashMap" resultType="HashMap">
+    /* QueryId : cmn-base01.selectUserDivDtlList */
+    <![CDATA[
+		SELECT _DIV.USER_DIV_CD
+		     , _DIV.CONN_RCD
+		     , CD.CD_NM AS CONN_NM
+		  FROM CMN_USER_DIV_DTL _DIV
+		     LEFT OUTER JOIN TST_COM_CD CD
+		     ON _DIV.CONN_RCD = CD.CD
+		     , CMN_USER_DIV MST
+		WHERE 1=1 ]]>
+		  AND MST.USER_DIV_CD = _DIV.USER_DIV_CD
+  		 <if test="USER_DIV_CD != null and USER_DIV_CD != ''" >
+		  AND _DIV.USER_DIV_CD = #{USER_DIV_CD}
+  		 </if>
+  		 <if test="USER_DIV_CD_NM != null and USER_DIV_CD_NM != ''" >
+		  AND (UPPER(MST.USER_DIV_CD) LIKE CONCAT('%',UPPER(#{USER_DIV_CD_NM}),'%') 
+		      OR UPPER(MST.USER_DIV_NM) LIKE CONCAT('%',UPPER(#{USER_DIV_CD_NM}),'%')
+		      )
+  		 </if>
+		ORDER BY _DIV.CONN_RCD
+    </select>
+    
+       <!--
+		설명           :  업로드된 파일의 상태를 커밋상태로 변경한다.
+		파라미터     : 
+		주사용처	:
+		변경이력    : 2019. 2. 20. SUL 최초작성
+	-->
+    <update id="commitCmnFile" parameterType="HashMap">
+    /* QueryId : cmn-base01.commitCmnFile */
+    <![CDATA[
+    UPDATE CMN_ATTC_FILE
+       SET FILE_STAT_RCD = 'CMN101.SAVE'
+    WHERE ATTC_FILE_NO = #{ATTC_FILE_NO}
+   ]]>
+   </update> 
+   
+   <insert id="insertCmnFile" parameterType="HashMap">
+	/* QueryId : cmn-base01.insertCmnFile */
+	<![CDATA[
+	INSERT INTO CMN_ATTC_FILE(
+			]]>
+	      ATTC_FILE_NO
+	     , SEQ
+	     , PGM_ID
+	     , USER_ID
+	     , FILE_NM
+	     , SAVE_FILE_NM
+	     , FILE_PATH
+	     , FILE_EXT
+	     , FILE_SIZE
+	     , FILE_STAT_RCD
+	     , CRT_DTHR 
+	     , CRT_USER_ID 
+	     , CRT_PGM_ID 
+	     , CRT_IP_MAC 
+	     , UPD_DTHR 
+	     , UPD_USER_ID 
+	     , UPD_PGM_ID 
+	     , UPD_IP_MAC 
+		<![CDATA[
+		)
+	VALUES(
+		]]>
+	      #{ATTC_FILE_NO}
+	     , (SELECT IFNULL(MAX(SEQ),0)+1 FROM CMN_ATTC_FILE T WHERE ATTC_FILE_NO = #{ATTC_FILE_NO})
+	     , #{PGM_ID}
+	     , #{USER_ID}
+	     , #{FILE_NM}
+	     , #{SAVE_FILE_NM}
+	     , #{FILE_PATH}
+	     , #{FILE_EXT}
+	     , #{FILE_SIZE}
+	     , (SELECT CASE WHEN EXISTS (SELECT 1 FROM CMN_ATTC_FILE T WHERE ATTC_FILE_NO = #{ATTC_FILE_NO} AND FILE_STAT_RCD = 'CMN101.SAVE') 
+	     			THEN 'CMN101.SAVE'
+	     		ELSE #{FILE_STAT_RCD}
+	     	END FROM DUAL)
+	     , NOW() 
+	     , #{CRT_USER_ID} 
+	     , #{CRT_PGM_ID} 
+	     , #{CRT_IP_MAC} 
+	     , NOW() 
+	     , #{UPD_USER_ID} 
+	     , #{UPD_PGM_ID} 
+	     , #{UPD_IP_MAC} 
+	<![CDATA[)]]>
+	</insert>
+	 <!--
+		설명           :  첨부파일 목록 조회
+		파라미터     : 
+		주사용처	: 파일 업로드 팝업/파일 목록UDC
+		변경이력    : 2019. 1. 10. SUL 최초작성
+	-->
+	<select id="selectCmnFileList" parameterType="HashMap" resultType="HashMap">
+    /* QueryId : cmn-base01.selectCmnFileList */
+    <![CDATA[
+		SELECT ATTC_FILE_NO
+			 , SEQ
+		     , PGM_ID
+		     , USER_ID
+		     , FILE_NM
+		     , SAVE_FILE_NM
+		     , FILE_PATH
+		     , FILE_EXT
+		     , FILE_SIZE
+		     , F_CMN_CODE_NM(FILE_STAT_RCD) AS FILE_STAT_NM
+		     , CRT_DTHR
+		     , CASE WHEN LOWER(FILE_EXT) IN ('doc', 'docx') THEN 'theme/images/icon/file_icon_DOC.png'
+	     			WHEN LOWER(FILE_EXT) IN ('xls', 'xlsx') THEN 'theme/images/icon/file_icon_XLS.png'
+		            WHEN LOWER(FILE_EXT) IN ('ppt', 'pptx') THEN 'theme/images/icon/file_icon_PPT.png'
+		            WHEN LOWER(FILE_EXT) IN ('pdf') THEN 'theme/images/icon/file_icon_PDF.png'
+		            WHEN LOWER(FILE_EXT) IN ('txt') THEN 'theme/images/icon/file_icon_TXT.png'
+		            WHEN LOWER(FILE_EXT) IN ('zip', 'egg') THEN 'theme/images/icon/file_icon_ZIP.png'
+		            WHEN LOWER(FILE_EXT) IN ('png', 'gif', 'jpg', 'jpeg', 'bmp', 'tif', 'tiff') THEN 'theme/images/icon/file_icon_IMG.png'
+		            ELSE 'theme/images/icon/file_icon_ETC.png'
+		     	END AS FILE_ICON_IMG
+		  FROM CMN_ATTC_FILE
+		WHERE ATTC_FILE_NO = #{ATTC_FILE_NO}
+	]]>
+	<if test="SEQ != null and SEQ!= ''" >
+		  AND SEQ = #{SEQ}
+	</if>
+	<if test="FILE_STAT_RCD != null and FILE_STAT_RCD!= ''" >
+		  AND FILE_STAT_RCD = #{FILE_STAT_RCD}
+	</if>
+		ORDER BY SEQ
+    </select>
+    
+    <!--
+		설명           : 양식파일관리 목록  조회
+		파라미터     : 
+		주사용처	: 양식파일관리
+		변경이력    : 
+	-->
+	<select id="selectCmnTemplateFileMngList" parameterType="HashMap" resultType="HashMap">
+    /* QueryId : cmn-base01.selectCmnTemplateFileMngList */
+	<![CDATA[]]>
+	</select>
+	
+	<!--
+		설명		: 테스트팀 사용자 조회
+		파라미터	: 
+		주사용처	: 사용자 조회
+		변경이력	: 2020. 4. 20. 김성혁 최초작성
+	-->		
+	<select id="selectTstUseUserList" parameterType="HashMap" resultType="HashMap">
+	/* QueryId : tst-base01.selectTstUseUserList */
+	<![CDATA[
+		SELECT U.USER_ID			/*사용자ID*/ 
+		     , P.NM_KOR 			/*사용자명*/ 
+		     , U.PARTY_ID 			/*구성원ID*/ 
+		     , U.LOGIN_ID 			/*로그인ID*/
+		     , U.USER_DIV_CD 		/*사용자구분코드[CMN_USER_DIV테이블]*/ 
+		     , U.STAT_RCD 			/*상태*/
+		     , U.USE_YN 			/*사용여부*/ 
+		     , U.DUP_PERMIT_YN 		/*중복허용여부*/ 
+		     , U.EFFT_ST_DT 		/*유효시작일자*/ 
+		     , U.EFFT_ED_DT 		/*유효종료일자*/ 
+		     , U.RMK 				/*비고*/ 
+		     , (CONCAT(U.USER_ID)) AS KEY_VALUE 	/* 고유번호*/ 
+		  FROM CMN_USE_USER U
+		  	 , CMN_PARTY P
+		 WHERE U.PARTY_ID = P.PARTY_ID 
+		 ]]>
+		<if test="userDivCd != null and userDivCd != ''" >
+		   	AND U.USER_DIV_CD = #{userDivCd}
+		</if>
+		<if test="useYn != null and useYn != ''" >
+			 AND U.USE_YN = #{useYn}
+		</if>
+		<if test="STAT_RCD != null and STAT_RCD != ''" >
+		   AND U.STAT_RCD = #{STAT_RCD}
+		</if>
+	</select>
+	
+	<select id="selectSysDate" resultType="String">
+	/* QueryId : tst-base01.selectSysDate */
+		<choose>
+			<when test="STR_FORMAT != null and STR_FORMAT != ''">
+				SELECT DATE_FORMAT(SYSDATE(), #{STR_FORMAT}) AS CURR_DT
+			</when>
+			<otherwise>
+				SELECT DATE_FORMAT(SYSDATE(), '%Y%m%d') AS CURR_DT
+			</otherwise>
+		</choose>
+		<![CDATA[
+			  FROM DUAL
+	 	]]>
+   </select>
+   
+     <select id="selectTimeStamp" resultType="String">
+	/* QueryId : tst-base01.selectTimeStamp */
+		<choose>
+			<when test="STR_FORMAT != null and STR_FORMAT != ''">
+				SELECT DATE_FORMAT(CURRENT_TIMESTAMP(6), #{STR_FORMAT}) AS CURR_DT
+			</when>
+			<otherwise>
+				SELECT DATE_FORMAT(CURRENT_TIMESTAMP(6) , '%Y%m%d%H%i%s%f') AS CURR_DT 
+			</otherwise>
+		</choose>
+		<![CDATA[
+			  FROM DUAL
+	 	]]>
+   </select>
+   
+   <select id="selectDaysBefore" resultType="String">
+	/* QueryId : tst-base01.selectDaysBefore */
+	<choose>
+		<when test="strDay != null and strDay != ''">
+			SELECT DATE_ADD(SYSDATE(), INTERVAL -#{strDay} DAY) AS MON_BEF
+		</when>
+		<otherwise>
+			SELECT DATE_ADD(SYSDATE(), INTERVAL -30 DAY) AS MON_BEF 
+		</otherwise>
+	</choose>
+			  FROM DUAL
+   </select>
+</mapper>

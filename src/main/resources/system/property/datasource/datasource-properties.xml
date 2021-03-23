@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd" >
+<properties>
+	<entry key="local.jdbc.driverClassName">org.postgresql.Driver</entry>
+	<entry key="local.jdbc.url">jdbc:postgresql://211.109.22.29:5432/postgresqldb</entry>
+	<entry key="local.jdbc.username">admin</entry>
+	<entry key="local.jdbc.password">1234</entry>
+	<entry key="dev.jdbc.jndiName">java:comp/env/hira.postgres</entry>
+	<entry key="prd.jdbc.jndiName">hira.postgres</entry>
+</properties>
+

@@ -1,0 +1,107 @@
+@import "../custom-settings.part.less";
+
+/************************************************
+ * 컨테이너 (그룹)
+ ************************************************/
+ 
+ /* 버튼 애니메이션을 위한 스타일 클래스 */
+.cl-container.btn-wrapper {
+	z-index: 0;
+	
+	&:before {
+		position: absolute;
+	    z-index: -1;
+	    height: 20px;
+	    width: 20px;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    transform-origin: 50% 50%;
+	    content: '';
+	    background-color: @gray-200;
+	    border-radius: 50%;
+	    opacity: 0;
+	    transition: all .3s;
+	}
+	
+	&:hover, &.cl-hover {
+		&:before {
+			content: "";
+		    transform: translate(-50%, -50%);
+		    transform-origin: 50% 50%;
+			background-color: @gray-200;
+			width: 99%;
+			height: 99%;
+			opacity: 1;
+		}
+	}
+	
+	&.cl-selected,
+	&.cl-focus {
+		&:before {
+			content: "";
+		    transform: translate(-50%, -50%);
+		    transform-origin: 50% 50%;
+			background-color: @gray-300;
+			width: 99%;
+			height: 99%;
+			opacity: 1;
+		}
+	}
+}
+
+/************************************************
+ * 서치 인풋
+ ************************************************/
+ 
+ .cl-searchinput.unified-search {
+ 	.cl-searchinput-search {
+ 		background-image: url(images/com/main/icon-search.svg);
+ 		background-size: 20px;
+		width: calc(@input-padding-x + 15px);
+ 	}
+ 	
+ 	&:not(.cl-disabled):hover {
+	 	.cl-searchinput-search {
+	 		background-image: url(images/com/main/icon-search.svg);
+	 	}
+ 	}
+ 	
+ 	&.cl-focus {
+ 		border-color: @input-border-color;
+ 		
+ 		.cl-searchinput-search {
+	 		background-image: url(images/com/main/icon-search.svg);
+ 		}
+ 	}
+ }
+ 
+ /************************************************
+ * 폼 레이아웃
+ ************************************************/
+ 
+ .cl-container.cl-form-group {
+ 	.cl-output.label {
+ 		text-align: left;
+ 		// font-weight: @font-weight-medium;
+ 		
+ 		&.required {
+			background-image: url(images/controls/output/required.png);
+			background-position: left center;
+			padding-left: 8px;
+		}
+ 	}
+ }
+ 
+  /* 그룹 타이틀 */
+.data-title {
+	color: #263238;
+//	border-left: solid 4px #e52222;
+	background-image: url(images/controls/output/icon-reserved-line.svg);
+	background-position: left center;
+	background-size: 16px;
+	background-repeat: no-repeat;
+    padding-left: 18px;
+    font-weight: bold;
+    font-size: 13px;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-fe955147" version="1.0.0.0">
+  <head std:sid="head-700a17ef">
+    <title>Progress</title>
+    <screen std:sid="screen-ac4bb3fe" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-bd8ec6e7" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-b1c5de2e" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-76c3ae29"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-06476eeb" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-608e5080" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Progress">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,PROGRESS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Basic Examples">
+      <cl:verticaldata std:sid="v-data-8eafbeee" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-d6ae1dc2" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-df42f757" autosize="height" height="113px" width="984px"/>
+      <cl:progress std:sid="progress-5d935013" id="pgr1" value="10">
+        <cl:verticaldata std:sid="v-data-d83e6b3c" height="10px" width="100%"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-dd4847c7" id="pgr7" value="30">
+        <cl:verticaldata std:sid="v-data-bfa595b8" height="10px" width="100%"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-93871f6c" id="pgr2" value="50">
+        <cl:verticaldata std:sid="v-data-02caa975" height="10px" width="100%"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-cf5b83ef" id="pgr8" value="70">
+        <cl:verticaldata std:sid="v-data-604ee2bd" height="10px" width="100%"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-a6363ace" id="pgr3" value="100">
+        <cl:verticaldata std:sid="v-data-649358c9" height="10px" width="100%"/>
+      </cl:progress>
+      <cl:verticallayout std:sid="v-layout-e574fe77" bottommargin="20" distribution="leading" leftmargin="20" rightmargin="20" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-c777deda" class="h6" value="Set Background">
+      <cl:verticaldata std:sid="v-data-b2b94595" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-51ca1126" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-9d3cfe36" autosize="height" height="94px" width="984px"/>
+      <cl:progress std:sid="progress-97067cfd" id="pgr4" value="10">
+        <cl:verticaldata std:sid="v-data-265546fe" height="10px" width="100%"/>
+        <cl:barstyle class="bg-success"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-9a8c26e6" id="pgr5" value="30">
+        <cl:verticaldata std:sid="v-data-7197fe84" height="10px" width="100%"/>
+        <cl:barstyle class="bg-info"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-bb98e918" id="pgr9" value="50">
+        <cl:verticaldata std:sid="v-data-78a2a81e" autosize="none" height="10px" width="942px"/>
+        <cl:barstyle class="bg-warning"/>
+      </cl:progress>
+      <cl:progress std:sid="progress-424e6a29" id="pgr10" value="70">
+        <cl:verticaldata std:sid="v-data-e3fad372" autosize="none" height="10px" width="942px"/>
+        <cl:barstyle class="bg-danger"/>
+      </cl:progress>
+      <cl:verticallayout std:sid="v-layout-3d709c2e" bottommargin="20" distribution="leading" leftmargin="20" rightmargin="20" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

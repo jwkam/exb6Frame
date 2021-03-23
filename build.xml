@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="exb6Frame" default="deploy" basedir="./">
+	<property name="build-lib.dir" location="clx-lib"></property>
+	<property name="workspace.dir" location="."></property>
+
+	<taskdef name="clxcompile"
+      classname="kr.co.tomatosystem.exbuilder.cikit.build.ant.Compile"
+      classpath="${build-lib.dir}/e6-compiler.jar"
+	/>
+
+	<target name="deploy">
+		<clxcompile
+			src="${workspace.dir}"
+			out="${workspace.dir}/target/exb6Frame/ui"
+			minify="true"
+			single="false"
+			language="true"
+			main=""
+		>
+		<exclude pattern="**/.svn/**" />
+		</clxcompile>
+	</target>
+
+</project>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-55323813" version="1.0.0.0">
+  <head std:sid="head-d7c81b75">
+    <title>Title2</title>
+    <screen std:sid="screen-2598d0c6" id="smuis" name="smuis" minwidth="1320px" width="1320px" height="780px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-89d2218e" id="default" name="default" minwidth="1024px" maxwidth="1319px" width="1024px" height="768px"/>
+    <screen std:sid="screen-b63331c0" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-49d8797d" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-6d7cc3ff"/>
+    <cl:appspec dev-description="그리드 타이틀(Title)">
+      <cl:property name="ctrl" type="control" bindable="false" std:desc="그리드 컨트롤 객체"/>
+      <cl:property name="rowCount" type="string" default="0" bindable="true" std:desc=""/>
+      <cl:property name="title" type="string" default="제목없음" bindable="true"/>
+      <cl:property name="showExportExcel" type="boolean" default="true" bindable="true" std:desc="엑셀 파일 Export 버튼을 보여줄지 여부"/>
+      <cl:property name="exportExcelTitle" type="string" bindable="true" std:desc="출력 엑셀파일명(디폴트는 그리드 명칭임)"/>
+      <cl:property name="exportHiddenColumns" type="boolean" default="false" bindable="true" std:desc="숨긴 컬럼도 엑셀 출력에 포함할 경우에 true로 지정(디폴트: false임)"/>
+      <cl:property name="exportExcludePart" type="string" bindable="true" std:desc="엑셀 파일 Export시 출력제외 영역(footer, gfooter 등)"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-87eeef7c" style="top:0px; left:0px; width:300px; height:20px;" class="grp-title">
+    <cl:listener std:sid="listener-7c142040" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-a24244a9" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:group std:sid="group-5e08498b" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-a0575197" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-4407a070" id="optCountText2" style="color:#37474f;" value="]">
+        <cl:formdata std:sid="f-data-3d8495f1" row="0" col="3"/>
+      </cl:output>
+      <cl:output std:sid="output-582fb466" id="optTilte" class="data-title">
+        <cl:apppropbind property="value" category="PROPERTY" app-property="title"/>
+        <cl:formdata std:sid="f-data-87084103" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-7be46a5b" id="optCountText" style="color:#37474f;" value="[">
+        <cl:formdata std:sid="f-data-faa4121a" row="0" col="1"/>
+      </cl:output>
+      <cl:output std:sid="output-ace14b8a" id="optRowCount" style="color:#37474f; font-size:9pt; text-align:center;" datatype="number" format="s#,##0">
+        <cl:apppropbind property="value" category="PROPERTY" app-property="rowCount"/>
+        <cl:formdata std:sid="f-data-4801d473" row="0" col="2"/>
+      </cl:output>
+      <cl:button std:sid="button-923e8267" id="btnExcelExport" style="background-color:transparent; border-right-style:none; background-repeat:no-repeat; background-size:auto; border-left-style:none; border-bottom-style:none; background-position:center center; background-image:url('../../theme/common/images/icon/icon_file_xls.gif'); border-top-style:none;" tooltip="엑셀 내려받기" value="">
+        <cl:listener std:sid="listener-5166e6be" name="click" handler="onBtnExcelExportClick"/>
+        <cl:apppropbind property="visible" category="PROPERTY" app-property="showExportExcel"/>
+        <cl:formdata std:sid="f-data-e930437e" row="0" col="5"/>
+      </cl:button>
+      <cl:button std:sid="button-e6ea7d4c" id="btnTools" style="background-color:transparent; border-right-style:none; background-repeat:no-repeat; border-left-style:none; border-bottom-style:none; background-position:center center; background-image:url('../../theme/common/images/icon/ico-grid-action.png'); border-top-style:none;" tooltip="필터/찾기 등">
+        <cl:listener std:sid="listener-f6d6ee43" name="click" handler="onBtnToolsClick"/>
+        <cl:formdata std:sid="f-data-e7fa96f4" row="0" col="4"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-00d1bde8">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="5" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="5" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+        <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-0b48a846"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler>
+      <std:guide position="266"/>
+    </std:hruler>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

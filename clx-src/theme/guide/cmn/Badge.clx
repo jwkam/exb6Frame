@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-50c10cd7" version="1.0.0.0">
+  <head std:sid="head-06ff1ef0">
+    <title>Badge</title>
+    <screen std:sid="screen-dd1ea3a3" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-b81d5a08" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-7d294977" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-bebee834"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-3779b376" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-54113b29" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Badges">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,BADGES"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Example with variations">
+      <cl:verticaldata std:sid="v-data-bcd90f00" height="25px" width="100px"/>
+    </cl:output>
+    <cl:group std:sid="group-5238bfd7" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-cf2364ba" autosize="height" height="279px" width="400px"/>
+      <cl:output std:sid="output-23245727" class="card-subtitle fw-bold" value="DEFAULT STYLE">
+        <cl:verticaldata std:sid="v-data-451b0a18" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-ab0ea089">
+        <cl:verticaldata std:sid="v-data-f5313d5e" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-a5a46bbc" class="badge badge-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-20412e84" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-56579aff" class="badge badge-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-4bef5dab" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-a6848189" class="badge badge-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-838b38fc" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-a1524b7e" class="badge badge-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-0203be20" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-526d1660" class="badge badge-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-0bf26396" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-b5f56a9b" class="badge badge-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-8f64b6da" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-1a12b20d" class="badge badge-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-9fc8cb17" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-6c2455d3" class="badge badge-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-8ab0f545" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-d46b11ee" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:output std:sid="output-b6d0fac1" class="card-subtitle fw-bold" value="PILL STYLE">
+        <cl:verticaldata std:sid="v-data-b4ffed4f" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-bc50dc9c">
+        <cl:verticaldata std:sid="v-data-e88d0cb7" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-98c298a9" class="badge badge-pill badge-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-a75cc6e4" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-c325752f" class="badge badge-pill badge-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-a3fe72c6" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-7b6ddb73" class="badge badge-pill badge-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-7cfc5fd1" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-6dfa237b" class="badge badge-pill badge-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-92d5559e" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-034c9383" class="badge badge-pill badge-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-95ce6d32" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-8c4bc9e8" class="badge badge-pill badge-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-dacdc25a" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-802d3963" class="badge badge-pill badge-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-1a26eaee" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-1338a5ce" class="badge badge-pill badge-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-4e2c8b07" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-9cf1dfd1" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:output std:sid="output-b3981c79" class="card-subtitle fw-bold" value="OUTLINE STYLE">
+        <cl:verticaldata std:sid="v-data-be6fb70a" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-4f485d5c">
+        <cl:verticaldata std:sid="v-data-6dad004b" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-664b13ff" class="badge badge-outline-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-c81f28eb" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-666cea89" class="badge badge-outline-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-9a0c3594" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-d94429f5" class="badge badge-outline-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-79485868" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-53ca449a" class="badge badge-outline-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-f39b69ae" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-d561af57" class="badge badge-outline-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-1ba35135" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-db83c2bf" class="badge badge-outline-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-bbab246f" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-0189c50b" class="badge badge-outline-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-024f9e73" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-f5115ed3" class="badge badge-outline-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-12403f3d" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-612bdfe2" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:output std:sid="output-c99c085f" class="card-subtitle fw-bold" value="OUTLINE PILL STYLE">
+        <cl:verticaldata std:sid="v-data-79076817" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-e6a9e1ec">
+        <cl:verticaldata std:sid="v-data-cabdaeaa" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-9e2885d0" class="badge badge-pill badge-outline-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-9a29540e" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-c0896c7a" class="badge badge-pill badge-outline-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-56f99eac" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-1bb21f3b" class="badge badge-pill badge-outline-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-c8f6a3d0" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-ab1478a9" class="badge badge-pill badge-outline-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-c698c1a6" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-cf82032c" class="badge badge-pill badge-outline-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-25f68575" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-28caeb9b" class="badge badge-pill badge-outline-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-a4e249df" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-8005ff72" class="badge badge-pill badge-outline-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-39aad482" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-c901c02c" class="badge badge-pill badge-outline-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-308fff6a" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-a4c311bf" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-e6511f99" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-1e66e22e" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-0095c7ba" height="162px" width="400px"/>
+      <cl:output std:sid="output-a5a6688b" class="overline-title" value="CLASS REFERENCE">
+        <cl:formdata std:sid="f-data-d7468782" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-32403284" class="overline-title" value="DETAILS">
+        <cl:formdata std:sid="f-data-68d19d9b" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-75ba2659" class="code" value=".badge-{state}">
+        <cl:formdata std:sid="f-data-39dd9bca" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-a4ac294a" value="Use {state} as primary, secodary, success, info, warning, dnager, gray, light.">
+        <cl:formdata std:sid="f-data-635b96ca" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-21a5e80e" class="code" value=".badge-outline-{state}">
+        <cl:formdata std:sid="f-data-53c63eca" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-d0dbc4ac" value="Same as above {state}.">
+        <cl:formdata std:sid="f-data-e3ac73bb" col="1" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-a1964a7a" class="code" value=".badge-pill">
+        <cl:formdata std:sid="f-data-b830e26e" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-de50389c" value="Use with .badge class rounded badge style.">
+        <cl:formdata std:sid="f-data-71ea2297" col="1" row="3"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-3ef5c986" bottom-margin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" left-margin="20px" right-margin="20px" top-margin="5px" vspace="10px">
+        <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:rows length="30"/>
+        <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-49749372" class="h6" value="Dot Style">
+      <cl:verticaldata std:sid="v-data-8c88eb36" height="25px" width="100px"/>
+    </cl:output>
+    <cl:group std:sid="group-2354f016" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-50170161" autosize="height" height="64px" width="984px"/>
+      <cl:group std:sid="group-881615d2">
+        <cl:verticaldata std:sid="v-data-b22025ea" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-85200a5e" class="badge badge-dot badge-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-debfabfb" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-b9445cae" class="badge badge-dot badge-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-522152e7" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-12f9101c" class="badge badge-dot badge-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-28cacb0b" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-c48f7788" class="badge badge-dot badge-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-b36cc872" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-64354673" class="badge badge-dot badge-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-0800b6e7" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-398b9f2e" class="badge badge-dot badge-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-c6cc744c" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-f40596f8" class="badge badge-dot badge-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-5fdcfbef" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-7711d747" class="badge badge-dot badge-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-94941ef0" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-a6167b9b" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-5c0a24c8" bottommargin="10" leftmargin="20" rightmargin="20" spacing="5" topmargin="10"/>
+    </cl:group>
+    <cl:output std:sid="output-5cbe59c6" class="h6" value="Dim/Pale Style">
+      <cl:verticaldata std:sid="v-data-b0501bfa" height="25px" width="100px"/>
+    </cl:output>
+    <cl:group std:sid="group-02f24162" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-9bd1f830" autosize="height" height="279px" width="984px"/>
+      <cl:output std:sid="output-94ad0f89" class="card-subtitle fw-bold" value="DEFAULT STYLE">
+        <cl:verticaldata std:sid="v-data-c0f51bf0" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-3e1ee2c2">
+        <cl:verticaldata std:sid="v-data-238a231f" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-f188a7cd" class="badge badge-dim badge-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-37c35ff4" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-cfc9af20" class="badge badge-dim badge-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-ce0b9f24" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-32f4cba9" class="badge badge-dim badge-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-23025c71" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-773970d8" class="badge badge-dim badge-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-9196d8ff" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-fd198943" class="badge badge-dim badge-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-f7ffa71d" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-a72cd462" class="badge badge-dim badge-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-9414cb64" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-9b17d13b" class="badge badge-dim badge-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-464e995a" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-700864e8" class="badge badge-dim badge-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-620881fe" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-9f43d767" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:output std:sid="output-a17534df" class="card-subtitle fw-bold" value="PILL STYLE">
+        <cl:verticaldata std:sid="v-data-530f3e18" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-94e748b6">
+        <cl:verticaldata std:sid="v-data-7bd84ac5" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-d6702e97" class="badge badge-pill badge-dim badge-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-6f94873a" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-542e0b34" class="badge badge-pill badge-dim badge-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-329098ad" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-54b243c8" class="badge badge-pill badge-dim badge-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-53610b84" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-9ceea8a5" class="badge badge-pill badge-dim badge-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-f5c7af46" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-45e13d78" class="badge badge-pill badge-dim badge-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-bf6983ad" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-f5f83fbe" class="badge badge-pill badge-dim badge-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-9d9bf33a" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-56d5460b" class="badge badge-pill badge-dim badge-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-cea764bf" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-4769b701" class="badge badge-pill badge-dim badge-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-ae705cad" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-c5857530" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:output std:sid="output-17af4831" class="card-subtitle fw-bold" value="OUTLINE STYLE">
+        <cl:verticaldata std:sid="v-data-93ae053f" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-172def6a">
+        <cl:verticaldata std:sid="v-data-1cd6b5fe" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-e7bd4134" class="badge badge-dim badge-outline-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-b1d5fe5d" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-f428025f" class="badge badge-dim badge-outline-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-bef06b59" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-78a0b34d" class="badge badge-dim badge-outline-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-4e3ba85a" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-6ab90a4b" class="badge badge-dim badge-outline-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-3b0c769a" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-b7767e23" class="badge badge-dim badge-outline-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-0a975c90" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-f0d4dbb5" class="badge badge-dim badge-outline-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-92ee846f" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-a1b9929a" class="badge badge-dim badge-outline-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-ca6f3939" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-1628981f" class="badge badge-dim badge-outline-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-5088c3fe" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-861f451f" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:output std:sid="output-004da734" class="card-subtitle fw-bold" value="OUTLINE PILL STYLE">
+        <cl:verticaldata std:sid="v-data-a92fba7b" height="25px" width="100px"/>
+      </cl:output>
+      <cl:group std:sid="group-4c126c50">
+        <cl:verticaldata std:sid="v-data-4835f145" autosize="height" height="25px" width="400px"/>
+        <cl:output std:sid="output-23b3f809" class="badge badge-pill badge-dim badge-outline-primary" value="Primary">
+          <cl:flowlayoutdata std:sid="f-data-0d28f6de" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-9836b3ed" class="badge badge-pill badge-dim badge-outline-secondary" value="Secondary">
+          <cl:flowlayoutdata std:sid="f-data-a611c291" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-938a602a" class="badge badge-pill badge-dim badge-outline-info" value="Info">
+          <cl:flowlayoutdata std:sid="f-data-ed4ce173" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-6b491ec2" class="badge badge-pill badge-dim badge-outline-success" value="Success">
+          <cl:flowlayoutdata std:sid="f-data-07bcb691" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-cd1ed17b" class="badge badge-pill badge-dim badge-outline-warning" value="Warning">
+          <cl:flowlayoutdata std:sid="f-data-895390b1" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-63d6464b" class="badge badge-pill badge-dim badge-outline-danger" value="Danger">
+          <cl:flowlayoutdata std:sid="f-data-7ddc2c33" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-90d87a14" class="badge badge-pill badge-dim badge-outline-gray" value="Gray">
+          <cl:flowlayoutdata std:sid="f-data-6e75aed0" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:output std:sid="output-f2b67fed" class="badge badge-pill badge-dim badge-outline-light" value="Light">
+          <cl:flowlayoutdata std:sid="f-data-c94f9453" autosize="width" height="25px" width="80px"/>
+        </cl:output>
+        <cl:flowlayout std:sid="f-layout-d3ddeb45" scrollable="false" spacing="20"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-11e8ae78" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-d662888c" bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

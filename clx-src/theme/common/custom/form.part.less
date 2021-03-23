@@ -1,0 +1,89 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+p.label {
+	display: inline-block;
+	margin: 5px 0 0 0;
+	font-size: @font-size-xs;
+}
+
+span.require {
+	display: inline;
+	color: @warning;
+	font-size: @h5-font-size;
+	vertical-align: middle;
+	padding-left: 5px;
+	line-height: .5;
+}
+
+.cl-output.label {
+	font-size: @font-size-xs;
+	
+	&.require {
+		
+		.cl-text {
+			&:after {
+				content: "*";
+				display: inline-block;
+				position: absolute;
+				
+				width: auto;
+
+				color: @warning;
+				float: left;
+				font-size: @h5-font-size;
+				padding-left: 5px;
+			}
+		}
+	}
+}
+
+.cl-container.search-box {
+	border : 1px solid @component-border-color;
+  	background-color: @lighter;
+	.cl-output {
+		font: @font-base;
+		text-align: right;
+		font-weight: bold; 
+		background-repeat: no-repeat;
+		background-position: left center;
+		
+		&.require {
+			background-image : url(images/search/output_required.png);
+			background-position: right center;
+			padding-right: 8px;
+		}
+	}
+}
+
+/* 프리폼 영역 스타일 */ 
+.cl-container.form-box {
+	background-color: @white;
+    border : 1px solid @component-border-color;
+    
+   .cl-output {
+		font: @font-base;
+		text-align: right;
+		font-weight: bold; 
+		background-repeat: no-repeat;
+		border: 1px solid @component-border-color;
+		
+		&:not(.cl-disabled){
+			background-color: #EDEFF6;				
+		} 
+		&.require {
+			background-image : url(images/search/output_required.png);
+			background-position: right center;
+			padding-right: 8px;
+		}
+		&.cl-disabled {
+			background-image: none;
+			background-color: none;
+		}
+	}
+	 /* disabled style */
+	&.cl-disabled {
+			background-image: none;
+			background-color: @component-disabled-background-color;
+	}
+}

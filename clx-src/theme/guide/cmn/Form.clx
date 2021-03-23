@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6bd7a980" version="1.0.0.0">
+  <head std:sid="head-2d5eb25b">
+    <title>Form</title>
+    <screen std:sid="screen-2d7917ee" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-5777dab1" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-2c6aec59" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-a01a3e6b"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-8176b37f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-cf987a9f" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Form Elements">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,FORM ELEMENTS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Form controls">
+      <cl:verticaldata std:sid="v-data-8ab863a2" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-7e422ca6" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-b2141289" height="714px" width="984px"/>
+      <cl:group std:sid="group-9fadfe05" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-592ee9cb" autosize="height" height="672px" width="400px"/>
+        <cl:output std:sid="output-7ad72499" class="label" value="Input text Default">
+          <cl:formdata std:sid="f-data-4938f1b0" col="0" row="1"/>
+        </cl:output>
+        <cl:output std:sid="output-16bc80d6" class="label" value="Input with Number">
+          <cl:formdata std:sid="f-data-8167046f" col="1" row="1"/>
+        </cl:output>
+        <cl:output std:sid="output-d1c99855" class="label" value="Input with Search Icon">
+          <cl:formdata std:sid="f-data-9ac760f6" col="0" row="3"/>
+        </cl:output>
+        <cl:output std:sid="output-2f2dde39" class="label" value="Textarea">
+          <cl:formdata std:sid="f-data-de477fa1" col="1" row="3"/>
+        </cl:output>
+        <cl:output std:sid="output-f7ce9df3" class="label" value="Input with Format">
+          <cl:formdata std:sid="f-data-ad2f4e68" col="0" row="5"/>
+        </cl:output>
+        <cl:output std:sid="output-fcd96529" class="label" value="Default File Upload">
+          <cl:formdata std:sid="f-data-b482889a" col="0" row="7"/>
+        </cl:output>
+        <cl:output std:sid="output-22c07057" class="label" value="Default Select">
+          <cl:formdata std:sid="f-data-a0370712" col="0" row="9"/>
+        </cl:output>
+        <cl:output std:sid="output-2ead98f9" class="label" value="Default Select Multiple">
+          <cl:formdata std:sid="f-data-cfd9b40b" col="1" row="7"/>
+        </cl:output>
+        <cl:output std:sid="output-0d7f953d" class="label required" value="Required State">
+          <cl:formdata std:sid="f-data-8458e600" col="0" row="13"/>
+        </cl:output>
+        <cl:output std:sid="output-14922c93" class="label" value="Filled State">
+          <cl:formdata std:sid="f-data-2b8c573d" col="1" row="13"/>
+        </cl:output>
+        <cl:output std:sid="output-3835298e" class="bg-gray-300" value="">
+          <cl:formdata std:sid="f-data-fc5c1651" height="1" valign="CENTER" col="0" colspan="2" row="11" rowspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-8489458c" class="card-subtitle fw-bold" value="DEFAULT PREVIEW">
+          <cl:formdata std:sid="f-data-17a3840a" col="0" colspan="2" row="0" rowspan="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-22efcf7a" id="ipb1" placeholder="input placeholder">
+          <cl:formdata std:sid="f-data-f17d1ef4" col="0" row="2"/>
+        </cl:inputbox>
+        <cl:textarea std:sid="t-area-dc40e9bc" id="txa1" value="Large text area content">
+          <cl:formdata std:sid="f-data-36dc28ce" col="1" colspan="1" row="4" rowspan="3"/>
+        </cl:textarea>
+        <cl:fileinput std:sid="f-input-0acda14b" id="fi1" placeholder="Choose file">
+          <cl:formdata std:sid="f-data-19f419f7" col="0" row="8"/>
+        </cl:fileinput>
+        <cl:listbox std:sid="l-box-20e68d59" id="lbx1" multiple="true">
+          <cl:formdata std:sid="f-data-b390ed21" col="1" colspan="1" row="8" rowspan="3"/>
+          <cl:item std:sid="item-1acf198e" label="Default Option" value=""/>
+          <cl:item std:sid="item-1e6cbdb0" label="Option select name" value="value1"/>
+          <cl:item std:sid="item-1abdcfa2" label="Option select name" value="value2"/>
+          <cl:item std:sid="item-fa9509bd" label="Option select name" value="value3"/>
+          <cl:item std:sid="item-e63da6aa" label="Option select name" value="value4"/>
+          <cl:item std:sid="item-659c90a7" label="Option select name" value="value5"/>
+        </cl:listbox>
+        <cl:numbereditor std:sid="n-editor-ca52fced" id="nbe1" placeholder="input placeholder">
+          <cl:formdata col="1" row="2"/>
+        </cl:numbereditor>
+        <cl:maskeditor std:sid="m-editor-71573b84" id="mse1" mask="000-0000-0000">
+          <cl:formdata col="0" row="6"/>
+        </cl:maskeditor>
+        <cl:combobox std:sid="c-box-0fced062" id="cmb1">
+          <cl:formdata std:sid="f-data-3a848eb9" col="0" row="10"/>
+          <cl:item std:sid="item-95406604" label="Default Option" value=""/>
+          <cl:item std:sid="item-27e8f9b4" label="Option select name" value="value1"/>
+          <cl:item std:sid="item-18bd6f5a" label="Option select name" value="value2"/>
+          <cl:item std:sid="item-f994cd45" label="Option select name" value="value3"/>
+          <cl:item std:sid="item-0390d0d5" label="Option select name" value="value4"/>
+          <cl:item std:sid="item-59a97d21" label="Option select name" value="value5"/>
+        </cl:combobox>
+        <cl:output std:sid="output-977a3dc0" class="card-subtitle fw-bold" value="STATE PREVIEW">
+          <cl:formdata std:sid="f-data-2b856288" col="0" colspan="2" row="12" rowspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-abe27970" class="label" value="Error State">
+          <cl:formdata std:sid="f-data-2a3f0544" col="0" row="15"/>
+        </cl:output>
+        <cl:output std:sid="output-48b1e693" class="label" value="Disabled State">
+          <cl:formdata std:sid="f-data-9e4a7174" col="1" row="15"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-b02b0b88" id="ipb2" class="required">
+          <cl:formdata std:sid="f-data-4e06f2bf" col="0" row="14"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-a25b673a" id="ipb3" value="abu Bin Ishtyak">
+          <cl:formdata std:sid="f-data-e90bdb33" col="1" row="14"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-f20d6805" id="ipb4" class="danger">
+          <cl:formdata std:sid="f-data-f20e5d3a" col="0" row="16"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-0bb79887" id="ipb5" enabled="false" value="info@example.com">
+          <cl:formdata std:sid="f-data-41f647bf" col="1" row="16"/>
+        </cl:inputbox>
+        <cl:searchinput std:sid="s-input-ba6a9fb4" id="sch1">
+          <cl:formdata std:sid="f-data-3eda935f" col="0" row="4"/>
+        </cl:searchinput>
+        <cl:formlayout std:sid="f-layout-a8d788bf" bottom-margin="20px" hspace="20px" left-margin="20px" right-margin="20px" top-margin="20px" vspace="10px">
+          <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="20"/>
+          <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-9482a74b" bottommargin="20" leftmargin="20" rightmargin="20" spacing="0" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-f4940007" class="h6" value="Combo Box">
+      <cl:verticaldata std:sid="v-data-c13d431a" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-cba2a739" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-2ed2a03a" height="185px" width="400px"/>
+      <cl:group std:sid="group-fd42ab07">
+        <cl:verticaldata std:sid="v-data-0917f65f" autosize="height" height="140px" width="400px"/>
+        <cl:output std:sid="output-efe1953b" value="Select Default">
+          <cl:formdata std:sid="f-data-eb827df2" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-4599d9b1" value="Select Multiple">
+          <cl:formdata std:sid="f-data-687469a9" col="1" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e488890f" value="Select with preventInput">
+          <cl:formdata std:sid="f-data-71a60c0e" col="0" row="2"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-189bf088" id="cmb2">
+          <cl:formdata std:sid="f-data-506f17cf" col="0" row="1"/>
+          <cl:item std:sid="item-c2eda5fb" label="Default Option" value=""/>
+          <cl:item std:sid="item-b9b4f74b" label="Option select name" value="value1"/>
+          <cl:item std:sid="item-4e71b787" label="Option select name" value="value2"/>
+          <cl:item std:sid="item-69ce9f98" label="Option select name" value="value3"/>
+          <cl:item std:sid="item-abc4f302" label="Option select name" value="value4"/>
+          <cl:item std:sid="item-d416a219" label="Option select name" value="value5"/>
+        </cl:combobox>
+        <cl:combobox std:sid="c-box-156adb78" id="cmb3" multiple="true">
+          <cl:formdata std:sid="f-data-d3d37e23" col="1" row="1"/>
+          <cl:item std:sid="item-d002c9e2" label="Default Option" value=""/>
+          <cl:item std:sid="item-2f6d15ce" label="Option select name" value="value1"/>
+          <cl:item std:sid="item-a065b393" label="Option select name" value="value2"/>
+          <cl:item std:sid="item-56061b80" label="Option select name" value="value3"/>
+          <cl:item std:sid="item-b988a696" label="Option select name" value="value4"/>
+          <cl:item std:sid="item-0b2d16bb" label="Option select name" value="value5"/>
+        </cl:combobox>
+        <cl:combobox std:sid="c-box-f9097987" id="cmb4" preventinput="true">
+          <cl:formdata std:sid="f-data-5883a32a" col="0" row="3"/>
+          <cl:item std:sid="item-406d7bb4" label="Default Option" value=""/>
+          <cl:item std:sid="item-b909cb15" label="Option select name" value="value1"/>
+          <cl:item std:sid="item-2544f38a" label="Option select name" value="value2"/>
+          <cl:item std:sid="item-ca2a668d" label="Option select name" value="value3"/>
+          <cl:item std:sid="item-b6163c99" label="Option select name" value="value4"/>
+          <cl:item std:sid="item-82824b1e" label="Option select name" value="value5"/>
+        </cl:combobox>
+        <cl:formlayout hspace="20px" vspace="10px">
+          <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="0" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-2d452bb1" class="h6" value="Date Input">
+      <cl:verticaldata std:sid="v-data-2ccb63c8" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-ca1056e5" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-f1f58f86" height="183px" width="400px"/>
+      <cl:group std:sid="group-9d4fc881">
+        <cl:verticaldata std:sid="v-data-0b26f4b3" autosize="height" height="140px" width="400px"/>
+        <cl:output std:sid="output-9b95cf29" value="Datepicker Default">
+          <cl:formdata std:sid="f-data-879c620d" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-3191dac5" value="Datepicker Alt">
+          <cl:formdata std:sid="f-data-8456ea23" col="1" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-84e9f4df" value="Select with spinbutton">
+          <cl:formdata std:sid="f-data-169f346d" col="0" row="2"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-198177f2" id="dti1">
+          <cl:formdata std:sid="f-data-14cdf77c" col="0" row="1"/>
+        </cl:dateinput>
+        <cl:dateinput std:sid="d-input-8c7e6670" id="dti2" calendartype="year">
+          <cl:formdata std:sid="f-data-6e5c5450" col="1" row="1"/>
+        </cl:dateinput>
+        <cl:dateinput std:sid="d-input-10fac921" id="dti3" spinbutton="true">
+          <cl:formdata std:sid="f-data-29e129ce" col="0" row="3"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-e25719be" value="Select without icon">
+          <cl:formdata std:sid="f-data-5565928a" col="1" row="2"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-06839aad" id="dti4" hidebutton="true">
+          <cl:formdata std:sid="f-data-b7bc946d" col="1" row="3"/>
+        </cl:dateinput>
+        <cl:formlayout std:sid="f-layout-00a55a47" hspace="20px" vspace="10px">
+          <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-02f43afc" bottommargin="20" leftmargin="20" rightmargin="20" spacing="0" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-09fc433d" class="h6" value="Checkbox Styles">
+      <cl:verticaldata std:sid="v-data-6191baf4" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-4882c982" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-64288eaa" height="93px" width="400px"/>
+      <cl:group std:sid="group-7edb46db">
+        <cl:verticaldata std:sid="v-data-92ab5643" autosize="height" height="50px" width="400px"/>
+        <cl:output std:sid="output-0d850f71" value="DEFAULT">
+          <cl:formdata std:sid="f-data-a47fa81a" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-0cc20237" value="CHECKED">
+          <cl:formdata col="1" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-c78ef8f1" value="DISABLED">
+          <cl:formdata std:sid="f-data-dccef39c" col="2" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-34b4ca6b" value="CHECK DISABLED">
+          <cl:formdata std:sid="f-data-494729f6" col="3" row="0"/>
+        </cl:output>
+        <cl:checkbox std:sid="c-box-57f4bac7" id="cbx1" text="Check">
+          <cl:formdata std:sid="f-data-7c0cbab8" col="0" row="1"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-619b9864" id="cbx2" text="Check" value="true">
+          <cl:formdata std:sid="f-data-fb764e02" col="1" row="1"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-e5aa75e5" id="cbx3" enabled="false" text="Check">
+          <cl:formdata std:sid="f-data-65baf6d4" col="2" row="1"/>
+        </cl:checkbox>
+        <cl:checkbox std:sid="c-box-9c647497" id="cbx4" enabled="false" text="Check" value="true">
+          <cl:formdata std:sid="f-data-d09c07e0" col="3" row="1"/>
+        </cl:checkbox>
+        <cl:formlayout std:sid="f-layout-ed3bc5f4" bottom-margin="0px" hspace="20px" left-margin="0px" right-margin="0px" top-margin="0px" vspace="5px">
+          <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-57199769" bottommargin="20" leftmargin="20" rightmargin="20" spacing="0" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-d56b0412" class="h6" value="Radio Styles">
+      <cl:verticaldata std:sid="v-data-38793a76" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-4cbbf340" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-0c962248" height="93px" width="400px"/>
+      <cl:group std:sid="group-c75cfc6b">
+        <cl:verticaldata std:sid="v-data-63f84ced" autosize="height" height="50px" width="400px"/>
+        <cl:output std:sid="output-5fdca50f" value="DEFAULT">
+          <cl:formdata std:sid="f-data-c8f90a37" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-34782b74" value="CHECKED">
+          <cl:formdata std:sid="f-data-618042dc" col="1" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e55e1f62" value="DISABLED">
+          <cl:formdata std:sid="f-data-62850512" col="2" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-7941f86f" value="CHECK DISABLED">
+          <cl:formdata std:sid="f-data-caa11afa" col="3" row="0"/>
+        </cl:output>
+        <cl:radiobutton std:sid="r-button-550b7fa2" id="rdb1">
+          <cl:formdata std:sid="f-data-fda5bdc0" col="0" row="1"/>
+          <cl:item std:sid="item-cc132e37" label="option" value="true"/>
+        </cl:radiobutton>
+        <cl:radiobutton std:sid="r-button-c0b07593" id="rdb2" value="true">
+          <cl:formdata std:sid="f-data-df76c984" col="1" row="1"/>
+          <cl:item std:sid="item-4eac7180" label="option" value="true"/>
+        </cl:radiobutton>
+        <cl:radiobutton std:sid="r-button-acfd0311" id="rdb3" enabled="false">
+          <cl:formdata std:sid="f-data-5d86c391" col="2" row="1"/>
+          <cl:item std:sid="item-4503b5fd" label="option" value="true"/>
+        </cl:radiobutton>
+        <cl:radiobutton std:sid="r-button-0abcc407" id="rdb4" enabled="false" value="true">
+          <cl:formdata std:sid="f-data-4bc2ab70" col="3" row="1"/>
+          <cl:item std:sid="item-a10a29bc" label="option" value="true"/>
+        </cl:radiobutton>
+        <cl:formlayout std:sid="f-layout-eba19463" bottom-margin="0px" hspace="20px" left-margin="0px" right-margin="0px" top-margin="0px" vspace="5px">
+          <cl:rows autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="25" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="1" minlength="0" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-5f216b6c" bottommargin="20" leftmargin="20" rightmargin="20" spacing="0" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

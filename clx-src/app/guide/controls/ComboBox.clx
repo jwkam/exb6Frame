@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ccf50f87" version="1.0.0.0">
+  <head std:sid="head-36af639d">
+    <title>InputBox</title>
+    <screen std:sid="screen-86f08349" id="default" name="default" minwidth="1235px" width="1235px" height="675px"/>
+    <screen std:sid="screen-baae5930" id="notebook" name="notebook" minwidth="1020px" maxwidth="1234px" width="1020px" height="540px"/>
+    <screen std:sid="screen-be0f89c0" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-2cb04679" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-8a447e37">
+      <cl:dataset std:sid="d-set-6f064cc0" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-67f52aee" name="CD"/>
+          <cl:datacolumn std:sid="d-column-33e41003" name="CD_NM"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[01]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[서울]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[02]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[부산]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[03]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[대구]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[04]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[수원]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[05]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[고양]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[06]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[대전]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[07]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[부여]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[08]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[광주]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[09]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[함평]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[제주]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-8b3bac71" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2f7c5b2c" name="CD_NM"/>
+          <cl:datacolumn std:sid="d-column-f2dd9e27" name="CD"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[경기도]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[전라도]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[경상도]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-bb169559" id="ds3">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-808b3a73" name="CD_NM"/>
+          <cl:datacolumn std:sid="d-column-702be647" name="CD"/>
+          <cl:datacolumn std:sid="d-column-3aec9dfd" name="P_VAL"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[천안]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[수원]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[200]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[안산]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[300]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[광주시]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[400]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[여수]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[500]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[나주]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[600]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[대구]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[700]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD_NM"><![CDATA[부산]]></cl:datavalue>
+            <cl:datavalue columnname="CD"><![CDATA[800]]></cl:datavalue>
+            <cl:datavalue columnname="P_VAL"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-f58f9e28" id="ds4">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ad576c49" name="column1"/>
+          <cl:datacolumn std:sid="d-column-85786187" name="column2"/>
+          <cl:datacolumn std:sid="d-column-2437d277" name="column3"/>
+          <cl:datacolumn std:sid="d-column-31e46d0a" name="column4"/>
+          <cl:datacolumn std:sid="d-column-8c0acf0b" name="column5"/>
+          <cl:datacolumn std:sid="d-column-0045c039" name="column6"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-bb893516" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-4cc32078" name="strValue1" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-49d0027a" name="strValue2" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-05a8338c" name="strValue3" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-a107fc13" name="strValue4"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-354e44e7" id="dm2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-8f0b1c7a" name="strVal1"/>
+          <cl:datacolumn std:sid="d-column-bfd4a717" name="strVal2"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-656f5d75" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-030de306" top="44px" left="44px" width="900px" height="220px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-37f32a80" id="opt1" value="버튼 숨김">
+        <cl:formdata std:sid="f-data-fbdef1b5" row="2" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-a665ba05" id="opt2" value="보여지는 아이템 갯수 지정">
+        <cl:formdata std:sid="f-data-d667050c" row="3" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-544534ba" id="cbb5" hidebutton="true">
+        <cl:formdata std:sid="f-data-dae733fe" row="2" col="1"/>
+        <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-aad54d3a" id="cbb6" maxvisibleitems="5">
+        <cl:formdata std:sid="f-data-dfc742cf" row="3" col="1"/>
+        <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+      </cl:combobox>
+      <cl:group std:sid="group-a8826426" id="grp2">
+        <cl:formdata std:sid="f-data-d6f695af" row="0" col="1"/>
+        <cl:combobox std:sid="c-box-565cb6b2" id="cbb7">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="strValue1"/>
+          <cl:formdata std:sid="f-data-62af4f91" row="0" col="0"/>
+          <cl:item std:sid="item-beb3c684" label="전체" value=""/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:combobox>
+        <cl:combobox std:sid="c-box-298703b4" id="cbb8">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="strValue2"/>
+          <cl:formdata std:sid="f-data-136e5216" row="0" col="1"/>
+          <cl:item std:sid="item-49d4b3c2" label="선택" value=""/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:combobox>
+        <cl:combobox std:sid="c-box-aa69055d" id="cbb9">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="strValue3"/>
+          <cl:formdata std:sid="f-data-51e965ce" row="0" col="2"/>
+          <cl:item std:sid="item-4264a0dc" label="" value=""/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:combobox>
+        <cl:formlayout std:sid="f-layout-ed325bca" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="0" vseparatorwidth="0">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-e56ef472" id="opt3" value="Prompt 아이템 지정">
+        <cl:formdata std:sid="f-data-ad2b224f" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-b5e3a643" id="opt6" value="아이템 활성/비활성 표현식 지정">
+        <cl:formdata std:sid="f-data-4567a9a8" row="5" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-63945acb" id="opt4" value="다중 아이템 선택">
+        <cl:formdata std:sid="f-data-2fd44376" row="4" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-f6fe2876" id="cbb11" maxvisibleitems="0" multiple="true">
+        <cl:datamapbind property="value" datacontrolid="dm1" columnname="strValue4"/>
+        <cl:formdata std:sid="f-data-e772018a" row="4" col="1"/>
+        <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+      </cl:combobox>
+      <cl:output std:sid="output-77ef6c5b" id="opt5" value="검색 입력 막기">
+        <cl:formdata std:sid="f-data-f03a438b" row="1" col="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-4da9d061" id="cbb12" preventinput="true">
+        <cl:formdata std:sid="f-data-4634ee12" row="1" col="1"/>
+        <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+      </cl:combobox>
+      <cl:group std:sid="group-e6e2a861" id="grp3" class="cl-form-group">
+        <cl:formdata std:sid="f-data-f676c0a1" row="5" col="1"/>
+        <cl:combobox std:sid="c-box-eef61dbf" id="cbb10" enableditemexp="(value == '02' || value == '03') ? false : true ">
+          <cl:formdata std:sid="f-data-616ba3af" row="0" col="0"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:combobox>
+        <cl:output std:sid="output-b52560ee" id="opt10" style="color:#757272;" value="enabledItemExp 속성을 사용하여, 특정 아이템들의 활성/비활성 상태를 지정할 수 있다.">
+          <cl:formdata std:sid="f-data-0924305e" row="1" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-1a3099ae" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="55" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="200" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-c75b85d4" id="opt7" value="자주 사용되는 콤보박스 속성 지정 방법입니다.">
+      <cl:xylayoutdata std:sid="xyl-data-ebde5e4a" top="9px" left="44px" width="900px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:output std:sid="output-634ac5aa" id="opt8" value="콤보박스 필터링 예제 2(그리드)">
+      <cl:xylayoutdata std:sid="xyl-data-54d78c61" top="377px" left="44px" width="256px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:combobox std:sid="c-box-12f7f385" id="cbb1">
+      <cl:listener std:sid="listener-47a90169" name="selection-change" handler="onCbb1SelectionChange"/>
+      <cl:datamapbind property="value" datacontrolid="dm2" columnname="strVal1"/>
+      <cl:xylayoutdata std:sid="xyl-data-4767ca75" top="327px" left="44px" width="100px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="item-e306caa8" label="선택" value=""/>
+      <cl:itemset datasetid="ds2" label="CD_NM" value="CD"/>
+    </cl:combobox>
+    <cl:output std:sid="output-5ea8f542" id="opt9" value="콤보박스 필터링 예제 1">
+      <cl:xylayoutdata std:sid="xyl-data-42bde43a" top="297px" left="44px" width="256px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:grid std:sid="grid-a9fe7d67" id="grx1" datasetid="ds4">
+      <cl:listener std:sid="listener-e7a411a8" name="update" handler="onGrx1Update"/>
+      <cl:xylayoutdata std:sid="xyl-data-c62de30e" top="407px" left="44px" width="742px" height="261px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-9461a902"/>
+      <cl:gridcolumn std:sid="g-column-07fd3710"/>
+      <cl:gridcolumn std:sid="g-column-5d6a51db"/>
+      <cl:gridcolumn std:sid="g-column-8f600016"/>
+      <cl:gridcolumn std:sid="g-column-5ee7412c"/>
+      <cl:gridcolumn std:sid="g-column-a35e3bff"/>
+      <cl:gridheader std:sid="gh-band-f648486c">
+        <cl:gridrow std:sid="g-row-b9c28389"/>
+        <cl:gridcell std:sid="gh-cell-f45b7023" rowindex="0" colindex="0" targetcolumnname="column1" sortable="false" filterable="false" text="지역(도)"/>
+        <cl:gridcell std:sid="gh-cell-830691a8" rowindex="0" colindex="1" targetcolumnname="column2" sortable="false" filterable="false" text="시군"/>
+        <cl:gridcell std:sid="gh-cell-a91777e0" rowindex="0" colindex="2" targetcolumnname="column3" sortable="false" filterable="false" text="column3"/>
+        <cl:gridcell std:sid="gh-cell-d49ed34a" rowindex="0" colindex="3" targetcolumnname="column4" sortable="false" filterable="false" text="column4"/>
+        <cl:gridcell std:sid="gh-cell-07a5f4a1" rowindex="0" colindex="4" targetcolumnname="column5" sortable="false" filterable="false" text="column5"/>
+        <cl:gridcell std:sid="gh-cell-1ce1f336" rowindex="0" colindex="5" targetcolumnname="column6" sortable="false" filterable="false" text="column6"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-1715d590">
+        <cl:gridrow std:sid="g-row-4ea3efcf"/>
+        <cl:gridcell std:sid="gd-cell-5d7f5d4c" rowindex="0" colindex="0" columnname="column1">
+          <cl:combobox std:sid="c-box-8ae8ff8a" id="cbb3">
+            <cl:xylayoutdata std:sid="xyl-data-d73ee454" top="100px" left="33px" width="100px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+            <cl:item std:sid="item-e2edd999" label="선택" value=""/>
+            <cl:itemset datasetid="ds2" label="CD_NM" value="CD"/>
+          </cl:combobox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-a2b7b1c6" rowindex="0" colindex="1" columnname="column2">
+          <cl:combobox std:sid="c-box-384c844f" id="cbb4" filterexp="(CD == &quot;&quot; || CD == null || P_VAL == column1)">
+            <cl:xylayoutdata std:sid="xyl-data-71e43717" top="100px" left="143px" width="146px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+            <cl:item std:sid="item-541c7ef7" label="선택" value=""/>
+            <cl:itemset datasetid="ds3" label="CD_NM" value="CD"/>
+          </cl:combobox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-d69dee0c" rowindex="0" colindex="2" columnname="column3"/>
+        <cl:gridcell std:sid="gd-cell-12e4c601" rowindex="0" colindex="3" columnname="column4"/>
+        <cl:gridcell std:sid="gd-cell-a35a7160" rowindex="0" colindex="4" columnname="column5"/>
+        <cl:gridcell std:sid="gd-cell-e6bf9a3c" rowindex="0" colindex="5" columnname="column6"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:combobox std:sid="c-box-5e1d6339" id="cbb2" filterexp="(CD == &quot;&quot; || P_VAL == #cbb1.value)">
+      <cl:datamapbind property="value" datacontrolid="dm2" columnname="strVal2"/>
+      <cl:xylayoutdata std:sid="xyl-data-89b9fde9" top="327px" left="154px" width="146px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:item std:sid="item-be759076" label="선택" value=""/>
+      <cl:itemset datasetid="ds3" label="CD_NM" value="CD"/>
+    </cl:combobox>
+    <cl:xylayout std:sid="xylayout-3225b378"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

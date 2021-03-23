@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b4abe891" version="1.0.0.0">
+  <head std:sid="head-51cb2405">
+    <title>Breadcrumb</title>
+    <screen std:sid="screen-db6528ce" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-01eb0a36" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-d531b630" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-2fb3fb7d"/>
+    <cl:appspec>
+      <cl:property bindable="false" default="default" name="class" type="enumeration">
+        <cl:available-value>default</cl:available-value>
+        <cl:available-value>arrow</cl:available-value>
+        <cl:available-value>bar</cl:available-value>
+      </cl:property>
+      <cl:property bindable="true" name="values" type="string"/>
+      <cl:property bindable="true" default="," name="delimiter" type="string"/>
+      <cl:property bindable="false" default="right" name="align" type="enumeration">
+        <cl:available-value>left</cl:available-value>
+        <cl:available-value>right</cl:available-value>
+      </cl:property>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-2b7b9a2b" class="breadcrumbs" style="top:0px; left:0px; width:300px; height:26px;">
+    <cl:listener std:sid="listener-808a53e4" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-be7d614a" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:output std:sid="output-7ead22a7" class="breadcrumb-item" removeOnBuild="true" value="HOME">
+      <cl:flowlayoutdata std:sid="f-data-7a983717" autosize="width" height="100%" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-2d2de213" class="breadcrumb-item active" removeOnBuild="true" value="LIBRARY">
+      <cl:flowlayoutdata std:sid="f-data-8ea49261" autosize="width" height="100%" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-aa24d6a3" class="breadcrumb-item active" removeOnBuild="true" value="DATA">
+      <cl:flowlayoutdata std:sid="f-data-58be4ef4" autosize="width" height="100%" width="100px"/>
+    </cl:output>
+    <cl:flowlayout scrollable="false" halign="right" linewrap="false" spacing="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,61 @@
+@import "../custom-settings.part.less";
+
+@form-icon-width: 25px;
+
+.cl-container.login-box {
+	background-color: @white;
+	box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+	border-radius: @border-radius;
+	
+	.cl-container.login-header {
+		background-image: url(images/com/login/login-logo-box-bg.png);
+		background-repeat: no-repeat;
+		background-color: #e5ecf5;
+		background-position: ~'calc(100% - 5px)' 10px;
+		background-size: 46%;
+	}
+	
+	.cl-container.login-body {
+		.cl-inputbox.form-control {
+			&.cl-focus {
+				box-shadow: 0 0 0 3px rgba(34,99,179,0.1);
+			}
+			
+			&.form-icon {
+				&.form-icon-right {
+					.cl-text {
+						padding-right: calc(@form-icon-width + @input-padding-x);
+					}
+				}
+			}
+		}
+		
+		.cl-checkbox.password-switch {
+			padding: 0;
+			
+			.cl-checkbox-icon,
+			.cl-checkbox-icon:hover, .cl-checkbox-icon.cl-hover {
+				background-image: url(images/com/login/icon-eye-off.png);
+			}
+			
+			&.cl-checked {
+				.cl-checkbox-icon,
+				.cl-checkbox-icon:hover, .cl-checkbox-icon.cl-hover {
+					background-image: url(images/com/login/icon-eye.png);
+				}
+			}
+			
+			&.cl-focus {
+				.cl-checkbox-icon {
+					outline: none;
+				}
+			}
+		}
+		
+		.cl-output.forgot-password {
+			background-image: url(images/com/login/icon-lock-fill.png);
+			background-position: left center;
+			padding-left: 15px;
+		}
+	}
+}

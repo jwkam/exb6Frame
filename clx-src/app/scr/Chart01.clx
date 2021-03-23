@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-880b43f5" version="1.0.0.0">
+  <head std:sid="head-c9d7b064">
+    <title>Chart01</title>
+    <screen std:sid="screen-1b01d9a2" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-365ad629" id="tablet" name="tablet" minwidth="800px" maxwidth="1023px" width="800px" height="768px"/>
+    <screen std:sid="screen-be878cc8" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <script std:sid="script-57203315" src="../../lib/echarts/echarts.min.js" type="text/javascript"/>
+    <cl:model std:sid="model-93f1777f">
+      <cl:dataset std:sid="d-set-347b94ad" id="dsData">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e4300b47" name="COLUMN1"/>
+          <cl:datacolumn std:sid="d-column-25c19419" name="COLUMN2"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-cffe5925" id="dsScatterData">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-17e11fff" name="X"/>
+          <cl:datacolumn std:sid="d-column-92bebd75" name="Y"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-ddd6924d" id="dsPieData">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-019f8681" name="NAME"/>
+          <cl:datacolumn std:sid="d-column-4b2ff094" name="VALUE"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-72b13f39" id="dsPyramid">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-a9f9be17" name="VALUE"/>
+          <cl:datacolumn std:sid="d-column-83b7a08e" name="NAME"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-a1c9ad14" id="dsLineBar">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e0fb3415" name="MONTH"/>
+          <cl:datacolumn std:sid="d-column-4ec75a8b" name="EVAPORATION"/>
+          <cl:datacolumn std:sid="d-column-c6a89853" name="PRECIPITATION"/>
+          <cl:datacolumn std:sid="d-column-5cefa044" name="TEMPERATURE"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-70ab97f3" id="dsYbar">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-38e90b21" name="DAY"/>
+          <cl:datacolumn std:sid="d-column-087f6315" name="TOMATO"/>
+          <cl:datacolumn std:sid="d-column-037fb6bc" name="WATERMELON"/>
+          <cl:datacolumn std:sid="d-column-e93a881d" name="STRAWBERRY"/>
+          <cl:datacolumn std:sid="d-column-20ffe231" name="ORANGE"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-fb34d67f" id="dsArea">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-6b9fccc9" name="COLUMN1"/>
+          <cl:datacolumn std:sid="d-column-483db84c" name="COLUMN2"/>
+          <cl:datacolumn std:sid="d-column-113dfc6e" name="COLUMN3"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7f164390" id="dsCustomLine">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-caaf83d2" name="X"/>
+          <cl:datacolumn std:sid="d-column-88e0d1bb" name="Y"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-08ec1a36" id="dsEditor">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-aafea331" name="VALUE"/>
+          <cl:datacolumn std:sid="d-column-9b8c76fd" name="NAME"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-d4f5fb38" id="subList" action="data/scr/chart/eChart.json">
+        <cl:listener std:sid="listener-fcb784a6" name="submit-success" handler="onSubListSubmitSuccess"/>
+        <cl:responsedata dataid="dsData"/>
+        <cl:responsedata dataid="dsScatterData"/>
+        <cl:responsedata dataid="dsPieData"/>
+        <cl:responsedata dataid="dsPyramid"/>
+        <cl:responsedata dataid="dsLineBar"/>
+        <cl:responsedata dataid="dsYbar"/>
+        <cl:responsedata dataid="dsArea"/>
+        <cl:responsedata dataid="dsCustomLine"/>
+        <cl:responsedata dataid="dsEditor"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec dev-comment="(현장과제)&#xD;&#xA;&lt; 구현 요청 화면 레이아웃 >&#xD;&#xA;* 다양한 차트를 이용한 시각화 보고서 형태의 화면구현(사전구현, 데이터 연동 포함)&#xD;&#xA;Pyramid" title="차트"/>
+  </head>
+  <body std:sid="body-5390a520" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-c5bf1eef" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-8823111f" id="grpChartCn">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-b8a237c4" width="400px" height="1798px" autosize="height"/>
+      <cl:group std:sid="group-7680d151" class="card">
+        <cl:formdata std:sid="f-data-15d1d5a5" row="0" col="0"/>
+        <cl:output std:sid="output-4ecb826b" id="AreaChart" class="card-title" value="AreaChart">
+          <cl:verticaldata std:sid="v-data-07a3e6b2" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-92793f9c" id="areaChart" type="udc.cmn.chart_Area">
+          <cl:verticaldata std:sid="v-data-d4424bfc" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-0c46448a" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-afc3ffed" class="card">
+        <cl:formdata std:sid="f-data-8482e5bd" row="0" col="1"/>
+        <cl:output std:sid="output-4720208a" id="BarChart" class="card-title" value="BarChart">
+          <cl:verticaldata std:sid="v-data-602990b3" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-f37a5db0" id="barChart" type="udc.cmn.chart_Bar">
+          <cl:verticaldata std:sid="v-data-900a844c" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-e6077ea1" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-7ee16152" class="card">
+        <cl:formdata std:sid="f-data-93c2ccc2" row="1" col="0"/>
+        <cl:output std:sid="output-d927b015" class="card-title" value="YBar Chart">
+          <cl:verticaldata std:sid="v-data-e63cbd82" width="442px" height="25px" autosize="none"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-3c392937" id="ybar" type="udc.cmn.chart_YbarCatogry">
+          <cl:verticaldata std:sid="v-data-6da10ea9" width="442px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-99a94bdd" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-4baacf31" class="card">
+        <cl:formdata std:sid="f-data-baa1dfa5" row="1" col="1"/>
+        <cl:output std:sid="output-3bd1a533" id="Circle Chart" class="card-title" value="Circle Chart">
+          <cl:verticaldata std:sid="v-data-f2494d55" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-17ce6ddf" id="circle" type="udc.cmn.chart_Circle">
+          <cl:verticaldata std:sid="v-data-50d3e654" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-64d5dbe0" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-712e064d" class="card">
+        <cl:formdata std:sid="f-data-e40c9ec5" row="2" col="0"/>
+        <cl:output std:sid="output-79d1a72b" class="card-title" value="Edit Chart">
+          <cl:verticaldata std:sid="v-data-1dcf9cdc" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-bd8c06a1" id="edit" type="udc.cmn.chart_Editor">
+          <cl:verticaldata std:sid="v-data-102a8dc4" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-b62dee21" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-44045e21" class="card">
+        <cl:formdata std:sid="f-data-91a269c0" row="2" col="1"/>
+        <cl:output std:sid="output-41b2251b" class="card-title" value="pie Chart">
+          <cl:verticaldata std:sid="v-data-a1ba37cf" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-4bf753ba" id="pie" type="udc.cmn.chart_pie">
+          <cl:verticaldata std:sid="v-data-447c5dc9" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-adeccbc1" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-de95bf31" class="card">
+        <cl:formdata std:sid="f-data-0f992817" row="3" col="0"/>
+        <cl:output std:sid="output-9898bbce" class="card-title" value="barline Chart">
+          <cl:verticaldata std:sid="v-data-79541726" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-3dfff67b" id="barline" type="udc.cmn.chart_barline">
+          <cl:verticaldata std:sid="v-data-0699f3bd" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-661ba419" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-54a04529" class="card">
+        <cl:formdata std:sid="f-data-86d62023" row="3" col="1"/>
+        <cl:output std:sid="output-3c2f3c93" class="card-title" value="Column Chart">
+          <cl:verticaldata std:sid="v-data-3cece888" width="442px" height="25px" autosize="none"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-cc4f4bd8" id="CLineChart" type="udc.cmn.chart_CustomLine">
+          <cl:verticaldata std:sid="v-data-5fac3445" width="442px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-6603bdd3" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-98c7d8fc" class="card">
+        <cl:formdata std:sid="f-data-923bd3bc" row="4" col="0"/>
+        <cl:output std:sid="output-b1363eb3" class="card-title" value="Scatter Chart">
+          <cl:verticaldata std:sid="v-data-af60a4b5" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-3d5560aa" id="scatt" type="udc.cmn.chart_Scatter">
+          <cl:verticaldata std:sid="v-data-4ce284f0" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-3d43c251" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-a8089231" class="card">
+        <cl:formdata std:sid="f-data-2ed8f156" row="4" col="1"/>
+        <cl:output std:sid="output-4e06b504" class="card-title" value="Pyramid Chart">
+          <cl:verticaldata std:sid="v-data-60ae3cd0" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-71f35cf3" id="pyr" type="udc.cmn.chart_Pyramid">
+          <cl:verticaldata std:sid="v-data-a5d56f6d" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-819e8836" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-a2f57daa" class="card">
+        <cl:formdata std:sid="f-data-3e370f8a" row="5" col="0"/>
+        <cl:output std:sid="output-c3ddcea8" class="card-title" value="CPie Chart">
+          <cl:verticaldata std:sid="v-data-13ca11fd" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-a7c7aee7" id="cPie" type="udc.cmn.chart_CustomPie">
+          <cl:verticaldata std:sid="v-data-fe5e980b" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-6f502177" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:group std:sid="group-784f2090" class="card">
+        <cl:formdata std:sid="f-data-9bf3e9c5" row="5" col="1"/>
+        <cl:output std:sid="output-13b9abf9" class="card-title" value="CLine Chart">
+          <cl:verticaldata std:sid="v-data-a5c8993e" width="100px" height="25px"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-973f8f2f" id="cLine" type="udc.cmn.chart_line">
+          <cl:verticaldata std:sid="v-data-137ec756" width="316px" height="298px" autosize="none"/>
+        </cl:udc>
+        <cl:verticallayout std:sid="v-layout-dedde638" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-b571ee97" hspace="20px" vspace="20px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-2a954178" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+	id="tmt" version="3.1">
+  <listener>
+    <listener-class>com.cleopatra.XBInitializer</listener-class>
+  </listener>
+  <listener>
+    <listener-class>
+            org.springframework.security.web.session.HttpSessionEventPublisher
+        </listener-class>
+  </listener>
+  <listener>
+    <listener-class>
+	        org.springframework.web.context.request.RequestContextListener
+	    </listener-class>
+  </listener>
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  
+  <context-param>
+    	<param-name>spring.profiles.active</param-name>
+    	<param-value>local</param-value>
+	</context-param>
+
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+	    	classpath*:system/spring/context-*.xml
+	    </param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/config/spring/dispatcher-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+    <url-pattern>*.csv</url-pattern>
+    <url-pattern>*.xls</url-pattern>
+    <url-pattern>*.xlsx</url-pattern>
+    <!-- 
+    <url-pattern>*.clx</url-pattern>
+     -->
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.do</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>401</error-code>
+    <location>/WEB-INF/error/error401.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/WEB-INF/error/error403.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error/404.do</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/error/error500.jsp</location>
+  </error-page>
+  <session-config>
+    <session-timeout>180</session-timeout>
+  </session-config>
+  
+</web-app>

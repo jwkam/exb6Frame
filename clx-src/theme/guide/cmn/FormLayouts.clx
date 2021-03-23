@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4a032d13" version="1.0.0.0">
+  <head std:sid="head-6488fa55">
+    <title>FormLayouts</title>
+    <screen std:sid="screen-9a3cd10f" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-329a3b77" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-36a62c20" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-899a771b"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-02664ac5" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-2eab1d97" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Form Layouts">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,FORM LAYTOUTS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Basic Form Style - S1">
+      <cl:verticaldata std:sid="v-data-c3526d4d" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-d1144eb5">
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="needs-auto-height" value="true"/>
+      <cl:verticaldata std:sid="v-data-4dd60b29" autosize="height" height="573px" width="984px"/>
+      <cl:group std:sid="group-9aef9cd5" class="cl-form-group">
+        <cl:formdata std:sid="f-data-ad560b67" height="572" col="0" row="0"/>
+        <cl:output std:sid="output-e5602107" class="h2" value="Customer Info">
+          <cl:formdata std:sid="f-data-07d8b561" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b34d1f0e" value="Full Name">
+          <cl:formdata std:sid="f-data-730c6fe0" col="0" row="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-480fd65d" id="ipb1">
+          <cl:formdata std:sid="f-data-35b6a6bf" col="0" row="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-15a8bbad" value="Email address">
+          <cl:formdata std:sid="f-data-6fc00a15" col="0" row="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-1d5b738e" id="ipb2">
+          <cl:formdata std:sid="f-data-fc01060a" col="0" row="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-eb0bc622" value="Phone No">
+          <cl:formdata std:sid="f-data-ece451d1" col="0" row="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-a9bbeaf4" id="ipb3">
+          <cl:formdata std:sid="f-data-fffa2fa5" col="0" row="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-20a4504d" value="Communication">
+          <cl:formdata std:sid="f-data-55fadb86" col="0" row="7"/>
+        </cl:output>
+        <cl:checkboxgroup std:sid="cb-group-7eb36303" id="cbg1">
+          <cl:formdata std:sid="f-data-2062b3bc" col="0" row="8"/>
+          <cl:item std:sid="item-16229377" label="Email" value="email"/>
+          <cl:item std:sid="item-19320f58" label="SMS" value="sms"/>
+          <cl:item std:sid="item-53e149b2" label="Phone" value="phone"/>
+        </cl:checkboxgroup>
+        <cl:output std:sid="output-f4daa4ed" value="Amount">
+          <cl:formdata std:sid="f-data-ebba5e9b" col="0" row="9"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-5844b9f4" id="ipb4">
+          <cl:formdata std:sid="f-data-aa146663" col="0" row="10"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-5ba49f8e" value="Payment Methods">
+          <cl:formdata std:sid="f-data-31301674" col="0" row="11"/>
+        </cl:output>
+        <cl:checkboxgroup std:sid="cb-group-02cfab45" id="cbg2">
+          <cl:formdata std:sid="f-data-94619b50" col="0" row="12"/>
+          <cl:item std:sid="item-8500d911" label="Card" value="card"/>
+          <cl:item std:sid="item-65fa0fc3" label="Bitcoin" value="bitcoin"/>
+          <cl:item std:sid="item-ef2afeff" label="Cash" value="cash"/>
+        </cl:checkboxgroup>
+        <cl:button std:sid="button-ef791816" id="btn1" value="Save Informations">
+          <cl:formdata std:sid="f-data-c207c0e5" halign="LEFT" width="150" col="0" row="13"/>
+        </cl:button>
+        <cl:formlayout bottom-margin="20px" hspace="20px" left-margin="20px" right-margin="20px" top-margin="20px" vspace="10px">
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-b58c413d" class="cl-form-group">
+        <cl:formdata std:sid="f-data-f8da7928" height="572" col="1" row="0"/>
+        <cl:output std:sid="output-faddd5bf" class="h2" value="Contact Form">
+          <cl:formdata std:sid="f-data-d712344b" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-96d2c13d" value="Full Name">
+          <cl:formdata std:sid="f-data-571a2a2c" col="0" row="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-126f0ffe" id="ipb5">
+          <cl:formdata std:sid="f-data-6f45895b" col="0" row="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-28f257ab" value="Email address">
+          <cl:formdata std:sid="f-data-02247683" col="0" row="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-6e3287aa" id="ipb6">
+          <cl:formdata std:sid="f-data-6eebdca4" col="0" row="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-2eadb3c5" value="Phone No">
+          <cl:formdata std:sid="f-data-9690009e" col="0" row="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-811f7b36" id="ipb7">
+          <cl:formdata std:sid="f-data-bb303022" col="0" row="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-2a4fda0a" value="Subject">
+          <cl:formdata std:sid="f-data-42fcb239" col="0" row="7"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-2fe2a10a" id="ipb8">
+          <cl:formdata std:sid="f-data-6adeaac5" col="0" row="8"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-44c5cc2b" value="Message">
+          <cl:formdata std:sid="f-data-53362e20" col="0" row="9"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-679302df" id="txa1" placeholder="Write your message">
+          <cl:formdata col="0" colspan="1" row="10" rowspan="3"/>
+        </cl:textarea>
+        <cl:button std:sid="button-56b4a993" id="btn2" value="Save Informations">
+          <cl:formdata std:sid="f-data-3d93b08a" halign="LEFT" width="150" col="0" row="13"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-39ae8e94" bottom-margin="20px" hspace="20px" left-margin="20px" right-margin="20px" top-margin="20px" vspace="10px">
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="35" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout hspace="20px" vspace="20px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-efcd31d0" class="h6" value="Basic Form Style - S2">
+      <cl:verticaldata std:sid="v-data-5d531f12" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-1bf5e6e1" class="cl-form-group">
+      <cl:verticaldata std:sid="v-data-5e1ee564" autosize="none" height="347px" width="482px"/>
+      <cl:output std:sid="output-9a15d21a" class="h2" value="Customer Info S2">
+        <cl:formdata col="0" colspan="2" row="0" rowspan="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-9f1ec5c8" id="ipb9">
+        <cl:formdata std:sid="f-data-83848b7a" col="0" row="2"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-6ba6f33a" value="Full Name">
+        <cl:formdata std:sid="f-data-7d3ae8bd" col="0" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-0f867953" id="ipb10">
+        <cl:formdata col="1" row="2"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-1c5298d4" value="Email address">
+        <cl:formdata col="1" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-d3a6fff0" id="ipb11">
+        <cl:formdata col="0" row="4"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-30aeb1e4" value="Phone No">
+        <cl:formdata col="0" row="3"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-137e6b13" id="ipb12">
+        <cl:formdata col="1" row="4"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-2180c0a0" value="Amount">
+        <cl:formdata col="1" row="3"/>
+      </cl:output>
+      <cl:checkboxgroup std:sid="cb-group-0f9d85cb" id="cbg3">
+        <cl:formdata col="0" row="6"/>
+        <cl:item std:sid="item-3c3cc647" label="Email" value="email"/>
+        <cl:item std:sid="item-693e382f" label="SMS" value="sms"/>
+        <cl:item std:sid="item-b62aff4b" label="Phone" value="phone"/>
+      </cl:checkboxgroup>
+      <cl:output std:sid="output-93a6a44e" value="Communication">
+        <cl:formdata col="0" row="5"/>
+      </cl:output>
+      <cl:checkboxgroup std:sid="cb-group-d461a2c8" id="cbg4">
+        <cl:formdata col="1" row="6"/>
+        <cl:item std:sid="item-306d5e96" label="Card" value="card"/>
+        <cl:item std:sid="item-8ac88ced" label="Bitcoin" value="bitcoin"/>
+        <cl:item std:sid="item-334e8a83" label="Cash" value="cash"/>
+      </cl:checkboxgroup>
+      <cl:output std:sid="output-b1f4884e" value="Payment Methods">
+        <cl:formdata col="1" row="5"/>
+      </cl:output>
+      <cl:button std:sid="button-debd70dd" id="btn3" value="Save Informations">
+        <cl:formdata halign="LEFT" width="150" col="0" colspan="2" row="7" rowspan="1"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-c0e4a216" bottom-margin="20px" hspace="20px" left-margin="20px" right-margin="20px" top-margin="20px" vspace="10px">
+        <cl:rows length="35" unit="PIXEL"/>
+        <cl:rows length="20" unit="PIXEL"/>
+        <cl:rows length="35" unit="PIXEL"/>
+        <cl:rows length="20" unit="PIXEL"/>
+        <cl:rows length="35" unit="PIXEL"/>
+        <cl:rows length="20" unit="PIXEL"/>
+        <cl:rows length="35" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-2f834269" class="h6" value="Basic Form Style - S3">
+      <cl:verticaldata std:sid="v-data-11064cfe" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-41e8f7e9" class="cl-form-group">
+      <cl:verticaldata std:sid="v-data-b5254037" autosize="height" height="317px" width="400px"/>
+      <cl:output std:sid="output-4f4bf75a" class="label" value="Site Name">
+        <cl:formdata std:sid="f-data-06f2189d" col="0" row="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-a558cc94" id="ipb17" value="eXbuilder6 Common Template">
+        <cl:formdata std:sid="f-data-2b7a0c93" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-40682837" class="label" value="Site Email">
+        <cl:formdata std:sid="f-data-4c3a85be" col="0" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-dfff458a" id="ipb18" value="info@example.com">
+        <cl:formdata std:sid="f-data-eef9eab5" col="1" row="1"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-d810074d" class="label" value="Site Copyright">
+        <cl:formdata std:sid="f-data-73ff6d8f" col="0" row="2"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-c1618155" id="ipb19" value="© 2019, Tomatosystem. All Rights Reserved.">
+        <cl:formdata std:sid="f-data-9b5427c6" col="1" row="2"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-7c2c00ac" class="label" value="Allow Registration">
+        <cl:formdata std:sid="f-data-b0ba934a" col="0" row="3"/>
+      </cl:output>
+      <cl:radiobutton std:sid="r-button-fa25fa7f" id="rdb2" value="enabled">
+        <cl:formdata std:sid="f-data-29f5a9b1" col="1" row="3"/>
+        <cl:item std:sid="item-7b432a2e" label="Enable" value="enabled"/>
+        <cl:item std:sid="item-3918edee" label="Disable" value="disabled"/>
+        <cl:item std:sid="item-4ec0a132" label="On Request" value="requested"/>
+      </cl:radiobutton>
+      <cl:output std:sid="output-ff8931f5" class="label" value="Main Website">
+        <cl:formdata std:sid="f-data-7b922fb7" col="0" row="4"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-f3b25931" id="ipb20" value="http://www.tomatosystem.co.kr">
+        <cl:formdata std:sid="f-data-76946b1e" col="1" row="4"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-72b879bb" class="label" value="Maintanace Mode">
+        <cl:formdata std:sid="f-data-94ee3fbd" col="0" row="5"/>
+      </cl:output>
+      <cl:checkbox std:sid="c-box-ded6e1b4" id="cbx2" text="Offline">
+        <cl:formdata std:sid="f-data-18c37d9e" col="1" row="5"/>
+      </cl:checkbox>
+      <cl:button std:sid="button-87da7b2b" id="btn5" value="Update">
+        <cl:formdata std:sid="f-data-414bbc0a" halign="RIGHT" col="0" colspan="2" row="6" rowspan="1"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-69682078" bottom-margin="5px" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10px" left-margin="5px" right-margin="5px" top-margin="5px" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="10px">
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:columns autoSizing="false" length="200" minlength="0" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-34eec297" class="h6" value="Setting Form Style">
+      <cl:verticaldata std:sid="v-data-873ff4a4" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-ae0fc837" class="cl-form-group">
+      <cl:verticaldata std:sid="v-data-43305e09" autosize="height" height="347px" width="400px"/>
+      <cl:output std:sid="output-e3ba50b2" class="label" value="Site Name">
+        <cl:formdata std:sid="f-data-e0075bce" col="0" row="0"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-baba3c95" id="ipb13" value="eXbuilder6 Common Template">
+        <cl:formdata std:sid="f-data-b0b9256c" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-5acd4579" class="label" value="Site Email">
+        <cl:formdata std:sid="f-data-c8a923d1" col="0" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-ef6f4f57" id="ipb14" value="info@example.com">
+        <cl:formdata std:sid="f-data-b78ee1d7" col="1" row="1"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-1ae4fc1b" class="label" value="Site Copyright">
+        <cl:formdata std:sid="f-data-675389c7" col="0" row="2"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-f26917df" id="ipb15" value="© 2019, Tomatosystem. All Rights Reserved.">
+        <cl:formdata std:sid="f-data-46b0d24a" col="1" row="2"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-67df3bfd" class="label" value="Allow Registration">
+        <cl:formdata std:sid="f-data-e7beff4b" col="0" row="3"/>
+      </cl:output>
+      <cl:radiobutton std:sid="r-button-a9a41d98" id="rdb1" value="enabled">
+        <cl:formdata std:sid="f-data-3f798abb" col="1" row="3"/>
+        <cl:item std:sid="item-0148a3b8" label="Enable" value="enabled"/>
+        <cl:item std:sid="item-218cd918" label="Disable" value="disabled"/>
+        <cl:item std:sid="item-d1ca5d51" label="On Request" value="requested"/>
+      </cl:radiobutton>
+      <cl:output std:sid="output-e835d0ae" class="label" value="Main Website">
+        <cl:formdata std:sid="f-data-4db8f489" col="0" row="4"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-d2fa264f" id="ipb16" value="http://www.tomatosystem.co.kr">
+        <cl:formdata std:sid="f-data-fcf28d4c" col="1" row="4"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-daa62124" class="label" value="Maintanace Mode">
+        <cl:formdata std:sid="f-data-dcd89917" col="0" row="5"/>
+      </cl:output>
+      <cl:checkbox std:sid="c-box-3b1eed15" id="cbx1" text="Offline">
+        <cl:formdata std:sid="f-data-62538996" col="1" row="5"/>
+      </cl:checkbox>
+      <cl:button std:sid="button-cb3b806c" id="btn4" value="Update">
+        <cl:formdata halign="RIGHT" col="0" colspan="2" row="6" rowspan="1"/>
+      </cl:button>
+      <cl:formlayout bottom-margin="20px" hspace="10px" left-margin="20px" right-margin="20px" top-margin="20px" vspace="10px">
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:rows length="35"/>
+        <cl:columns autoSizing="false" length="200" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

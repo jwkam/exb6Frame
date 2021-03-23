@@ -1,0 +1,214 @@
+{
+	"dsData": [
+		{
+			"COLUMN2": 120,
+			"COLUMN1": "Mon"
+		},
+		{
+			"COLUMN2": 200,
+			"COLUMN1": "Tue"
+		},
+		{
+			"COLUMN2": 150,
+			"COLUMN1": "Wed"
+		},
+		{
+			"COLUMN2": 80,
+			"COLUMN1": "Thu"
+		},
+		{
+			"COLUMN2": 70,
+			"COLUMN1": "Fri"
+		}
+	],
+	"dsPyramid": [
+		{
+			"VALUE": 60,
+			"NAME": "바이샤"
+		},
+		{
+			"VALUE": 40,
+			"NAME": "크샤트리아"
+		},
+		{
+			"VALUE": 20,
+			"NAME": "브라단"
+		},
+		{
+			"VALUE": 80,
+			"NAME": "수드라"
+		},
+		{
+			"VALUE": 100,
+			"NAME": "불가촉천민"
+		}
+	],
+	"dsArea": [
+		{
+			"COLUMN3": 400,
+			"COLUMN2": 820,
+			"COLUMN1": "1980"
+		},
+		{
+			"COLUMN3": 200,
+			"COLUMN2": 932,
+			"COLUMN1": "1981"
+		},
+		{
+			"COLUMN3": 150,
+			"COLUMN2": 901,
+			"COLUMN1": "1982"
+		},
+		{
+			"COLUMN3": 333,
+			"COLUMN2": 934,
+			"COLUMN1": "1983"
+		},
+		{
+			"COLUMN3": 1000,
+			"COLUMN2": 1290,
+			"COLUMN1": "1984"
+		}
+	],
+	"dsLineBar": [
+		{
+			"EVAPORATION": 2,
+			"MONTH": "201501",
+			"PRECIPITATION": 2,
+			"TEMPERATURE": 0
+		},
+		{
+			"EVAPORATION": 4,
+			"MONTH": "201502",
+			"PRECIPITATION": 5,
+			"TEMPERATURE": 3
+		},
+		{
+			"EVAPORATION": 7,
+			"MONTH": "201503",
+			"PRECIPITATION": 9,
+			"TEMPERATURE": 8
+		},
+		{
+			"EVAPORATION": 23,
+			"MONTH": "201504",
+			"PRECIPITATION": 26,
+			"TEMPERATURE": 12
+		},
+		{
+			"EVAPORATION": 25,
+			"MONTH": "201505",
+			"PRECIPITATION": 28,
+			"TEMPERATURE": 21
+		}
+	],
+	"dsPieData": [
+		{
+			"VALUE": 120,
+			"NAME": "토마토"
+		},
+		{
+			"VALUE": 200,
+			"NAME": "수박"
+		},
+		{
+			"VALUE": 250,
+			"NAME": "오렌지"
+		},
+		{
+			"VALUE": 110,
+			"NAME": "복숭아"
+		},
+		{
+			"VALUE": 160,
+			"NAME": "딸기"
+		}
+	],
+	"dsYbar": [
+		{
+			"DAY": "Mon",
+			"WATERMELON": 129,
+			"TOMATO": 323,
+			"STRAWBERRY": 218,
+			"ORANGE": 537
+		},
+		{
+			"DAY": "Tue",
+			"WATERMELON": 368,
+			"TOMATO": 455,
+			"STRAWBERRY": 395,
+			"ORANGE": 664
+		},
+		{
+			"DAY": "Wed",
+			"WATERMELON": 278,
+			"TOMATO": 285,
+			"STRAWBERRY": 186,
+			"ORANGE": 524
+		},
+		{
+			"DAY": "Thu",
+			"WATERMELON": 190,
+			"TOMATO": 101,
+			"STRAWBERRY": 225,
+			"ORANGE": 914
+		},
+		{
+			"DAY": "Fri",
+			"WATERMELON": 422,
+			"TOMATO": 247,
+			"STRAWBERRY": 302,
+			"ORANGE": 894
+		}
+	],
+	"dsScatterData": [
+		{
+			"X": 7,
+			"Y": 6
+		},
+		{
+			"X": 8,
+			"Y": 4
+		},
+		{
+			"X": 6,
+			"Y": 1
+		},
+		{
+			"X": 5,
+			"Y": 10
+		},
+		{
+			"X": 3,
+			"Y": 11
+		}
+	],
+	"dsCustomLine": [
+		{
+			"X": -10,
+			"Y": 10
+		},
+		{
+			"X": 0,
+			"Y": 0
+		},
+		{
+			"X": 10,
+			"Y": 10
+		},
+		{
+			"X": 15,
+			"Y": 5
+		},
+		{
+			"X": 20,
+			"Y": 10
+		}
+	],
+	"dsEditor": [
+		{
+			"VALUE": 50,
+			"NAME": "사용량"
+		}
+	]
+}

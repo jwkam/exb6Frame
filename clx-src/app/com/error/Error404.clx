@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-1c4484f2" version="1.0.0.0">
+  <head std:sid="head-22b66aba">
+    <title>Error404</title>
+    <screen std:sid="screen-b96a8a3e" id="default" name="default" minwidth="1200px" width="1200px" height="768px"/>
+    <screen std:sid="screen-9feb0e85" id="tablet" name="tablet" minwidth="850px" maxwidth="1199px" width="850px" height="768px"/>
+    <screen std:sid="screen-4496e782" id="test" name="mobile" maxwidth="849px" width="544px" height="768px"/>
+    <cl:model std:sid="model-0e56415c"/>
+    <cl:appspec preferred-height="0"/>
+  </head>
+  <body std:sid="body-c6bdff07" style="top:0px; left:0px; width:800px; height:600px;" class="bg-gray-200">
+    <cl:img std:sid="image-86e4f739" id="img1" src="../../../theme/common/images/com/error/error-404-landing-page-flat-style.png">
+      <cl:xylayoutdata std:sid="xyl-data-b5e4afaf" width="1073px" height="713px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+    </cl:img>
+    <cl:htmlsnippet std:sid="htmlsnippet-39130d01" id="hsp1" value="&lt;a href='https://www.freepik.com/vectors/business'>Business vector created by pikisuperstar - www.freepik.com&lt;/a>">
+      <cl:xylayoutdata std:sid="xyl-data-4bd6b4a5" bottom="10px" width="400px" height="20px" horizontalAnchor="CENTER" verticalAnchor="BOTTOM"/>
+    </cl:htmlsnippet>
+    <cl:xylayout std:sid="xylayout-97555b62"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

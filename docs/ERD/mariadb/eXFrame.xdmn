@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e:DomainDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:e="http://exerd.tomato.com/model" UUID="DDefinition_BtfCcFKrEeqLQ-LbMNSkNQ" productId="com.tomato.db.mysql" version="2.5.7.20190719-1507">
+  <domain UUID="Domain_BtfCcVKrEeqLQ-LbMNSkNQ" name="ID">
+    <domain UUID="Domain_BtfCclKrEeqLQ-LbMNSkNQ" comment="CLX(화면)ID" name="CLXID_S_20" suggestedDataType="VARCHAR(20)"/>
+    <domain UUID="Domain_BtfCc1KrEeqLQ-LbMNSkNQ" name="SEQ_N_10" suggestedDataType="INT(10)"/>
+    <domain UUID="Domain_BtfCdFKrEeqLQ-LbMNSkNQ" name="계정ID_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCdVKrEeqLQ-LbMNSkNQ" name="메뉴ID_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCdlKrEeqLQ-LbMNSkNQ" name="업무역할ID_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCd1KrEeqLQ-LbMNSkNQ" name="컨트롤ID_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCeFKrEeqLQ-LbMNSkNQ" name="프로그램ID_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCeVKrEeqLQ-LbMNSkNQ" name="사용자ID_S_50" suggestedDataType="VARCHAR(50)"/>
+  </domain>
+  <domain UUID="Domain_BtfCelKrEeqLQ-LbMNSkNQ" name="KEY">
+    <domain UUID="Domain_BtfCe1KrEeqLQ-LbMNSkNQ" name="로그인키_S_400" suggestedDataType="VARCHAR(400)"/>
+    <domain UUID="Domain_BtfCfFKrEeqLQ-LbMNSkNQ" name="세션키_S_400" suggestedDataType="VARCHAR(400)"/>
+    <domain UUID="Domain_BtfCfVKrEeqLQ-LbMNSkNQ" name="접속세션키_S_2000" suggestedDataType="VARCHAR(2000)"/>
+    <domain UUID="Domain_BtfCflKrEeqLQ-LbMNSkNQ" name="프로그램키_S_200" suggestedDataType="VARCHAR(200)"/>
+  </domain>
+  <domain UUID="Domain_BtfCf1KrEeqLQ-LbMNSkNQ" name="날짜">
+    <domain UUID="Domain_BtfCgFKrEeqLQ-LbMNSkNQ" name="년_S_4" suggestedDataType="VARCHAR(4)"/>
+    <domain UUID="Domain_BtfCgVKrEeqLQ-LbMNSkNQ" name="년월_S_6" suggestedDataType="VARCHAR(6)"/>
+    <domain UUID="Domain_BtfCglKrEeqLQ-LbMNSkNQ" name="년월일_S_8" suggestedDataType="VARCHAR(8)"/>
+    <domain UUID="Domain_BtfCg1KrEeqLQ-LbMNSkNQ" name="분_S_2" suggestedDataType="VARCHAR(2)"/>
+    <domain UUID="Domain_BtfChFKrEeqLQ-LbMNSkNQ" name="시간_S_2" suggestedDataType="VARCHAR(2)"/>
+    <domain UUID="Domain_BtfChVKrEeqLQ-LbMNSkNQ" name="시간_S_6" suggestedDataType="VARCHAR(6)"/>
+    <domain UUID="Domain_BtfChlKrEeqLQ-LbMNSkNQ" name="시분_S_4" suggestedDataType="VARCHAR(4)"/>
+    <domain UUID="Domain_BtfCh1KrEeqLQ-LbMNSkNQ" name="시분초_S_6" suggestedDataType="VARCHAR(6)"/>
+    <domain UUID="Domain_BtfCiFKrEeqLQ-LbMNSkNQ" name="월_S_2" suggestedDataType="VARCHAR(2)"/>
+    <domain UUID="Domain_BtfCiVKrEeqLQ-LbMNSkNQ" name="일_S_2" suggestedDataType="VARCHAR(2)"/>
+    <domain UUID="Domain_BtfCilKrEeqLQ-LbMNSkNQ" name="일자_D" suggestedDataType="DATE"/>
+    <domain UUID="Domain_BtfCi1KrEeqLQ-LbMNSkNQ" name="일자_DT" suggestedDataType="DATETIME"/>
+    <domain UUID="Domain_BtfCjFKrEeqLQ-LbMNSkNQ" name="일자_S_8" suggestedDataType="VARCHAR(8)"/>
+  </domain>
+  <domain UUID="Domain_BtfCjVKrEeqLQ-LbMNSkNQ" name="로그">
+    <domain UUID="Domain_BtfCjlKrEeqLQ-LbMNSkNQ" name="갱신IP_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCj1KrEeqLQ-LbMNSkNQ" name="갱신자ID_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCkFKrEeqLQ-LbMNSkNQ" name="갱신프로그램ID_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCkVKrEeqLQ-LbMNSkNQ" name="생성IP_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCklKrEeqLQ-LbMNSkNQ" name="생성자ID_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCk1KrEeqLQ-LbMNSkNQ" name="생성프로그램ID_S_50" suggestedDataType="VARCHAR(50)"/>
+  </domain>
+  <domain UUID="Domain_BtfClFKrEeqLQ-LbMNSkNQ" name="명칭">
+    <domain UUID="Domain_BtfClVKrEeqLQ-LbMNSkNQ" name="권한_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCllKrEeqLQ-LbMNSkNQ" name="명_S_10" suggestedDataType="VARCHAR(10)"/>
+    <domain UUID="Domain_BtfCl1KrEeqLQ-LbMNSkNQ" name="명_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCmFKrEeqLQ-LbMNSkNQ" name="명_S_50" suggestedDataType="VARCHAR(50)"/>
+  </domain>
+  <domain UUID="Domain_BtfCmVKrEeqLQ-LbMNSkNQ" name="문자">
+    <domain UUID="Domain_BtfCmlKrEeqLQ-LbMNSkNQ" name="값_S_10" suggestedDataType="VARCHAR(10)"/>
+    <domain UUID="Domain_BtfCm1KrEeqLQ-LbMNSkNQ" name="값_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCnFKrEeqLQ-LbMNSkNQ" name="값_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCnVKrEeqLQ-LbMNSkNQ" name="값_S_500" suggestedDataType="VARCHAR(500)"/>
+    <domain UUID="Domain_BtfCnlKrEeqLQ-LbMNSkNQ" name="이름_S_10" suggestedDataType="VARCHAR(10)"/>
+    <domain UUID="Domain_BtfCn1KrEeqLQ-LbMNSkNQ" name="이름_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCoFKrEeqLQ-LbMNSkNQ" name="이름_S_50" suggestedDataType="VARCHAR(50)"/>
+  </domain>
+  <domain UUID="Domain_BtfCoVKrEeqLQ-LbMNSkNQ" name="문자열">
+    <domain UUID="Domain_BtfColKrEeqLQ-LbMNSkNQ" name="내용_S_10" suggestedDataType="VARCHAR(10)"/>
+    <domain UUID="Domain_BtfCo1KrEeqLQ-LbMNSkNQ" name="내용_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCpFKrEeqLQ-LbMNSkNQ" name="내용_S_1000" suggestedDataType="VARCHAR(1000)"/>
+    <domain UUID="Domain_BtfCpVKrEeqLQ-LbMNSkNQ" name="내용_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCplKrEeqLQ-LbMNSkNQ" name="내용_S_500" suggestedDataType="VARCHAR(500)"/>
+    <domain UUID="Domain_BtfCp1KrEeqLQ-LbMNSkNQ" name="내용_T" suggestedDataType="TEXT"/>
+    <domain UUID="Domain_BtfCqFKrEeqLQ-LbMNSkNQ" name="제목_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCqVKrEeqLQ-LbMNSkNQ" name="제목_S_50" suggestedDataType="VARCHAR(50)"/>
+    <domain UUID="Domain_BtfCqlKrEeqLQ-LbMNSkNQ" name="패스워드_S_500" suggestedDataType="VARCHAR(500)"/>
+  </domain>
+  <domain UUID="Domain_BtfCq1KrEeqLQ-LbMNSkNQ" name="숫자">
+    <domain UUID="Domain_BtfCrFKrEeqLQ-LbMNSkNQ" name="순번_N_10" suggestedDataType="INT(10)"/>
+    <domain UUID="Domain_BtfCrVKrEeqLQ-LbMNSkNQ" name="순서_S_20" suggestedDataType="VARCHAR(20)"/>
+    <domain UUID="Domain_BtfCrlKrEeqLQ-LbMNSkNQ" name="숫자_N_10" suggestedDataType="INT(10)"/>
+    <domain UUID="Domain_BtfCr1KrEeqLQ-LbMNSkNQ" name="숫자_N_5" suggestedDataType="INT(5)"/>
+    <domain UUID="Domain_BtfCsFKrEeqLQ-LbMNSkNQ" name="파일번호_N_10" suggestedDataType="INT(10)"/>
+    <domain UUID="Domain_BtfCsVKrEeqLQ-LbMNSkNQ" name="파일번호_N_20" suggestedDataType="INT(20)"/>
+    <domain UUID="Domain_BtfCslKrEeqLQ-LbMNSkNQ" name="숫자_D_15_3" suggestedDataType="DECIMAL(15,3)"/>
+  </domain>
+  <domain UUID="Domain_BtfCs1KrEeqLQ-LbMNSkNQ" name="여부">
+    <domain UUID="Domain_BtfCtFKrEeqLQ-LbMNSkNQ" comment="[Y/N]" name="여부_C_1" suggestedDataType="CHAR(1)"/>
+    <domain UUID="Domain_BtfCtVKrEeqLQ-LbMNSkNQ" comment="[PASS/FAIL/REVIEW]" name="여부_S_10" suggestedDataType="VARCHAR(10)"/>
+  </domain>
+  <domain UUID="Domain_BtfCtlKrEeqLQ-LbMNSkNQ" name="주소">
+    <domain UUID="Domain_BtfCt1KrEeqLQ-LbMNSkNQ" name="IP_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCuFKrEeqLQ-LbMNSkNQ" name="URL_S_500" suggestedDataType="VARCHAR(500)"/>
+    <domain UUID="Domain_BtfCuVKrEeqLQ-LbMNSkNQ" name="우편번호_S_10" suggestedDataType="VARCHAR(10)"/>
+    <domain UUID="Domain_BtfCulKrEeqLQ-LbMNSkNQ" name="이메일_S_200" suggestedDataType="VARCHAR(200)"/>
+    <domain UUID="Domain_BtfCu1KrEeqLQ-LbMNSkNQ" name="주소_S_200" suggestedDataType="VARCHAR(200)"/>
+    <domain UUID="Domain_BtfCvFKrEeqLQ-LbMNSkNQ" name="파일경로_S_100" suggestedDataType="VARCHAR(100)"/>
+    <domain UUID="Domain_BtfCvVKrEeqLQ-LbMNSkNQ" name="파일경로_S_1000" suggestedDataType="VARCHAR(1000)"/>
+    <domain UUID="Domain_BtfCvlKrEeqLQ-LbMNSkNQ" name="파일경로_S_500" suggestedDataType="VARCHAR(500)"/>
+  </domain>
+  <domain UUID="Domain_BtfCv1KrEeqLQ-LbMNSkNQ" name="코드">
+    <domain UUID="Domain_BtfCwFKrEeqLQ-LbMNSkNQ" comment="마스터 코드" name="공통코드_S_10" suggestedDataType="VARCHAR(10)"/>
+    <domain UUID="Domain_BtfCwVKrEeqLQ-LbMNSkNQ" comment="마스터 코드" name="코드_S_20" suggestedDataType="VARCHAR(20)"/>
+  </domain>
+</e:DomainDefinition>

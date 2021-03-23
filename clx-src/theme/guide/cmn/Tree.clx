@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9c331d8d" version="1.0.0.0">
+  <head std:sid="head-2bb1f1d9">
+    <title>Tree</title>
+    <screen std:sid="screen-12682ba0" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-003b9386" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-86615f4c" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-15d94533">
+      <cl:dataset std:sid="d-set-82731092" id="dsTree">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d9290565" name="label"/>
+          <cl:datacolumn std:sid="d-column-80606ae2" name="value"/>
+          <cl:datacolumn std:sid="d-column-cc6ef122" name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대한민국]]></cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[지방자치단체]]></cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중앙행정기관]]></cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[서울특별시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부산광역시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대구광역시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[인천광역시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value7</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[광주광역시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value8</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대전광역시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value9</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[울산광역시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value10</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[세종특별자치시]]></cl:datavalue>
+            <cl:datavalue columnname="value">value11</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[경기도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value12</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[강원도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value13</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[충청북도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value14</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[충청남도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value15</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[전라북도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value16</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[전라남도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value17</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[경상북도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value18</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[경상남도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value19</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[제주특별자치도]]></cl:datavalue>
+            <cl:datavalue columnname="value">value20</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[기획재정부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value21</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[교육부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value22</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[과학기술정보통신부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value23</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[외교부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value24</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[범무부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value25</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[통일부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value26</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[국방부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value27</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[행정안정부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value28</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[문화체육관광부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value29</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[농림축산식품부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value30</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[산업통산자원부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value31</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[보건복지부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value32</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[환경부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value33</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[고용노동부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value34</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[여성가족부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value35</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[국토교통부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value36</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[해양수산부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value37</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[중소벤처기업부]]></cl:datavalue>
+            <cl:datavalue columnname="value">value38</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-af321ef4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-c6e765a6" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Trees">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,TREES"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Basic Examples">
+      <cl:verticaldata std:sid="v-data-1f70153f" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-72c312ca" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-e36e72b8" autosize="none" height="350px" width="984px"/>
+      <cl:tree std:sid="tree-8f0c6b1f" id="tre1" autoOpen="1">
+        <cl:xylayoutdata std:sid="xyl-data-f3facad4" height="308px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="230px"/>
+        <cl:treeitemset datasetid="dsTree" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:tree std:sid="tree-000fbab5" id="tre2" autoOpen="1" enabled="false">
+        <cl:xylayoutdata std:sid="xyl-data-ffb33406" height="308px" horizontalAnchor="LEFT" left="260px" top="20px" verticalAnchor="TOP" width="230px"/>
+        <cl:treeitemset datasetid="dsTree" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:xylayout std:sid="xylayout-e407a65f"/>
+    </cl:group>
+    <cl:output std:sid="output-b7201255" class="h6" value="Line Styles">
+      <cl:verticaldata std:sid="v-data-f3298589" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-f1b9aa3b" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-d2fd8416" autosize="none" height="350px" width="984px"/>
+      <cl:tree std:sid="tree-4280717d" id="tre3" autoOpen="1" showlines="true">
+        <cl:xylayoutdata std:sid="xyl-data-1194a51b" height="308px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="230px"/>
+        <cl:treeitemset datasetid="dsTree" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:tree std:sid="tree-5625c7e8" id="tre4" autoOpen="1" enabled="false" showlines="true">
+        <cl:xylayoutdata std:sid="xyl-data-69062eae" height="308px" horizontalAnchor="LEFT" left="260px" top="20px" verticalAnchor="TOP" width="230px"/>
+        <cl:treeitemset datasetid="dsTree" label="label" value="value" parent="parent"/>
+      </cl:tree>
+      <cl:xylayout std:sid="xylayout-158411f4"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

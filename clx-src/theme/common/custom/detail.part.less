@@ -1,0 +1,71 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+
+.cl-container.body-detail {
+	background-image: linear-gradient(#1b1b1b 60px, @body-background-color 60px);
+}
+
+.cl-container.header-detail {
+	.cl-output.header-title {
+		font-size: @h5-font-size;
+		font-weight: @font-weight-medium;
+	}
+	
+	.cl-button[class*="btn-nav-"] {
+		background-color : @transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		color: @gray-100;
+		font-size: (@font-size-base * .5);
+		padding-top: 5px;
+		
+		&:not(.cl-disabled).cl-focus,
+		&:not(.cl-disabled).cl-hover,
+		&:not(.cl-disabled):hover {
+			color: #378ef0;
+		}
+	}
+	
+	.cl-button.btn-nav-code {
+		background-image :url(images/icon/icon-code-gray-20px.svg);
+		
+		&:not(.cl-disabled).cl-focus,
+		&:not(.cl-disabled).cl-hover,
+		&:not(.cl-disabled):hover {
+			background-image :url(images/icon/icon-code-blue-20px.svg);
+		}
+	}
+	
+	.cl-button.btn-nav-download {
+		background-image :url(images/icon/icon-download-gray-20px.svg);
+		
+		&:not(.cl-disabled).cl-focus,
+		&:not(.cl-disabled).cl-hover,
+		&:not(.cl-disabled):hover {
+			background-image :url(images/icon/icon-download-blue-20px.svg);
+		}
+	}
+	
+	.cl-button.btn-nav-clipboard {
+		background-image :url(images/icon/icon-clipboard-gray-20px.svg);
+		
+		&:not(.cl-disabled).cl-focus,
+		&:not(.cl-disabled).cl-hover,
+		&:not(.cl-disabled):hover {
+			background-image :url(images/icon/icon-clipboard-blue-20px.svg);
+		}
+	}
+	
+	.cl-button.btn-nav-rotate {
+		background-image :url(images/icon/icon-rotate-cw-gray-20px.svg);
+		
+		&:not(.cl-disabled).cl-focus,
+		&:not(.cl-disabled).cl-hover,
+		&:not(.cl-disabled):hover {
+			background-image :url(images/icon/icon-rotate-cw-blue-20px.svg);
+		}
+	}
+}
+

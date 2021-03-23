@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a569cdc7" version="1.0.0.0">
+  <head std:sid="head-88c503b5">
+    <title>Breadcrumb</title>
+    <screen std:sid="screen-0ccb31fe" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-5af74695" id="tablet" height="768px" maxwidth="1023px" minwidth="850px" name="tablet" width="850px"/>
+    <screen std:sid="screen-2ba502ec" id="mobile" height="768px" maxwidth="849px" name="mobile" width="550px"/>
+    <cl:model std:sid="model-d71b0270"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-ddd74975" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-db247920" autosize="none" height="26px" width="984px"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="BREADCRUMBS">
+        <cl:formdata std:sid="f-data-c8d7556a" col="0" row="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.cmn.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" col="1" row="0"/>
+        <cl:property name="values" type="string" value="DESIGN GUIDE,BREADCRUMBS"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="true" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-ca373120" class="h6" value="Default Style">
+      <cl:verticaldata std:sid="v-data-8ae340f6" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-5238bfd7" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-9520b7e6" autosize="height" height="129px" width="984px"/>
+      <cl:udc std:sid="ud-control-b00044f8" id="breadcrumb2" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-3a5c345c" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-697f4d9d" id="breadcrumb3" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-2220bdc7" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-26e537ab" id="breadcrumb4" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-f7cb9b6f" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY,DATA"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-e6511f99" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-87427b1d" class="h6" value="Arrow Style">
+      <cl:verticaldata std:sid="v-data-5316824c" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-21ab20d4" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-3d3e972c" autosize="height" height="129px" width="984px"/>
+      <cl:udc std:sid="ud-control-29e3f289" id="breadcrumb5" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-babba1b8" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME"/>
+        <cl:property name="class" type="enumeration" value="arrow"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-4166e876" id="breadcrumb6" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-fd4e5674" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY"/>
+        <cl:property name="class" type="enumeration" value="arrow"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-d3f87b46" id="breadcrumb7" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-e88c9d3c" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY,DATA"/>
+        <cl:property name="class" type="enumeration" value="arrow"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-edf5c541" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-ead74900" class="h6" value="Bar Style">
+      <cl:verticaldata std:sid="v-data-00e7dbdd" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-91dbf6d4" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-6f0f1313" autosize="height" height="129px" width="984px"/>
+      <cl:udc std:sid="ud-control-65fc0d91" id="breadcrumb8" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-611efe25" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME"/>
+        <cl:property name="class" type="enumeration" value="bar"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-c8d3ec97" id="breadcrumb9" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-6fbe8dc0" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY"/>
+        <cl:property name="class" type="enumeration" value="bar"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-6cac8f6c" id="breadcrumb10" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-66fdb1a0" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="left"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY,DATA"/>
+        <cl:property name="class" type="enumeration" value="bar"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-86881550" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-4b00f416" class="h6" value="Right Align">
+      <cl:verticaldata std:sid="v-data-b37d0705" autosize="none" height="25px" width="984px"/>
+    </cl:output>
+    <cl:group std:sid="group-c2f3b025" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-14abb24e" autosize="height" height="129px" width="984px"/>
+      <cl:udc std:sid="ud-control-2359571b" id="breadcrumb11" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-e01fd1fa" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="right"/>
+        <cl:property name="values" type="string" value="HOME"/>
+        <cl:property name="class" type="enumeration" value="bar"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-6e56c8bf" id="breadcrumb12" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-577aca78" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="right"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY"/>
+        <cl:property name="class" type="enumeration" value="bar"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-17d59998" id="breadcrumb13" type="udc.cmn.Breadcrumb">
+        <cl:verticaldata std:sid="v-data-2c905642" height="26px" width="300px"/>
+        <cl:property name="align" type="enumeration" value="right"/>
+        <cl:property name="values" type="string" value="HOME,LIBRARY,DATA"/>
+        <cl:property name="class" type="enumeration" value="bar"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-38b654d5" bottommargin="20" leftmargin="20" rightmargin="20" spacing="5" topmargin="20"/>
+    </cl:group>
+    <cl:verticallayout bottommargin="20" leftmargin="20" rightmargin="20" spacing="20" topmargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
